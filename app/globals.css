@@ -29,6 +29,34 @@
 }
 
 
+/* why choose us */
+.shine-button1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-button1::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent, rgba(244, 193, 127, 0.4), transparent);
+  transform: rotate(25deg);
+  animation: shine1 2.5s infinite;
+}
+
+@keyframes shine1 {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
 
 
 /* home 1 */
