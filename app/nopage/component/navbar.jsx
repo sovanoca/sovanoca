@@ -94,7 +94,7 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden flex items-center">
                          <motion.div
-                        initial={{ x: 20 }}
+                        initial={{ x: -20 }}
                         animate={{ x: 0 }}
                         className="ml-8 flex items-center lg:hidden"
                     >

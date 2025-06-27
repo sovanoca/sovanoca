@@ -9,33 +9,33 @@ const ServicesSection = () => {
 
   const services = [
     {
-      id: 1,
-      title: "Building Construction",
-      description: "Our post-construction services gives you peace of mind knowing that we are still here for you even after.",
-      image: "/service-img-1.jpg",
-      category: "Construction"
-    },
-    {
-      id: 2,
-      title: "Architecture Design",
-      description: "Innovative architectural solutions that blend aesthetics with functionality for modern spaces.",
-      image: "/service-img-2.jpg",
-      category: "Design"
-    },
-    {
-      id: 3,
-      title: "Building Renovation",
-      description: "Transform your existing space with our expert renovation services that preserve character.",
-      image: "/service-img-3.jpg",
-      category: "Renovation"
-    },
-    {
-      id: 4,
-      title: "Building Maintenance",
-      description: "Comprehensive maintenance plans to keep your property in perfect condition year-round.",
-      image: "/service-img-4.jpg",
-      category: "Maintenance"
-    }
+    id: 1,
+    title: "Commercial Exterior Painting Services",
+    description: "Enhance your commercial property’s curb appeal with expert exterior painting solutions tailored for businesses.",
+    image: "/commercial-painting.webp",
+    category: "Commercial"
+  },
+  {
+    id: 2,
+    title: "Bathroom Remodeling Services",
+    description: "Transform your bathroom with modern design, quality fixtures, and expert craftsmanship.",
+    image: "/bathroom-remodel.webp",
+    category: "Residential"
+  },
+  {
+    id: 3,
+    title: "Kitchen Remodeling Services",
+    description: "Modern kitchen remodels combining functionality with design that fits your lifestyle.",
+    image: "/kitchen-remodel.webp",
+    category: "Residential"
+  },
+  {
+    id: 4,
+    title: "Architectural and Interior Design Consulting",
+    description: "Tailored design consultation services for residential and commercial projects.",
+    image: "/design-consulting.webp",
+    category: "Consulting"
+  }
   ];
 
   // Animation variants - optimized for performance

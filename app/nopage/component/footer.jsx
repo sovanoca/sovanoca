@@ -47,7 +47,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0D1B2A] text-white py-16 px-6 md:px-16">
+    <footer className="bg-b1 text-white py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <motion.div 
