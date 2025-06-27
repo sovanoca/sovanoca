@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   
   const features = [
     {
-      title: "Modern & Efficient Approach",
+      title: "Modern and Efficient Approach",
       description: "We leverage the latest construction technologies and methodologies to deliver projects faster and more efficiently than traditional contractors.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,13 +88,13 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto">
         {/* Decorative elements */}
         <motion.div 
-          className="absolute top-20 left-10 w-24 h-24 bg-blue-100 rounded-full -z-10"
+          className="absolute top-20 left-10 w-24 h-24 bg-blue-100  -z-10"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
         />
         <motion.div 
-          className="absolute bottom-40 right-10 w-32 h-32 bg-blue-200 rounded-full -z-10 opacity-30"
+          className="absolute bottom-40 right-10 w-32 h-32 bg-blue-200  -z-10 opacity-30"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -127,7 +127,7 @@ const WhyChooseUs = () => {
             Why we're your <span className="text-b1">best choice</span>
           </motion.h1>
           <motion.div 
-            className="h-1 w-20 bg-b1 mx-auto rounded-full"
+            className="h-1 w-20 bg-b1 mx-auto "
             initial={{ width: 0 }}
             whileInView={{ width: 80 }}
             viewport={{ once: true }}
@@ -147,7 +147,7 @@ const WhyChooseUs = () => {
             {features.map((feature, index) => (
               <motion.div 
                 key={index}
-                className={`bg-white rounded-xl shadow-lg p-6 relative overflow-hidden cursor-pointer transition-all duration-300 ${
+                className={`bg-white  shadow-lg p-6 relative overflow-hidden cursor-pointer transition-all duration-300 ${
                   activeFeature === index ? 'ring-2 ring-b1 shadow-xl' : 'hover:shadow-xl'
                 }`}
                 variants={item}
@@ -156,7 +156,7 @@ const WhyChooseUs = () => {
               >
                 {/* Feature icon */}
                 <motion.div 
-                  className={`p-3 rounded-full w-max mb-5 ${
+                  className={`p-3  w-max mb-5 ${
                     activeFeature === index 
                       ? 'bg-b1 text-white' 
                       : 'bg-blue-100 text-b1'
@@ -170,7 +170,7 @@ const WhyChooseUs = () => {
                 <p className="text-gray-600 mb-4">{feature.description}</p>
                 
                 <motion.div 
-                  className={`absolute -bottom-4 -right-4 w-24 h-24 rounded-full ${
+                  className={`absolute -bottom-4 -right-4 w-24 h-24  ${
                     activeFeature === index 
                       ? 'bg-b1' 
                       : 'bg-blue-100'
@@ -200,10 +200,10 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="bg-b1 rounded-2xl shadow-2xl p-8 text-white relative overflow-hidden h-full w-full">
+            <div className="bg-b1  shadow-2xl p-8 text-white relative overflow-hidden h-full w-full">
               <div className="absolute top-0 left-0 w-full h-full bg-[url('/texture.png')] opacity-10" />
-              <div className="absolute -top-20 -right-20 w-64 h-64 bg-white rounded-full opacity-10" />
-              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300 rounded-full opacity-20" />
+              <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
+              <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
               
               <div className="relative z-10">
                 <motion.div 
@@ -241,9 +241,9 @@ const WhyChooseUs = () => {
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 1, delay: 0.8 }}
-                  className="h-1 bg-white/30 mb-8 rounded-full"
+                  className="h-1 bg-white/30 mb-8 "
                 >
-                  <div className="h-full bg-white rounded-full" style={{ width: `${(activeFeature + 1) * 25}%` }} />
+                  <div className="h-full bg-white " style={{ width: `${(activeFeature + 1) * 25}%` }} />
                 </motion.div>
                 
                 <motion.div
@@ -251,7 +251,7 @@ const WhyChooseUs = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1 }}
                 >
-                  <button className="bg-white shine-button1 text-b1 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition flex items-center gap-2">
+                  <button className="bg-white shine-button1 text-b1 font-bold px-8 py-3  hover:bg-gray-100 transition flex items-center gap-2">
                     Start Your Project
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -265,7 +265,7 @@ const WhyChooseUs = () => {
         
         {/* Value Proposition Banner */}
         <motion.div 
-          className="mt-20 bg-b1 rounded-2xl shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
+          className="mt-20 bg-b1  shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -303,7 +303,7 @@ const WhyChooseUs = () => {
                   transition={{ duration: 0.6, delay: 0.8 }}
                 >
                   <div className="flex items-center">
-                    <div className="bg-b1 rounded-full p-2 mr-3">
+                    <div className="bg-b1  p-2 mr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -311,7 +311,7 @@ const WhyChooseUs = () => {
                     <span>100% Satisfaction Guarantee</span>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-b1 rounded-full p-2 mr-3">
+                    <div className="bg-b1  p-2 mr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -319,7 +319,7 @@ const WhyChooseUs = () => {
                     <span>Competitive Pricing</span>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-b1 rounded-full p-2 mr-3">
+                    <div className="bg-b1  p-2 mr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -327,7 +327,7 @@ const WhyChooseUs = () => {
                     <span>Flexible Solutions</span>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-b1 rounded-full p-2 mr-3">
+                    <div className="bg-b1  p-2 mr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
@@ -339,7 +339,7 @@ const WhyChooseUs = () => {
               
               <div className="grid grid-cols-2 gap-4">
                 <motion.div 
-                  className="bg-white rounded-xl p-6 text-center"
+                  className="bg-white  p-6 text-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -349,7 +349,7 @@ const WhyChooseUs = () => {
                   <div className="text-gray-800">Projects</div>
                 </motion.div>
                 <motion.div 
-                  className="bg-white rounded-xl p-6 text-center"
+                  className="bg-white  p-6 text-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -359,7 +359,7 @@ const WhyChooseUs = () => {
                   <div className="text-gray-800">Years</div>
                 </motion.div>
                 <motion.div 
-                  className="bg-white rounded-xl p-6 text-center"
+                  className="bg-white  p-6 text-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -369,7 +369,7 @@ const WhyChooseUs = () => {
                   <div className="text-gray-800">Satisfaction</div>
                 </motion.div>
                 <motion.div 
-                  className="bg-white rounded-xl p-6 text-center"
+                  className="bg-white  p-6 text-center"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

@@ -87,7 +87,7 @@
     0% 20%    /* 8. Left edge, 20% down — back near the top-left corner */
   );
 
-  border-radius: 12px; /* Optional: adds subtle rounding to all corners for smoother visual */
+ /* Optional: adds subtle rounding to all corners for smoother visual */
 }
 
 

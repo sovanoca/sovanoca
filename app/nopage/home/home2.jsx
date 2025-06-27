@@ -21,7 +21,7 @@ export default function AboutUsHero() {
                 transition={{ duration: 0.8 }}
                 className="w-full flex justify-center flex-col"
             >
-                <div className="rounded-3xl overflow-hidden w-full max-w-md md:max-w-full lg:p-20">
+                <div className=" overflow-hidden w-full max-w-md md:max-w-full lg:p-20">
                     <Image
                         src="/Engineer-photo.png"
                         alt="Construction Workers"
@@ -47,7 +47,7 @@ export default function AboutUsHero() {
                     Crafting structures that last a lifetime requires a holistic approach that integrates advanced materials, resilient design, regular maintenance, and sustainability practices. By learning from historical examples and leveraging modern technology.
                 </p>
 
-                <div className="bg-blue-50 p-4 rounded-xl space-y-4">
+                <div className="bg-blue-50 p-4  space-y-4">
                     <div className="flex items-center gap-3">
                         <span className="text-b1 text-xl">✔</span>
                         <p className="font-semibold text-gray-800">Comprehensive Services</p>
@@ -66,7 +66,7 @@ export default function AboutUsHero() {
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-b1 shine-button text-white font-bold px-6 py-3 rounded-xl flex items-center gap-2"
+                        className="bg-b1 shine-button text-white font-bold px-6 py-3 flex items-center gap-2"
                     >
                         Get Free Quote <ArrowRight size={20} />
                     </motion.button>

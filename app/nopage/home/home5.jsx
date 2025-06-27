@@ -137,7 +137,7 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="relative overflow-hidden rounded-xl shadow-md h-[400px] cursor-pointer"
+              className="relative overflow-hidden  shadow-md h-[400px] cursor-pointer"
               variants={item}
               whileHover={cardHover}
               onMouseEnter={() => setHoveredProject(project.id)}
@@ -174,7 +174,7 @@ const ProjectsSection = () => {
                       : project.category === "Renovation" 
                         ? "bg-amber-500" 
                         : "bg-emerald-500"
-                } text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full shadow`}>
+                } text-white text-xs md:text-sm font-medium px-3 py-1  shadow`}>
                   {project.category}
                 </span> */}
               </motion.div>
@@ -229,7 +229,7 @@ const ProjectsSection = () => {
                   </div>
 
                   <motion.button
-                    className="bg-white text-gray-900 font-medium px-4 py-2 rounded-full flex items-center gap-1 text-sm md:text-base w-full justify-center"
+                    className="bg-white text-gray-900 font-medium px-4 py-2  flex items-center gap-1 text-sm md:text-base w-full justify-center"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                   >
@@ -263,7 +263,7 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.button
-            className="bg-b1 text-white font-medium px-8 py-3 rounded-full flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors"
+            className="bg-b1 text-white font-medium px-8 py-3  flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors"
             whileHover={{
               scale: 1.03,
               

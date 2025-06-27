@@ -69,7 +69,7 @@ export default function Home() {
                     <div className="flex flex-col-reverse lg:flex-row h-full gap-4 lg:gap-6">
                         {/* Left Image */}
                         <motion.div
-                            className="lg:w-1/2 clip-hex  hidden lg:flex relative w-full h-64 sm:h-72 lg:h-full overflow-hidden rounded-xl shadow-lg"
+                            className="lg:w-1/2 clip-hex  hidden lg:flex relative w-full h-64 sm:h-72 lg:h-full overflow-hidden -xl shadow-lg"
                             variants={scaleUp}
                             initial="hidden"
                             animate="show"
@@ -107,7 +107,7 @@ export default function Home() {
                         >
                             {/* Right Image */}
                             <motion.div
-                                className="clip-hex relative w-full h-48 sm:h-56 lg:h-2/3 overflow-hidden rounded-xl shadow-lg"
+                                className="clip-hex relative w-full h-48 sm:h-56 lg:h-2/3 overflow-hidden -xl shadow-lg"
                                 variants={scaleUp}
                                 initial="hidden"
                                 animate="show"
@@ -130,7 +130,7 @@ export default function Home() {
                                 animate="show"
                             >
                                 <motion.button
-                                    className="flex-1 shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 rounded-md lg:rounded-xl hover:bg-orange-600 transition shadow-md"
+                                    className="flex-1 shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6  hover:bg-b1 transition shadow-md"
                                     variants={item}
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}
@@ -138,7 +138,7 @@ export default function Home() {
                                     Request a Quote
                                 </motion.button>
                                 <motion.button
-                                    className="flex-1 bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 rounded-md lg:rounded-xl border border-gray-300 hover:bg-gray-50 transition shadow-md"
+                                    className="flex-1 bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6  border border-gray-300 hover:bg-gray-50 transition shadow-md"
                                     variants={item}
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}

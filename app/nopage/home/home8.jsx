@@ -99,7 +99,7 @@ const FAQSection = () => {
                         Construction Questions Answered
                     </motion.h1>
                     <motion.div
-                        className="h-1 w-20 bg-b1 mx-auto rounded-full"
+                        className="h-1 w-20 bg-b1 mx-auto "
                         initial={{ width: 0 }}
                         whileInView={{ width: 80 }}
                         viewport={{ once: true }}
@@ -118,7 +118,7 @@ const FAQSection = () => {
                     {faqs.map((faq, index) => (
                         <motion.div
                             key={index}
-                            className="border border-gray-200 rounded-xl shadow-sm overflow-hidden"
+                            className="border border-gray-200  shadow-sm overflow-hidden"
                             variants={item}
                         >
                             <button
@@ -163,15 +163,15 @@ const FAQSection = () => {
 
                 {/* CTA Section */}
                 <motion.div
-                    className="mt-16 bg-b1 rounded-2xl shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
+                    className="mt-16 bg-b1  shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                 >
                     <div className="absolute inset-0 bg-[url('/texture.png')] opacity-10" />
-                    <div className="absolute -top-20 -right-20 w-64 h-64 bg-white rounded-full opacity-10" />
-                    <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300 rounded-full opacity-20" />
+                    <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
+                    <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
                     <div className="relative z-10 max-w-2xl mx-auto text-center">
                         <motion.h3
@@ -202,14 +202,14 @@ const FAQSection = () => {
                             transition={{ delay: 0.6 }}
                         >
                             <motion.button
-                                className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 rounded-full hover:bg-white/10 transition flex items-center justify-center gap-2"
+                                className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3  hover:bg-white/10 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 Request a Quote →
                             </motion.button>
                             <motion.button
-                                className="bg-white text-b1 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                className="bg-white text-b1 font-bold px-8 py-3  hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >

@@ -120,7 +120,7 @@ const ServicesSection = () => {
           {services.map((service) => (
             <motion.div 
               key={service.id}
-              className="relative overflow-hidden rounded-xl shadow-md h-[360px] cursor-pointer"
+              className="relative overflow-hidden  shadow-md h-[360px] cursor-pointer"
               variants={item}
               whileHover={cardHover}
               onMouseEnter={() => setHoveredCard(service.id)}
@@ -149,7 +149,7 @@ const ServicesSection = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                <span className="bg-b1 text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full shadow">
+                <span className="bg-b1 text-white text-xs md:text-sm font-medium px-3 py-1  shadow">
                   {service.category}
                 </span>
               </motion.div>
@@ -187,7 +187,7 @@ const ServicesSection = () => {
                     {service.description}
                   </motion.p>
                   <motion.button
-                    className="bg-white text-gray-900 font-medium px-4 py-2 rounded-full flex items-center gap-1 text-sm md:text-base"
+                    className="bg-white text-gray-900 font-medium px-4 py-2  flex items-center gap-1 text-sm md:text-base"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                   >
@@ -221,7 +221,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.button
-            className="bg-b1 text-white font-medium px-8 py-3 rounded-full flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-orange-600 transition-colors"
+            className="bg-b1 text-white font-medium px-8 py-3  flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors"
             whileHover={{ 
               scale: 1.03,
               boxShadow: "0 8px 20px -5px rgba(249, 115, 22, 0.4)"

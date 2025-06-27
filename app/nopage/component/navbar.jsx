@@ -82,7 +82,7 @@ const Navbar = () => {
                             <Link
                                 href="/get-quote"
                                 title="Request a Construction Quote from Sovanoca"
-                                className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 px-4 font-medium py-3 rounded-full hover:scale-105 transition-all text-md shadow-lg relative z-10"
+                                className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 px-4 font-medium py-3  hover:scale-105 transition-all text-md shadow-lg relative z-10"
                             >
                                 Request a Quote →
                             </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                         <Link
                             href="/get-quote"
                             title="Request a Construction Quote from Sovanoca"
-                            className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 px-4 font-medium py-3 rounded-full hover:scale-105 transition-all text-md shadow-lg relative z-10"
+                            className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 px-4 font-medium py-3  hover:scale-105 transition-all text-md shadow-lg relative z-10"
                         >
                             Request a Quote →
                         </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
                             <Link
                                 href="/get-quote"
                                 title="Request a Quote from Sovanoca Construction Company"
-                                className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 block text-center px-6 py-3 rounded-lg transition-colors font-semibold shadow-md"
+                                className="shine-button bg-b1 text-white hover:bg-white hover:text-b1 border border-b1 block text-center px-6 py-3 -lg transition-colors font-semibold shadow-md"
                             >
                                 Request a Quote →
                             </Link>

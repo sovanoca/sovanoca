@@ -17,7 +17,7 @@ export default function HeroSection() {
             Don’t wait any longer to bring your construction dreams to life. Partner with Buildup and experience unparalleled service and quality.
           </p>
 
-          <button className="mt-4 bg-white hover:bg-blue-100 text-[#0D1B2A] font-bold py-4 px-6 rounded-md shine-button1 flex items-center gap-2 transition">
+          <button className="mt-4 bg-white hover:bg-blue-100 text-[#0D1B2A] font-bold py-4 px-6  shine-button1 flex items-center gap-2 transition">
             Get Free Quote <ArrowRight size={20} />
           </button>
         </div>

@@ -76,7 +76,7 @@ export default function TestimonialSection() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeUp}
-                        className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all"
+                        className="bg-white border border-gray-200  p-6 shadow-sm hover:shadow-lg transition-all"
                     >
                         {/* Stars */}
                         <div className="flex gap-1 mb-4">
@@ -97,7 +97,7 @@ export default function TestimonialSection() {
                                 alt={item.name}
                                 width={48}
                                 height={48}
-                                className="w-12 h-12 rounded-full object-cover"
+                                className="w-12 h-12  object-cover"
                             />
 
 
