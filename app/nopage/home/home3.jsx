@@ -149,7 +149,7 @@ const ServicesSection = () => {
                   transition: { duration: 0.3 }
                 }}
               >
-                <span className="bg-orange-500 text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full shadow">
+                <span className="bg-b1 text-white text-xs md:text-sm font-medium px-3 py-1 rounded-full shadow">
                   {service.category}
                 </span>
               </motion.div>
@@ -202,7 +202,7 @@ const ServicesSection = () => {
               {/* Hover overlay effect */}
               {hoveredCard === service.id && (
                 <motion.div 
-                  className="absolute inset-0 bg-gradient-to-t from-orange-500/20 to-transparent"
+                  className="absolute inset-0 bg-gradient-to-t from-b1/20 to-transparent"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
@@ -221,7 +221,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <motion.button
-            className="bg-orange-500 text-white font-medium px-8 py-3 rounded-full flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-orange-600 transition-colors"
+            className="bg-b1 text-white font-medium px-8 py-3 rounded-full flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-orange-600 transition-colors"
             whileHover={{ 
               scale: 1.03,
               boxShadow: "0 8px 20px -5px rgba(249, 115, 22, 0.4)"

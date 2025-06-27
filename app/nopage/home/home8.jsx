@@ -81,7 +81,7 @@ const FAQSection = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <motion.h2
-                        className="text-lg md:text-xl font-medium text-orange-500 mb-4"
+                        className="text-lg md:text-xl font-medium text-b1 mb-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -99,7 +99,7 @@ const FAQSection = () => {
                         Construction Questions Answered
                     </motion.h1>
                     <motion.div
-                        className="h-1 w-20 bg-orange-500 mx-auto rounded-full"
+                        className="h-1 w-20 bg-b1 mx-auto rounded-full"
                         initial={{ width: 0 }}
                         whileInView={{ width: 80 }}
                         viewport={{ once: true }}
@@ -134,7 +134,7 @@ const FAQSection = () => {
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="h-6 w-6 text-orange-500 flex-shrink-0"
+                                        className="h-6 w-6 text-b1 flex-shrink-0"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -163,7 +163,7 @@ const FAQSection = () => {
 
                 {/* CTA Section */}
                 <motion.div
-                    className="mt-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
+                    className="mt-16 bg-b1 rounded-2xl shadow-xl p-8 md:p-12 text-white relative overflow-hidden"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -171,7 +171,7 @@ const FAQSection = () => {
                 >
                     <div className="absolute inset-0 bg-[url('/texture.png')] opacity-10" />
                     <div className="absolute -top-20 -right-20 w-64 h-64 bg-white rounded-full opacity-10" />
-                    <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-orange-300 rounded-full opacity-20" />
+                    <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300 rounded-full opacity-20" />
 
                     <div className="relative z-10 max-w-2xl mx-auto text-center">
                         <motion.h3
@@ -209,7 +209,7 @@ const FAQSection = () => {
                                 Request a Quote →
                             </motion.button>
                             <motion.button
-                                className="bg-white text-orange-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                className="bg-white text-b1 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >

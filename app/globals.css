@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @config "../tailwind.config.js"; 
 
+
+@font-face {
+  font-family: 'YourFont';
+  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-size: larger;
+}
+
+.vintage {
+  font-family: 'YourFont', sans-serif;
+}
+
+
 /* navbar */
 .shine-button {
   position: relative;
@@ -42,7 +56,7 @@
   left: -100%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(120deg, transparent, rgba(244, 193, 127, 0.4), transparent);
+  background: linear-gradient(120deg, transparent, rgba(175, 207, 255, 0.337), transparent);
   transform: rotate(25deg);
   animation: shine1 2.5s infinite;
 }

@@ -43,7 +43,7 @@ export default function TestimonialSection() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeUp}
-                className="text-yellow-500 font-semibold uppercase tracking-wide mb-2"
+                className="text-b1 font-semibold uppercase tracking-wide mb-2"
             >
                 Testimonials
             </motion.p>

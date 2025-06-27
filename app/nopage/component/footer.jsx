@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <motion.div 
                 whileHover={{ rotate: 10 }}
-                className="bg-orange-500 p-2 rounded-lg"
+                className="bg-[#0D1B2A] p-2 rounded-lg border border-blue-400"
               >
                 <Image
                   src="/construction-company-logo.png"
@@ -80,29 +80,29 @@ const Footer = () => {
             </p>
             
             <motion.div 
-              className="flex gap-4 text-orange-500 text-lg mt-6"
+              className="flex gap-4 text-blue-400 text-lg mt-6"
               variants={fadeIn}
             >
               <motion.a 
-                whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
                 className="cursor-pointer transition-all"
               >
                 <FaInstagram />
               </motion.a>
               <motion.a 
-                whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
                 className="cursor-pointer transition-all"
               >
                 <FaFacebookF />
               </motion.a>
               <motion.a 
-                whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
                 className="cursor-pointer transition-all"
               >
                 <FaXTwitter />
               </motion.a>
               <motion.a 
-                whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
                 className="cursor-pointer transition-all"
               >
                 <FaLinkedinIn />
@@ -112,7 +112,7 @@ const Footer = () => {
 
           {/* Our Services */}
           <motion.div variants={item}>
-            <h3 className="text-orange-500 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
+            <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
               Our Services
             </h3>
             <ul className="space-y-3 text-sm">
@@ -122,11 +122,11 @@ const Footer = () => {
                   key={i}
                   whileHover={{ 
                     x: 10,
-                    color: "#f97316"
+                    color: "#93c5fd"
                   }}
-                  className="flex items-center gap-2 transition-colors cursor-pointer"
+                  className="flex items-center gap-2 transition-colors cursor-pointer text-gray-300"
                 >
-                  <span className="text-orange-500">→</span> {service}
+                  <span className="text-blue-400">→</span> {service}
                 </motion.li>
               ))}
             </ul>
@@ -134,7 +134,7 @@ const Footer = () => {
 
           {/* Company */}
           <motion.div variants={item}>
-            <h3 className="text-orange-500 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
+            <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
               Company
             </h3>
             <ul className="space-y-3 text-sm">
@@ -143,11 +143,11 @@ const Footer = () => {
                   key={i}
                   whileHover={{ 
                     x: 10,
-                    color: "#f97316"
+                    color: "#93c5fd"
                   }}
-                  className="flex items-center gap-2 transition-colors cursor-pointer"
+                  className="flex items-center gap-2 transition-colors cursor-pointer text-gray-300"
                 >
-                  <span className="text-orange-500">→</span> {item}
+                  <span className="text-blue-400">→</span> {item}
                 </motion.li>
               ))}
             </ul>
@@ -155,7 +155,7 @@ const Footer = () => {
 
           {/* Contact Us */}
           <motion.div variants={item}>
-            <h3 className="text-orange-500 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
+            <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
               Contact Us
             </h3>
             <ul className="space-y-5 text-sm text-gray-300">
@@ -163,8 +163,8 @@ const Footer = () => {
                 className="flex items-start gap-3"
                 whileHover={{ x: 5 }}
               >
-                <div className="bg-orange-500 p-2 rounded-full">
-                  <FaPhone className="text-white mt-0.5" />
+                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
+                  <FaPhone className="text-blue-400 mt-0.5" />
                 </div>
                 <div>
                   <div className="font-medium text-white">Phone</div>
@@ -176,8 +176,8 @@ const Footer = () => {
                 className="flex items-start gap-3"
                 whileHover={{ x: 5 }}
               >
-                <div className="bg-orange-500 p-2 rounded-full">
-                  <FaEnvelope className="text-white mt-0.5" />
+                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
+                  <FaEnvelope className="text-blue-400 mt-0.5" />
                 </div>
                 <div>
                   <div className="font-medium text-white">Email</div>
@@ -189,8 +189,8 @@ const Footer = () => {
                 className="flex items-start gap-3"
                 whileHover={{ x: 5 }}
               >
-                <div className="bg-orange-500 p-2 rounded-full">
-                  <FaMapMarkerAlt className="text-white mt-0.5" />
+                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
+                  <FaMapMarkerAlt className="text-blue-400 mt-0.5" />
                 </div>
                 <div>
                   <div className="font-medium text-white">Location</div>
@@ -204,8 +204,6 @@ const Footer = () => {
           </motion.div>
         </motion.div>
 
-        
-
         {/* Footer Bottom */}
         <motion.div 
           className="border-t border-gray-700 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4"
@@ -218,13 +216,13 @@ const Footer = () => {
             <span>Copyright © {new Date().getFullYear()} Sovanoca Construction.</span>
 
             <motion.a 
-              className="text-orange-500 hover:underline"
+              className="text-blue-400 hover:underline"
               whileHover={{ scale: 1.05 }}
             >
               Privacy Policy
             </motion.a>
             <motion.a 
-              className="text-orange-500 hover:underline"
+              className="text-blue-400 hover:underline"
               whileHover={{ scale: 1.05 }}
             >
               Terms of Service
@@ -232,31 +230,31 @@ const Footer = () => {
           </div>
           
           <motion.div 
-            className="flex gap-4 text-orange-500 text-lg"
+            className="flex gap-4 text-blue-400 text-lg"
             whileInView={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ delay: 0.3 }}
           >
             <motion.a 
-              whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+              whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
               className="cursor-pointer transition-all"
             >
               <FaInstagram />
             </motion.a>
             <motion.a 
-              whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+              whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
               className="cursor-pointer transition-all"
             >
               <FaFacebookF />
             </motion.a>
             <motion.a 
-              whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+              whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
               className="cursor-pointer transition-all"
             >
               <FaXTwitter />
             </motion.a>
             <motion.a 
-              whileHover={{ y: -5, color: "#fff", scale: 1.2 }}
+              whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
               className="cursor-pointer transition-all"
             >
               <FaLinkedinIn />

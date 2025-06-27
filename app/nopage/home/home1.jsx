@@ -36,7 +36,7 @@ export default function Home() {
                     {/* Left Text */}
                     <motion.div className="flex w-full lg:w-1/2 items-end p-2 lg:p-4" variants={item}>
                         <div>
-                            <motion.h1 className="text-xs text-center lg:text-left sm:text-sm font-medium text-orange-500" variants={item}>
+                            <motion.h1 className="text-xs text-center lg:text-left sm:text-sm font-medium text-b1" variants={item}>
                                 Trusted Construction Company You Can Rely On
                             </motion.h1>
                             <motion.h2 className="text-3xl text-center lg:text-left lg:text-5xl font-bold leading-tight" variants={item}>
@@ -130,7 +130,7 @@ export default function Home() {
                                 animate="show"
                             >
                                 <motion.button
-                                    className="flex-1 shine-button bg-orange-500 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 rounded-md lg:rounded-xl hover:bg-orange-600 transition shadow-md"
+                                    className="flex-1 shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 rounded-md lg:rounded-xl hover:bg-orange-600 transition shadow-md"
                                     variants={item}
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.98 }}
