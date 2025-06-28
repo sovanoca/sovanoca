@@ -2,7 +2,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-
+import Link from 'next/link';
 const FAQSection = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -208,16 +208,18 @@ const FAQSection = () => {
                             >
                                 Request a Quote →
                             </motion.button>
-                            <motion.button
-                                className="bg-white text-b1 font-bold px-8 py-3  hover:bg-gray-100 transition flex items-center justify-center gap-2"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                </svg>
-                                Call Us: (555) 123-4567
-                            </motion.button>
+                           <Link href="tel:+15512001350" passHref>
+                                    <motion.p
+                                        className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                        </svg>
+                                        Call Us: (551) 200-1350
+                                    </motion.p>
+                                </Link>
 
 
                         </motion.div>
