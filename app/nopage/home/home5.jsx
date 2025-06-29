@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -262,6 +263,7 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
+          <Link href="/projects"  >
           <motion.button
             className="bg-b1 text-white font-medium px-8 py-3  flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors"
             whileHover={{
@@ -275,6 +277,7 @@ const ProjectsSection = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

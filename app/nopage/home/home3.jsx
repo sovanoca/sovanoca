@@ -227,6 +227,8 @@ const ServicesSection = () => {
                 </motion.div>
 
                 {/* View All Button */}
+                ;
+
                 <motion.div
                     className="mt-12 md:mt-16 text-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -234,19 +236,23 @@ const ServicesSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <motion.button
-                        className="bg-b1 text-white font-medium px-8 py-3  flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors"
+                    <motion.div
                         whileHover={{
                             scale: 1.03,
-                            boxShadow: "0 8px 20px -5px rgba(249, 115, 22, 0.4)"
+                            
                         }}
                         whileTap={{ scale: 0.97 }}
                     >
-                        Browse All Construction Services
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </motion.button>
+                        <Link
+                            href="/services"
+                            className="bg-b1 text-white font-medium px-8 py-3 flex items-center gap-2 mx-auto text-base md:text-lg shadow-md hover:bg-b1 transition-colors w-fit"
+                        >
+                            Browse All Construction Services
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </Link>
+                    </motion.div>
                 </motion.div>
             </div>
         </section>

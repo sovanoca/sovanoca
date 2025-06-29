@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -9,17 +10,19 @@ export default function HeroSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 w-full items-center">
 
         {/* Text Content */}
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col">
           <h1 className="text-4xl lg:text-5xl font-extrabold leading-tight">
             North Carolina Construction Experts You Can Trust
           </h1>
           <p className="text-lg text-gray-300 max-w-lg">
             Ready to take your commercial or residential project to the next level? Partner with Buildup — a trusted construction service provider in North Carolina — for reliable execution, transparent pricing, and top-quality results.
           </p>
+<div className="flex">
 
-          <button className="mt-4 bg-white hover:bg-blue-100 text-[#0D1B2A] font-bold py-4 px-6 shine-button1 flex items-center gap-2 transition">
+          <Link href="/get-quote" className="mt-4 bg-white hover:bg-blue-100 text-[#0D1B2A] font-bold py-4 px-6 shine-button1 flex items-center gap-2 transition">
             Get Free Quote <ArrowRight size={20} />
-          </button>
+          </Link>
+</div>
         </div>
 
 

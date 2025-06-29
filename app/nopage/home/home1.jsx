@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
     const container = {
@@ -93,10 +94,10 @@ export default function Home() {
                             animate="show"
                         >
                             <motion.p className="text-gray-600 text-base lg:text-lg" variants={item}>
-                            Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
+                                Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
 
-                            From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
-                        </motion.p>
+                                From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
+                            </motion.p>
                         </motion.div>
 
                         {/* Right Column */}
@@ -123,30 +124,37 @@ export default function Home() {
                                 />
                             </motion.div>
 
-                            {/* Buttons */}
+                            
+
                             <motion.div
                                 className="flex flex-col sm:flex-row gap-3 lg:gap-4"
                                 variants={container}
                                 initial="hidden"
                                 animate="show"
                             >
-                                <motion.button
-                                    className="flex-1 shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6  hover:bg-b1 transition shadow-md"
-                                    variants={item}
-                                    whileHover={{ scale: 1.03 }}
-                                    whileTap={{ scale: 0.98 }}
-                                >
-                                    Request a Quote
-                                </motion.button>
-                                <motion.button
-                                    className="flex-1 bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6  border border-gray-300 hover:bg-gray-50 transition shadow-md"
-                                    variants={item}
-                                    whileHover={{ scale: 1.03 }}
-                                    whileTap={{ scale: 0.98 }}
-                                >
-                                    View Projects
-                                </motion.button>
+                                <Link href="/get-quote" passHref>
+                                    <motion.p
+                                        className="flex-1 text-center shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 hover:bg-b1 transition shadow-md"
+                                        variants={item}
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.98 }}
+                                    >
+                                        Request a Quote
+                                    </motion.p>
+                                </Link>
+
+                                <Link href="/projects" passHref>
+                                    <motion.p
+                                        className="flex-1 text-center bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 border border-gray-300 hover:bg-gray-50 transition shadow-md"
+                                        variants={item}
+                                        whileHover={{ scale: 1.03 }}
+                                        whileTap={{ scale: 0.98 }}
+                                    >
+                                        View Projects
+                                    </motion.p>
+                                </Link>
                             </motion.div>
+
                         </motion.div>
                     </div>
                 </motion.div>

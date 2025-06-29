@@ -64,13 +64,17 @@ export default function AboutUsHero() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
-                    <motion.button
+                    <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-b1 shine-button text-white font-bold px-6 py-3 flex items-center gap-2"
                     >
-                        Get Free Quote <ArrowRight size={20} />
-                    </motion.button>
+                        <Link
+                            href="/get-quote"
+                            className="bg-b1 shine-button text-white font-bold px-6 py-3 flex items-center gap-2"
+                        >
+                            Get Free Quote <ArrowRight size={20} />
+                        </Link>
+                    </motion.div>
 
                     <Link href="tel:+15512001350" passHref>
                         <motion.p

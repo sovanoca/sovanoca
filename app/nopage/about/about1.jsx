@@ -127,20 +127,24 @@ export default function AboutUs() {
                                 SOVANOCA Construction: Transforming visions into reality with quality construction services that stand the test of time.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
+                                <Link href="/projects">
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="bg-white text-b1 font-bold px-8 py-3  shadow-lg"
-                                >
+                                    >
                                     Our Projects
                                 </motion.button>
+                                    </Link>
+                                    <Link href="/contact-us">
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="bg-transparent border-2 border-white text-white font-bold px-8 py-3 "
-                                >
+                                    >
                                     Contact Us
                                 </motion.button>
+                                    </Link>
                             </div>
                         </motion.div>
                     </div>
@@ -500,13 +504,15 @@ export default function AboutUs() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.6 }}
                     >
+                        <Link href="/get-quote">
                         <motion.button
                             className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3  hover:bg-white/10 transition flex items-center justify-center gap-2"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                        >
+                            >
                             Request a Quote →
                         </motion.button>
+                            </Link>
                         <Link href="tel:+15512001350" passHref>
                             <motion.p
                                 className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"

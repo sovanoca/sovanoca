@@ -407,6 +407,7 @@ const ServicesSection = () => {
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
                         Contact us today for a free consultation and quote on your construction needs.
                     </p>
+                    <Link href="/get-quote">
                     <motion.button
                         className="bg-b1 shine-button text-white font-medium px-8 py-3  flex items-center gap-2 mx-auto text-base lg:text-lg shadow-lg  transition-colors"
                         whileHover={{
@@ -420,6 +421,7 @@ const ServicesSection = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </motion.button>
+                    </Link>
                 </motion.div>
             </div>
         </section>

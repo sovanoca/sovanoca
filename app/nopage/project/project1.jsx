@@ -178,7 +178,7 @@ export default function ProjectsPage() {
                 transition={{ delay: 0.5, duration: 0.6 }}
                 className="flex flex-wrap justify-center gap-4"
               >
-                <Link href="/quote" passHref>
+                <Link href="/get-quote" passHref>
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
@@ -353,13 +353,15 @@ export default function ProjectsPage() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.6 }}
                     >
+                      <Link href="/get-quote">
                         <motion.button
                             className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3  hover:bg-white/10 transition flex items-center justify-center gap-2"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                        >
+                            >
                             Request a Quote →
                         </motion.button>
+                          </Link>
                         <Link href="tel:+15512001350" passHref>
                             <motion.p
                                 className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
