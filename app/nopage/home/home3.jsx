@@ -12,32 +12,33 @@ const ServicesSection = () => {
         {
             id: 1,
             title: "Commercial Exterior Painting Services",
-            description: "Enhance your commercial property’s curb appeal with expert exterior painting solutions tailored for businesses.",
+            description: "Professional-grade exterior painting for commercial buildings—boost curb appeal, protect surfaces, and maintain brand presence.",
             image: "/commercial-painting.webp",
             category: "Commercial"
         },
         {
             id: 2,
             title: "Bathroom Remodeling Services",
-            description: "Transform your bathroom with modern design, quality fixtures, and expert craftsmanship.",
+            description: "Upgrade your bathroom with custom layouts, modern finishes, water-efficient fixtures, and expert installation.",
             image: "/bathroom-remodel.webp",
             category: "Residential"
         },
         {
             id: 3,
             title: "Kitchen Remodeling Services",
-            description: "Modern kitchen remodels combining functionality with design that fits your lifestyle.",
+            description: "High-end kitchen renovations designed for style, flow, and function—from cabinetry to countertops and lighting.",
             image: "/kitchen-remodel.webp",
             category: "Residential"
         },
         {
             id: 4,
             title: "Architectural and Interior Design Consulting",
-            description: "Tailored design consultation services for residential and commercial projects.",
+            description: "Work with our design consultants to plan efficient, aesthetic spaces for residential or commercial construction projects.",
             image: "/design-consulting.webp",
             category: "Consulting"
         }
     ];
+
 
     const createSlug = (title) => {
         return title
@@ -99,15 +100,15 @@ const ServicesSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <motion.h1
+                    <motion.h2
                         className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
                     >
-                        Our construction services
-                    </motion.h1>
+                        Top-Rated Residential, Commercial & Consulting Construction Services
+                    </motion.h2>
                     <motion.p
                         className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto"
                         initial={{ opacity: 0, y: 10 }}
@@ -115,7 +116,8 @@ const ServicesSection = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        We specialize in a wide range of construction services, including residential, commercial, and industrial projects.
+                        We provide expert construction, remodeling, and design consulting services—crafted to meet your unique residential or commercial needs with precision and quality.
+
                     </motion.p>
                 </motion.div>
 
@@ -202,7 +204,7 @@ const ServicesSection = () => {
                                             whileHover={{ scale: 1.03 }}
                                             whileTap={{ scale: 0.97 }}
                                         >
-                                            View Details
+                                            Explore Service Details
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 lg:h-5 lg:w-5" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -240,7 +242,7 @@ const ServicesSection = () => {
                         }}
                         whileTap={{ scale: 0.97 }}
                     >
-                        View All Services
+                        Browse All Construction Services
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>

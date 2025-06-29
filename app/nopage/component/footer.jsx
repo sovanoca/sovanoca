@@ -181,7 +181,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <div className="font-medium text-white">Email</div>
-                                    <div>info@Sovanoca.com</div>
+                                    <div>infosovanoca@gmail.com</div>
                                 </div>
                             </motion.li>
 
@@ -195,8 +195,8 @@ const Footer = () => {
                                 <div>
                                     <div className="font-medium text-white">Location</div>
                                     <div>
-                                        37 San Juan Lane Graaf<br />
-                                        Florisstraat 22A, 3021 CH
+                                        7 Dundas Circle Suite G, <br /> Greensboro, NC 27403
+                                        
                                     </div>
                                 </div>
                             </motion.li>

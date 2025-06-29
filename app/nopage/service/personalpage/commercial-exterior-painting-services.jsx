@@ -78,7 +78,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Premium Commercial Painting</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Commercial Painting Contractors</span>
                             </motion.h2>
 
                             <motion.h1

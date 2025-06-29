@@ -37,10 +37,10 @@ export default function Home() {
                     <motion.div className="flex w-full lg:w-1/2 items-end p-2 lg:p-4" variants={item}>
                         <div>
                             <motion.h1 className="text-xs text-center lg:text-left sm:text-sm font-medium text-b1" variants={item}>
-                                Trusted Construction Company You Can Rely On
+                                Trusted Construction Company in North Carolina
                             </motion.h1>
                             <motion.h2 className="text-3xl text-center lg:text-left lg:text-5xl font-bold leading-tight" variants={item}>
-                                We build high-quality spaces 
+                                We build high-quality spaces
                                 <span className="text-gray-800"> </span>{' '}
                                 <span className="text-gray-500 font-bold">with smart and modern design.</span>
                             </motion.h2>
@@ -51,8 +51,9 @@ export default function Home() {
                     {/* Right Text */}
                     <motion.div className="hidden lg:flex w-full lg:w-1/2 items-end pl-20" variants={item}>
                         <motion.p className="text-gray-600 text-base lg:text-lg" variants={item}>
-                            Proudly based in Danville, we bring homes and businesses to life with solid planning and skilled building.
-                            From the first idea to the final detail, we&apos;re the trusted choice for construction done right.
+                            Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
+
+                            From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
                         </motion.p>
 
                     </motion.div>
@@ -76,7 +77,7 @@ export default function Home() {
                         >
                             <Image
                                 src="/under-construction-building.webp"
-                                alt="Construction site in Danville"
+                                alt="Construction site in Greensboro"
                                 fill
                                 className="object-cover"
                                 priority
@@ -91,11 +92,11 @@ export default function Home() {
                             initial="hidden"
                             animate="show"
                         >
-                            <motion.p className="text-gray-600 text-md lg:text-lg" variants={item}>
-                                Based in Danville, we specialize in residential and commercial construction that blends smart planning with
-                                durable craftsmanship. From concept to completion, we&apos;re the construction partner Danville businesses and
-                                homeowners trust.
-                            </motion.p>
+                            <motion.p className="text-gray-600 text-base lg:text-lg" variants={item}>
+                            Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
+
+                            From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
+                        </motion.p>
                         </motion.div>
 
                         {/* Right Column */}
@@ -114,7 +115,7 @@ export default function Home() {
                             >
                                 <Image
                                     src="/Engineers-discussing-projects1.webp"
-                                    alt="Construction engineers in Danville"
+                                    alt="Construction engineers in Greensboro"
                                     fill
                                     className="object-cover"
                                     priority

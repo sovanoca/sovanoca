@@ -7,40 +7,49 @@ const FAQSection = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     // Based on common construction industry FAQs
-    const faqs = [
-        {
-            question: "What types of construction projects do you handle?",
-            answer: "We specialize in both residential and commercial construction projects. Our expertise includes new home construction, home renovations and additions, commercial buildings, retail spaces, office renovations, and industrial facilities. We also handle specialized projects like kitchen and bathroom remodels, foundation work, and exterior improvements."
-        },
-        {
-            question: "How long does a typical construction project take?",
-            answer: "Project timelines vary significantly based on scope and complexity. A bathroom remodel might take 2-4 weeks, while a custom home build typically takes 6-12 months. Commercial projects can range from 3 months to over a year. After reviewing your project details, we'll provide a detailed timeline with milestones during the planning phase."
-        },
-        {
-            question: "Are you licensed and insured?",
-            answer: "Yes, we are fully licensed, bonded, and insured. Our company maintains general liability insurance, workers' compensation coverage, and builder's risk insurance. We can provide certificates of insurance upon request. All our subcontractors are also vetted to ensure they meet our insurance and licensing standards."
-        },
-        {
-            question: "Do you provide free estimates?",
-            answer: "We offer complimentary initial consultations and project estimates. After discussing your project requirements, we'll provide a detailed written estimate that outlines costs, materials, and timelines. For complex projects, we may charge a small fee for comprehensive feasibility studies that inform more accurate budgeting."
-        },
-        {
-            question: "How do you handle project changes or modifications?",
-            answer: "We have a formal change order process to handle modifications. Any requested changes are documented in writing, with associated costs and timeline impacts clearly outlined. We require client approval before implementing changes. This process ensures transparency and prevents misunderstandings while keeping your project on track."
-        },
-        {
-            question: "What warranties do you offer on your work?",
-            answer: "We provide a comprehensive warranty package: 1-year workmanship warranty on all projects, 2-year warranty on mechanical systems, and up to 10-year structural warranty depending on the project. We also honor manufacturer warranties on all materials and products installed. All warranties are provided in writing upon project completion."
-        },
-        {
-            question: "How do you ensure safety on the construction site?",
-            answer: "Safety is our top priority. We implement OSHA-compliant safety protocols, conduct daily safety briefings, provide specialized training for all crew members, and perform regular site safety inspections. We maintain a strict drug-free workplace policy and require all personnel to use proper personal protective equipment at all times."
-        },
-        {
-            question: "Can I see examples of your previous work?",
-            answer: "Absolutely! We maintain a comprehensive portfolio of completed projects on our website. We can also arrange site visits to recently completed projects (with owner permission) or provide references from past clients. For projects similar to yours, we can share detailed case studies showing our process and results."
-        }
-    ];
+  const faqs = [
+  {
+    question: "What types of construction projects do you handle in North Carolina?",
+    answer:
+      "As a leading construction company in North Carolina, we specialize in a wide range of residential and commercial construction projects. Our services include custom home construction, home remodeling, room additions, kitchen and bathroom renovations, and complete property renovations. On the commercial side, we handle office buildings, retail store fit-outs, restaurants, warehouses, and industrial facilities. We also offer foundation work, roofing, siding, and other exterior improvements tailored to North Carolina's unique climate and building codes. Whether you're in Charlotte, Raleigh, Greensboro, or anywhere else in NC, we have the experience and local expertise to deliver exceptional results."
+  },
+  {
+    question: "How long does a typical construction project take in North Carolina?",
+    answer:
+      "Construction timelines vary based on the scope, size, and complexity of your project. For instance, a small bathroom remodel in Raleigh may take 2–4 weeks, while building a custom home in the suburbs of Charlotte could take anywhere from 6 to 12 months. Commercial construction projects, such as office spaces or retail stores, usually take between 3 months to over a year, depending on permits, design approvals, and structural requirements. During the initial consultation, our team will assess your specific needs and provide a customized project timeline with key milestones so you always know what to expect."
+  },
+  {
+    question: "Are you licensed and insured to operate in North Carolina?",
+    answer:
+      "Yes, we are fully licensed, bonded, and insured to operate throughout North Carolina. We hold all required state and local licenses to ensure compliance with NC building codes and regulations. Our insurance coverage includes general liability, workers’ compensation, and builder’s risk policies to protect our clients and our team. All subcontractors we work with are also thoroughly vetted to ensure they meet our high standards for licensing and insurance. We’re happy to provide copies of our certifications and insurance documents upon request for your peace of mind."
+  },
+  {
+    question: "Do you provide free estimates for construction projects in NC?",
+    answer:
+      "Absolutely! We offer free, no-obligation consultations and detailed estimates for all types of construction projects in North Carolina. After understanding your goals, site conditions, and budget, we prepare a comprehensive written estimate outlining labor, materials, permits, and timelines. For complex or large-scale builds, we also offer paid feasibility studies that provide deeper insight into costs and potential challenges. This transparency helps North Carolina homeowners and business owners plan their investments more effectively."
+  },
+  {
+    question: "How do you manage design changes or modifications during a project?",
+    answer:
+      "We follow a structured and transparent change order process for any design or scope modifications. If you request changes during construction, we’ll document them in writing and provide an updated quote detailing any additional costs and how the timeline may be affected. No changes are implemented without your written approval. This process ensures clear communication and keeps your North Carolina construction project on budget and on schedule without surprises."
+  },
+  {
+    question: "What kind of warranty do you offer on your construction services in NC?",
+    answer:
+      "We stand behind the quality of our work with a comprehensive warranty package. All projects come with a standard 1-year workmanship warranty. For systems like plumbing, HVAC, and electrical, we offer a 2-year warranty. Structural components may be covered for up to 10 years depending on the project type. We also pass along all manufacturer warranties on materials and products used in your build. These warranties are provided in writing at the end of your project for full transparency and peace of mind."
+  },
+  {
+    question: "What safety measures do you follow on construction sites in North Carolina?",
+    answer:
+      "Safety is a cornerstone of our operations. All our North Carolina construction projects follow OSHA safety standards and local safety regulations. Our crew members undergo regular safety training and daily on-site briefings. We enforce strict safety protocols, including the use of personal protective equipment (PPE), secure job site access, and regular inspections. We also maintain a drug-free workplace policy. These measures ensure a safe working environment for our team and a secure construction site for you and your neighbors."
+  },
+  {
+    question: "Can I view your past construction projects in North Carolina?",
+    answer:
+      "Yes! We proudly showcase our work through a portfolio of completed construction projects across North Carolina, including cities like Raleigh, Durham, Wilmington, Asheville, and more. You can view our photo gallery and project case studies on our website. For serious inquiries, we can also arrange site visits (with prior client approval) or connect you with past clients for references. These examples demonstrate our craftsmanship, attention to detail, and the quality of service you can expect when working with us."
+  }
+];
+
 
     // Animation variants
     const container = {

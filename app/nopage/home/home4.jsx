@@ -8,44 +8,44 @@ const WhyChooseUs = () => {
 
     const features = [
         {
-            title: "Safety-First Culture",
-            description: "We create a secure environment where everyone prioritizes their well-being and goes home safe every day.",
+        title: "Commitment to Site Safety",
+        description: "As a trusted construction company, we uphold the highest safety protocols on every project to protect our workers and clients.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2l9 4.5v5.25c0 5.25-3.75 10.5-9 12-5.25-1.5-9-6.75-9-12V6.5L12 2z" />
                 </svg>
             ),
-            stat: "Zero Compromise"
+            stat: "Zero Accidents Goal"
         },
         {
-            title: "Unmatched Quality",
-            description: "We build with meticulous craftsmanship, ensuring every project stands the test of time — no shortcuts.",
+        title: "Superior Construction Quality",
+        description: "We deliver premium craftsmanship, durable materials, and quality control checks that ensure long-lasting structures with zero compromise.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m1.5-6.5a9 9 0 11-7 0" />
                 </svg>
             ),
-            stat: "Lasting Results"
+            stat: "Built to Last"
         },
         {
-            title: "Integrity & Teamwork",
-            description: "We earn trust through honesty, transparency, and ethical conduct in every collaboration and project.",
+        title: "Transparent & Ethical Practices",
+        description: "Our team operates with honesty and accountability, earning client trust across all stages of construction and renovation.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 10l5 5 5-5" />
                 </svg>
             ),
-            stat: "Built on Trust"
+            stat: "Trusted Partnerships"
         },
         {
-            title: "Sustainable Construction",
-            description: "We minimize our footprint with eco-friendly materials and practices that support a greener future.",
+        title: "Green Building Experts",
+        description: "We use sustainable construction techniques and eco-friendly materials to reduce environmental impact and meet green building standards.",
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 0v10m0 0h10" />
                 </svg>
             ),
-            stat: "Eco Conscious"
+            stat: "Eco-Friendly Builds"
         }
     ];
 
@@ -117,7 +117,7 @@ const WhyChooseUs = () => {
                     >
                         Why choose us
                     </motion.h2>
-                    <motion.h1
+                    <motion.h2
                         className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-3xl mx-auto"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ const WhyChooseUs = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         Why we're your <span className="text-b1">best choice</span>
-                    </motion.h1>
+                    </motion.h2>
                     <motion.div
                         className="h-1 w-20 bg-b1 mx-auto "
                         initial={{ width: 0 }}

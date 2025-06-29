@@ -41,25 +41,25 @@ export default function AboutUsHero() {
                 className="space-y-4 lg:space-y-6"
             >
                 <h3 className=" text-b1 font-bold uppercase">About Us</h3>
-                <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                    Crafting structures that <br /> last a lifetime
-                </h1>
-                <p className="text-gray-600 text-lg">
-                    Crafting structures that last a lifetime requires a holistic approach that integrates advanced materials, resilient design, regular maintenance, and sustainability practices. By learning from historical examples and leveraging modern technology.
-                </p>
+                <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Trusted Construction Company in North Carolina — Building to Last
+
+                </h2>
+                At Sovanoca, we specialize in building residential and commercial spaces that stand the test of time. Based in Greensboro, we combine expert planning, skilled craftsmanship, and modern design to deliver exceptional construction services across North Carolina.
+
 
                 <div className="bg-blue-50 p-4  space-y-4">
                     <div className="flex items-center gap-3">
                         <span className="text-b1 text-xl">✔</span>
-                        <p className="font-semibold text-gray-800">Comprehensive Services</p>
+                        <p className="font-semibold text-gray-800">Residential & Commercial Construction Experts </p>
                     </div>
                     <div className="flex items-center gap-3">
                         <span className="text-b1 text-xl">✔</span>
-                        <p className="font-semibold text-gray-800">Advanced Technology</p>
+                        <p className="font-semibold text-gray-800">Skilled Team & Modern Building Techniques </p>
                     </div>
                     <div className="flex items-center gap-3">
                         <span className="text-b1 text-xl">✔</span>
-                        <p className="font-semibold text-gray-800">Transparent Communication</p>
+                        <p className="font-semibold text-gray-800">Clear Project Timelines and Honest Communication </p>
                     </div>
                 </div>
 

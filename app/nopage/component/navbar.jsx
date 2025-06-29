@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: 'Services', href: '/services', title: 'Our Construction Company Services' },
         { name: 'About Us', href: '/about-us', title: 'Learn About Sovanoca Construction Company' },
         { name: 'Projects', href: '/projects', title: 'View Our Construction Projects' },
-        { name: 'Blogs', href: '/blogs', title: 'Construction Tips & Industry Insights' },
+        // { name: 'Blogs', href: '/blogs', title: 'Construction Tips & Industry Insights' },
         { name: 'Contact Us', href: '/contact-us', title: 'Get in Touch with Sovanoca Construction Company' },
     ];
 
