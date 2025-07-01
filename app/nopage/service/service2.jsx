@@ -161,7 +161,7 @@ const ServicesSection = () => {
         },
         {
             id: 22,
-            title: "HVAC Mihi & Split Installation",
+            title: "HVAC Mini & Split Installation",
             description: "Energy-efficient HVAC system installs and replacements for year-round comfort.",
             image: "/hvac.jpg",
             category: "Residential"

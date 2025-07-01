@@ -4,47 +4,47 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Home4 from "../../home/home4"
-import Home5 from "../../home/home5"
-import Home6 from "../../home/home6"
-import Home7 from "../../home/home7"
+import Home4 from "../../home/home4";
+import Home5 from "../../home/home5";
+import Home6 from "../../home/home6";
+import Home7 from "../../home/home7";
 
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to commercial store renovation
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "How long does a commercial store renovation typically take?",
+            answer: "Project timelines vary based on store size and scope. Small renovations take 2-4 weeks, while complete overhauls may require 8-12 weeks. We provide a detailed schedule after our initial assessment to minimize business disruption."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "Do you handle permits and regulatory compliance?",
+            answer: "Yes, we manage all necessary permits and ensure compliance with NC building codes, ADA requirements, and local regulations. Our team has extensive experience navigating commercial renovation requirements across North Carolina."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Can renovations be done while my store remains open?",
+            answer: "Absolutely. We specialize in phased renovations that allow businesses to continue operations. We work after hours and section off construction areas to minimize disruption to your customers and staff."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "What types of commercial spaces do you renovate?",
+            answer: "We renovate all types of retail spaces including clothing stores, restaurants, salons, grocery stores, showrooms, and service businesses. Our expertise covers both interior and exterior transformations."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "Do you offer design services?",
+            answer: "Yes, we provide comprehensive design-build services. Our in-house designers create layouts that maximize space, improve customer flow, and enhance brand identity while staying within budget."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "How do you handle unexpected issues during renovation?",
+            answer: "Our detailed initial assessment minimizes surprises, but we maintain contingency plans for any unforeseen issues. We communicate immediately about any changes and provide solutions without compromising quality."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "What's included in your renovation warranty?",
+            answer: "We offer a 3-year warranty on all workmanship and a 1-year warranty on materials. Specific warranty details are provided in your contract and vary by project components."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "Do you work with historic buildings?",
+            answer: "Yes, we specialize in renovating historic commercial properties while preserving architectural integrity. We're experienced with NC historic preservation requirements and sensitive restoration techniques."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Commercial Store Renovation</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +91,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Commercial Store Renovation Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/store-renovation.jpg"
+                                        alt="Commercial store renovation in North Carolina"
+                                        title="Professional Store Renovation Services"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Complete Store Transformations</h3>
                                 </div>
                             </div>
 
@@ -116,9 +115,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Transform your retail space with our premium commercial renovation solutions.
+                                Serving businesses across North Carolina, we revitalize storefronts, enhance customer experiences,
+                                and create modern retail environments that drive sales and brand loyalty.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +128,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Complete design-build services",
+                                    "Minimal business disruption",
+                                    "NC building code compliance",
+                                    "3-year workmanship warranty",
+                                    "Historic building expertise",
+                                    "Free initial consultation"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -150,7 +149,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Store Renovation Quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
@@ -184,22 +183,19 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/store-renovation.jpg"
+                                        alt="Commercial store renovation services in North Carolina"
+                                        title="Complete Store Renovation Solutions"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-cover w-full h-[70vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Complete Store Transformations</h3>
+                                    <p className="text-blue-100">Revitalizing NC businesses since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
@@ -225,7 +221,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Commercial Store Renovation
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +233,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Retail Space</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our commercial store renovation services are designed to revitalize your business environment,
+                                creating modern, functional spaces that attract customers and enhance brand perception.
+                                We understand that your store's appearance directly impacts customer experience and sales,
+                                and we're committed to delivering exceptional transformations.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving retailers throughout North Carolina, our team brings expertise in commercial renovation,
+                                space planning, and code compliance. We work with boutiques, restaurants, service businesses,
+                                and retail chains of all sizes to create spaces that perform.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Why Invest in Store Renovation?</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Increases sales by up to 25% with updated spaces",
+                                        "Enhances brand identity and customer perception",
+                                        "Improves operational efficiency and workflow",
+                                        "Extends the lifespan of your retail space",
+                                        "Meets current ADA and safety requirements",
+                                        "Boosts employee morale and productivity"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +272,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Renovation Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Comprehensive Consultation",
+                                        description: "We assess your space, understand your goals, and identify renovation opportunities"
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Design Development",
+                                        description: "Our team creates custom layouts, material selections, and 3D visualizations"
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Permitting & Planning",
+                                        description: "We handle all NC building permits and develop a phased construction schedule"
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Professional Implementation",
+                                        description: "Skilled tradespeople execute the renovation with minimal disruption"
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Quality Assurance",
+                                        description: "We conduct regular inspections to ensure perfection at every stage"
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Final Reveal & Support",
+                                        description: "We deliver your transformed space and provide maintenance guidance"
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,15 +313,15 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Our Renovation Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Storefront Modernization", "Interior Layout Redesign", "Lighting Upgrades",
+                                        "Fixture Installation", "Flooring Replacement", "Ceiling Renovations",
+                                        "ADA Compliance Updates", "HVAC System Upgrades", "Electrical Improvements",
+                                        "Plumbing Updates", "Exterior Facelifts", "Signage Installation"
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -359,10 +354,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Commercial Renovation FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our store renovation services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +435,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Transform Your Retail Space?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +445,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free consultation on your store renovation project.
                             </motion.p>
 
                             <motion.div
@@ -460,7 +455,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Renovation Quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -470,7 +465,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call Renovation Experts' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}

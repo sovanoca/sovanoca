@@ -12,36 +12,36 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Mendenhall Apartments",
-      description: "SOVANOCA recently delivered a complete inside and outside renovation of a historical apartment building in the heart of downtown Greensboro, Nc.",
+      description: "SOVANOCA recently delivered a complete inside and outside renovation of a historical apartment building in the heart of downtown Greensboro, North Carolina.",
       image: "/Mendenhall-Apartments.jpeg",
-      location: "Greensboro, Nc.",
+      location: "Greensboro, North Carolina.",
       year: "2025",
       category: "Residential"
     },
     {
       id: 2,
       title: "W-market Apartments",
-      description: "SOVANOCA recently delivered a complete inside and outside renovation of an apartment building on West Market st Greensboro, Nc.",
+      description: "SOVANOCA recently delivered a complete inside and outside renovation of an apartment building on West Market st Greensboro, North Carolina.",
       image: "/W-market-Apartments.jpeg",
-      location: "Greensboro, Nc.",
+      location: "Greensboro, North Carolina.",
       year: "2024",
       category: "Commercial"
     },
     {
       id: 3,
       title: "The Yurt at Sanford",
-      description: "SOVANOCA recently delivered a Unique pre-fab structure for an airbnb host in Sanford, Nc.",
+      description: "SOVANOCA recently delivered a Unique pre-fab structure for an airbnb host in Sanford, North Carolina.",
       image: "/The-Yurt-at-Sanford.jpeg",
-      location: "Sanford, Nc.",
+      location: "Sanford, North Carolina.",
       year: "2023",
       category: "Renovation"
     },
     {
       id: 4,
       title: "UNCG Apartments",
-      description: "SOVANOCA recently delivered a complete inside and outside renovation of an apartment building in Greensboro, Nc.",
+      description: "SOVANOCA recently delivered a complete inside and outside renovation of an apartment building in Greensboro, North Carolina.",
       image: "/UNCG-Apartments.jpeg",
-      location: "Greensboro, Nc.",
+      location: "Greensboro, North Carolina.",
       year: "2024",
       category: "Community"
     }

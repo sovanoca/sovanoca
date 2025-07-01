@@ -12,39 +12,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to commercial sidewalk services
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "How often should commercial sidewalks be repaired or replaced?",
+            answer: "Commercial sidewalks typically need inspection every 2-3 years with repairs as needed. Full replacement may be required every 10-15 years depending on usage, weather conditions, and material quality. We offer free assessments to evaluate your sidewalk condition."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "What materials do you use for commercial sidewalk construction?",
+            answer: "We use high-quality materials suited for North Carolina's climate including: poured concrete (4-6' thickness), permeable pavers, stamped concrete, and ADA-compliant finishes. All materials meet local municipal codes and durability requirements for commercial properties."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Will sidewalk construction disrupt my business operations?",
+            answer: "We minimize disruption through careful planning. For retail businesses, we can work during off-hours or phase the project. We maintain safe pedestrian access and clearly mark work zones. Most projects are completed with minimal impact to your operations."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "Do your sidewalks meet ADA compliance standards?",
+            answer: "Yes, all our sidewalk installations and repairs strictly follow ADA guidelines for slope (1:12 max), width (minimum 36'), surface texture, and proper curb ramp installation. We ensure compliance with both federal and North Carolina accessibility requirements."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "How long does a commercial sidewalk project take?",
+            answer: "Project timelines vary based on size: Small repairs (1-2 days), Section replacement (3-5 days), Full property sidewalks (1-3 weeks). Concrete requires 7 days curing time before heavy use. We provide a detailed schedule upfront for your planning."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "What's included in your sidewalk maintenance services?",
+            answer: "Our maintenance includes: crack sealing, trip hazard removal (up to 1/2' tolerance), pressure washing, joint resealing, stain removal, and minor leveling. We also provide preventative treatments to extend sidewalk lifespan."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "Do you handle permits for sidewalk projects?",
+            answer: "Yes, we manage all necessary permits from local municipalities including right-of-way permits when needed. Our team is familiar with North Carolina's commercial property regulations and handles all paperwork for you."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "What warranty do you offer on sidewalk work?",
+            answer: "We provide a 3-year warranty on materials and workmanship for new installations and a 1-year warranty on repairs. This covers settling, cracking (beyond normal shrinkage cracks), and surface defects under normal use conditions."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Sidewalk For Commercial Properties</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +91,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Commercial Sidewalk Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/walkway-installation.webp"
+                                        alt="Commercial property sidewalk construction"
+                                        title="Commercial sidewalk installation and repair"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Professional Sidewalk Solutions</h3>
                                 </div>
                             </div>
 
@@ -116,9 +115,10 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Enhance safety and accessibility with our commercial sidewalk services. 
+                                Serving businesses across North Carolina, we specialize in ADA-compliant 
+                                sidewalk construction, repairs, and maintenance for retail centers, 
+                                office complexes, and all commercial properties.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +129,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "ADA-compliant designs",
+                                    "Durable commercial-grade materials",
+                                    "Trip hazard removal",
+                                    "3-year warranty on new installations",
+                                    "Permit acquisition included",
+                                    "Minimal business disruption"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -184,22 +184,19 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/walkway-installation.webp"
+                                        alt="Commercial property sidewalk installation"
+                                        title="Professional sidewalk construction"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-96"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Commercial Sidewalk Experts</h3>
+                                    <p className="text-blue-100">Building safe, accessible pathways for NC businesses</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
@@ -225,7 +222,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Commercial Sidewalk Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +234,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Safe, Accessible Walkways for Your Business</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our commercial sidewalk services ensure your property meets all safety and accessibility 
+                                requirements while enhancing curb appeal. Well-maintained sidewalks create positive first 
+                                impressions, reduce liability risks, and demonstrate your commitment to customer safety.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving businesses throughout North Carolina, we specialize in commercial-grade sidewalk 
+                                solutions for shopping centers, office parks, restaurants, apartment complexes, and all 
+                                types of commercial properties. Our team handles everything from minor repairs to complete 
+                                sidewalk installations.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Benefits of Professional Sidewalk Services</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Reduces slip/trip hazard liability",
+                                        "Ensures ADA compliance and accessibility",
+                                        "Improves property value and appearance",
+                                        "Extends pavement lifespan with proper maintenance",
+                                        "Meets municipal code requirements",
+                                        "Enhances customer and employee safety"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +273,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Sidewalk Service Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Site Assessment",
+                                        description: "We evaluate existing conditions, measure slopes, identify trip hazards, and check ADA compliance."
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Design & Planning",
+                                        description: "Create layout plans with proper slopes, widths, and drainage considerations for your property."
+                                    },
+                                    {
+                                        title: "Permit Acquisition",
+                                        description: "Handle all necessary permits and approvals from local municipalities."
                                     },
                                     {
                                         title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        description: "Remove damaged sections, grade properly, and prepare stable base materials."
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Precision Installation",
+                                        description: "Pour and finish concrete or install pavers with proper control joints and textures."
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
-                                    },
-                                    {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Final Inspection",
+                                        description: "Verify ADA compliance, check slopes, and ensure seamless transitions."
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,15 +314,15 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Commercial Sidewalk Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "New Sidewalk Installation", "ADA Ramp Construction", "Trip Hazard Removal",
+                                        "Sidewalk Replacement", "Crack Repairs", "Concrete Leveling",
+                                        "Pressure Washing", "Joint Sealing", "Stamped Concrete",
+                                        "Permeable Pavers", "Curbs & Gutters", "Expansion Joint Repair"
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                      <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -359,10 +355,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Commercial Sidewalk FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our commercial sidewalk services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +436,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Need Commercial Sidewalk Services?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +446,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free assessment of your commercial property's sidewalks.
                             </motion.p>
 
                             <motion.div

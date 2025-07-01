@@ -4,47 +4,47 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Home4 from "../../home/home4"
-import Home5 from "../../home/home5"
-import Home6 from "../../home/home6"
-import Home7 from "../../home/home7"
+import Home4 from "../../home/home4";
+import Home5 from "../../home/home5";
+import Home6 from "../../home/home6";
+import Home7 from "../../home/home7";
 
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to residential flooring
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "What types of flooring do you install?",
+            answer: "We specialize in all major flooring types including hardwood, laminate, luxury vinyl plank (LVP), tile, carpet, and engineered wood. We help you select the perfect flooring for your North Carolina home based on your lifestyle, budget, and design preferences."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "How long does a typical flooring installation take?",
+            answer: "Most residential flooring projects take 1-3 days depending on room size and flooring type. Whole-house installations may take 3-7 days. We provide a detailed timeline during our free in-home consultation and work efficiently to minimize disruption to your daily life."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Do you remove and dispose of old flooring?",
+            answer: "Yes, we include professional removal and eco-friendly disposal of your existing flooring in our service. We take care of all preparation work including subfloor inspection and leveling to ensure a perfect installation."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "Can flooring be installed over existing flooring?",
+            answer: "In many cases, yes. Certain flooring types can be installed over existing surfaces if they're in good condition. During our assessment, we'll determine if your existing flooring is suitable for overlay or needs removal."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "What's the best flooring for North Carolina's climate?",
+            answer: "We recommend moisture-resistant options like luxury vinyl plank (LVP) or tile for humid areas. For living spaces, engineered hardwood offers stability in changing temperatures. We'll help you select flooring that performs well in NC's climate."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "Do you offer flooring samples?",
+            answer: "Absolutely! We provide free samples you can take home to see how different flooring options look in your actual lighting and with your existing décor. Our design consultants will help you make the perfect choice."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "What warranty do you offer on flooring installations?",
+            answer: "We provide a lifetime craftsmanship warranty on all installations, plus manufacturer warranties on materials (which vary by product). All warranty details are provided in writing before your project begins."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "How soon can you start my flooring project?",
+            answer: "We typically schedule installations 1-2 weeks after consultation. For urgent projects, we offer expedited services. Contact us for current availability and we'll work to accommodate your timeline."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Flooring</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +91,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Residential Flooring Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/residential-flooring.jpg"
+                                        alt="Residential flooring installation in North Carolina"
+                                        title="Professional Flooring Installation"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-72"
+                                        className="object-fit w-full h-80"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Flooring Solutions</h3>
                                 </div>
                             </div>
 
@@ -116,9 +115,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Transform your home with our premium flooring solutions. Serving homeowners across North Carolina, 
+                                we provide expert installation of beautiful, durable floors that enhance your living space 
+                                and add value to your property.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +128,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Professional installation",
+                                    "Wide selection of flooring types",
+                                    "Free in-home consultation",
+                                    "Lifetime craftsmanship warranty",
+                                    "Eco-friendly disposal of old flooring",
+                                    "Competitive pricing"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -150,7 +149,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Flooring Quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
@@ -184,17 +183,17 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/residential-flooring.jpg"
+                                        alt="Residential flooring installation in North Carolina"
+                                        title="Beautiful Flooring Solutions for NC Homes"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-fit w-full h-[70vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Premium Flooring Solutions</h3>
+                                    <p className="text-blue-100">Transforming NC homes since 2023</p>
                                 </div>
                             </div>
 
@@ -225,7 +224,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Residential Flooring Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +236,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Home with Beautiful Floors</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our residential flooring services are designed to enhance your living space with beautiful, 
+                                durable flooring that suits your lifestyle and design preferences. We understand that your floors 
+                                are the foundation of your home's aesthetic and functionality, and we're committed to delivering 
+                                exceptional results that exceed your expectations.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving homeowners throughout North Carolina, our team of flooring experts brings years of experience 
+                                in installation, material selection, and design consultation. We work with all types of residential 
+                                properties from single-family homes to townhouses and condominiums.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Why Invest in Quality Flooring?</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Increases home value by up to 10%",
+                                        "Enhances indoor air quality with low-VOC options",
+                                        "Improves safety with slip-resistant surfaces",
+                                        "Reduces allergens with easy-to-clean materials",
+                                        "Creates a cohesive design throughout your home",
+                                        "Provides long-term durability and comfort"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +275,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Flooring Installation Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Free In-Home Consultation",
+                                        description: "We visit your home to assess your space, discuss options, and take precise measurements"
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Material Selection",
+                                        description: "Our experts help you choose the perfect flooring type, color, and texture for your home"
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Preparation & Removal",
+                                        description: "We professionally remove old flooring and prepare the subfloor for optimal results"
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Precision Installation",
+                                        description: "Our skilled technicians install your new flooring with attention to detail"
                                     },
                                     {
                                         title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        description: "We conduct thorough checks to ensure perfection in every detail"
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Final Walkthrough & Care Instructions",
+                                        description: "We review the completed work and provide maintenance recommendations"
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,13 +316,13 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Our Flooring Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Hardwood Flooring", "Laminate Flooring", "Luxury Vinyl Plank",
+                                        "Tile Installation", "Carpet Installation", "Bamboo Flooring",
+                                        "Cork Flooring", "Waterproof Flooring", "Stair Installation",
+                                        "Floor Repair", "Subfloor Preparation", "Baseboard Installation"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -359,10 +357,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Flooring Installation FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our residential flooring services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +438,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Transform Your Home with New Floors?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +448,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free consultation and quote on your flooring project.
                             </motion.p>
 
                             <motion.div
@@ -460,7 +458,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Flooring Quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -470,7 +468,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call Flooring Experts' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}

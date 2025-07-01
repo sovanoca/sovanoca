@@ -12,39 +12,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // Updated FAQ data for electrical upgrades
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "What types of electrical upgrades do you offer?",
+            answer: "We provide comprehensive services including panel upgrades, whole-house rewiring, GFCI/AFCI installation, lighting upgrades, EV charger installation, surge protection, and smart home automation integration. All work meets or exceeds North Carolina electrical codes."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "How do I know if my electrical system needs upgrading?",
+            answer: "Warning signs include: frequent breaker trips, flickering lights, burning smells, outdated fuse boxes, discolored outlets, lack of GFCI protection, and insufficient outlets. We offer free safety inspections to assess your system."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Will electrical upgrades disrupt my business operations?",
+            answer: "We minimize disruption through careful planning. For commercial projects, we work after hours or weekends. For residential, we work room-by-room and maintain a clean workspace. Critical circuits can often remain live during upgrades."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "Are your electricians licensed and insured?",
+            answer: "Yes, all our electricians are licensed in North Carolina, bonded, and fully insured. We carry $2 million in liability coverage and maintain workers' compensation for all technicians."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "How long does an electrical panel upgrade take?",
+            answer: "Most residential panel upgrades take 6-10 hours. Commercial panels vary based on size and complexity, typically 1-3 days. We provide detailed timelines after assessment and obtain all necessary permits."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "Do you handle permits and inspections?",
+            answer: "Yes, we manage all aspects of permitting and coordinate with local inspectors. All work meets NEC (National Electrical Code) and North Carolina-specific requirements. We handle the paperwork so you don't have to."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "Can you help with energy-efficient upgrades?",
+            answer: "Absolutely. We specialize in LED lighting retrofits, smart thermostats, energy monitoring systems, and solar-ready electrical panels. These upgrades can reduce energy costs by 20-50% while enhancing functionality."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "What warranty do you provide on electrical work?",
+            answer: "We offer a 5-year warranty on labor and a 1-year warranty on materials. Manufacturer warranties apply to fixtures and equipment. All warranty details are provided in writing upon project completion."
         }
     ];
 
@@ -66,7 +66,6 @@ export default function ServiceHero() {
         <div className="bg-white text-gray-900">
             <section className="relative overflow-hidden bg-white text-black">
 
-
                 <div className="relative z-10 container mx-auto px-8 py-4  lg:py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         {/* Text Content */}
@@ -82,7 +81,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Electrical Upgrades</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +90,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Electrical Upgrades Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/electrical-upgrades.webp"
+                                        alt="Professional electrical panel upgrade"
+                                        title="Licensed electrician performing upgrade"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-72"
+                                        className="object-fit w-full h-80"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Certified Electricians</h3>
                                 </div>
                             </div>
 
@@ -116,9 +114,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Upgrade your electrical system for safety, efficiency, and modern convenience. 
+                                Serving homes and businesses across North Carolina, our licensed electricians provide 
+                                code-compliant solutions that power your life reliably.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +127,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Licensed & insured electricians",
+                                    "24/7 emergency service",
+                                    "Minimal disruption guarantee",
+                                    "5-year workmanship warranty",
+                                    "Energy-efficient solutions",
+                                    "Free safety inspection"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -169,8 +167,6 @@ export default function ServiceHero() {
                                         View Projects
                                     </motion.button>
                                 </Link>
-
-
                             </motion.div>
                         </motion.div>
 
@@ -184,27 +180,22 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/electrical-upgrades.webp"
+                                        alt="Licensed electrician upgrading electrical panel"
+                                        title="Professional electrical upgrade services"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-cover w-full h-[70vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Certified Electricians</h3>
+                                    <p className="text-blue-100">Serving NC since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
-
-
             </section>
             <Home4/>
             
@@ -225,7 +216,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Electrical Upgrade Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +228,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Power Your Property Safely and Efficiently</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our electrical upgrade services are designed to enhance safety, increase capacity, 
+                                and modernize your electrical systems. We understand that outdated electrical systems 
+                                pose fire risks and limit your ability to use modern appliances and technology.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving homeowners and businesses throughout North Carolina, our licensed electricians 
+                                bring expertise in NEC code compliance, energy-efficient solutions, and smart home integration. 
+                                We handle everything from minor upgrades to complete rewiring, ensuring your property 
+                                meets current safety standards.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Why Upgrade Your Electrical System?</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Prevent electrical fires (cause of 51,000 home fires annually)",
+                                        "Support modern appliances and technology",
+                                        "Reduce energy costs by 15-30%",
+                                        "Increase property value and insurability",
+                                        "Meet current building code requirements",
+                                        "Eliminate shock hazards with GFCI/AFCI protection"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,31 +267,31 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Electrical Upgrade Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Comprehensive Electrical Assessment",
+                                        description: "We conduct thorough inspections using thermal imaging and circuit testing to identify safety hazards and upgrade needs."
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Customized Upgrade Plan",
+                                        description: "We create tailored solutions based on your usage patterns, future needs, and budget."
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Permitting & Documentation",
+                                        description: "We handle all permits and provide detailed documentation of your upgraded system."
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Professional Installation",
+                                        description: "Our licensed electricians perform upgrades using premium materials and industry best practices."
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Safety Testing & Verification",
+                                        description: "We test all circuits, grounding, and safety devices to ensure optimal performance."
                                     },
                                     {
-                                        title: "Final Walkthrough",
+                                        title: "Final Inspection & Walkthrough",
                                         description: "We review the completed work with you and provide maintenance recommendations."
                                     }
                                 ].map((step, index) => (
@@ -318,15 +308,15 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Our Electrical Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Electrical Panel Upgrades", "Whole-House Rewiring", "GFCI/AFCI Installation",
+                                        "Lighting Upgrades & Retrofits", "EV Charger Installation", "Surge Protection",
+                                        "Generator Hookups", "Circuit Additions", "Smart Home Integration",
+                                        "Commercial Electrical Upgrades", "Service Upgrades (100-400 Amp)", "Electrical Inspections"
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -340,7 +330,6 @@ export default function ServiceHero() {
             <Home5/>
             <Home6/>
             <Home7/>
-
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
@@ -359,10 +348,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Electrical Upgrade FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our electrical services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +429,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Upgrade Your Electrical System?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +439,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free safety inspection and upgrade assessment.
                             </motion.p>
 
                             <motion.div
@@ -470,7 +459,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call electrical company' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -482,7 +471,6 @@ export default function ServiceHero() {
                                         Call Us: (551) 200-1350
                                     </motion.p>
                                 </Link>
-
                             </motion.div>
                         </div>
                     </motion.div>

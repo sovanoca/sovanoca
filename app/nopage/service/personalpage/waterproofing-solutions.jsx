@@ -1,4 +1,3 @@
-// components/ServiceHero.js
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -12,39 +11,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to waterproofing solutions
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "What are the signs I need waterproofing in my North Carolina home?",
+            answer: "Common signs include: basement dampness or standing water, musty odors, mold growth, efflorescence (white powder on walls), cracked foundations, peeling paint, and high humidity levels. If you notice any of these in your NC home, it's time for a professional assessment."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "How long does waterproofing last in NC's climate?",
+            answer: "Our waterproofing solutions last 10-15 years on average. We use premium materials specifically engineered for North Carolina's humid climate, heavy rainfall, and occasional freeze-thaw cycles. Coastal areas may require more frequent maintenance due to higher moisture exposure."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Can waterproofing prevent mold in my basement?",
+            answer: "Yes, proper waterproofing is the first defense against mold. By controlling moisture intrusion, we create an environment where mold can't thrive. We also install vapor barriers and recommend dehumidifiers to maintain optimal humidity levels below 50% - crucial in NC's humid climate."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "Do you offer foundation repair services along with waterproofing?",
+            answer: "Yes, we provide comprehensive solutions. Our team addresses foundation cracks, wall bowing, and structural issues before applying waterproofing treatments. We're certified in foundation stabilization methods appropriate for North Carolina soil conditions."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "What waterproofing methods work best for North Carolina homes?",
+            answer: "We use interior and exterior solutions: exterior membrane systems, French drains, sump pumps, interior drainage channels, vapor barriers, and hydraulic cement for cracks. For crawl spaces, we specialize in encapsulation systems that combat NC's high humidity."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "How much does basement waterproofing cost in North Carolina?",
+            answer: "Costs vary based on home size and solution complexity. Simple interior systems start around $3,000, while comprehensive exterior solutions range $8,000-$15,000. We provide transparent quotes after assessing your specific needs and offer financing options for NC homeowners."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "Will waterproofing increase my home's value in North Carolina?",
+            answer: "Absolutely. Waterproofing adds significant value by preventing structural damage and creating usable space. In NC's competitive housing market, waterproofed basements and crawl spaces are major selling points that can increase property value by 10-15%."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "What warranty do you offer on waterproofing work?",
+            answer: "We provide a transferable 10-year warranty covering materials and workmanship. This includes protection against water intrusion, sump pump failures, and drainage system issues. We also offer annual maintenance plans to ensure optimal performance in NC's climate."
         }
     ];
 
@@ -66,7 +65,6 @@ export default function ServiceHero() {
         <div className="bg-white text-gray-900">
             <section className="relative overflow-hidden bg-white text-black">
 
-
                 <div className="relative z-10 container mx-auto px-8 py-4  lg:py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         {/* Text Content */}
@@ -82,7 +80,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Waterproofing Solutions</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +89,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Residential Waterproofing Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-waterproofing.webp"
+                                        alt="Basement waterproofing in North Carolina"
+                                        title="Professional waterproofing services in NC"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Dry & Healthy Homes</h3>
                                 </div>
                             </div>
 
@@ -116,9 +113,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Protect your North Carolina home from water damage with our comprehensive waterproofing solutions. 
+                                Serving homeowners statewide, we prevent basement flooding, control crawl space moisture, 
+                                and safeguard your foundation against NC's heavy rains and high humidity.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +126,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Basement waterproofing systems",
+                                    "Crawl space encapsulation",
+                                    "Foundation crack repairs",
+                                    "10-year transferable warranty",
+                                    "Free moisture inspections",
+                                    "Mold prevention solutions"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -150,7 +147,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get waterproofing quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
@@ -169,8 +166,6 @@ export default function ServiceHero() {
                                         View Projects
                                     </motion.button>
                                 </Link>
-
-
                             </motion.div>
                         </motion.div>
 
@@ -184,26 +179,22 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-waterproofing.webp"
+                                        alt="Basement waterproofing in North Carolina"
+                                        title="Professional waterproofing services in NC"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-96"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Waterproofing Experts</h3>
+                                    <p className="text-blue-100">Protecting NC homes from water damage since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
-
 
             </section>
             <Home4/>
@@ -225,7 +216,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Comprehensive Waterproofing Solutions for NC Homes
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +228,30 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Protect Your Home from Water Damage</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                North Carolina's heavy rainfall and high humidity create perfect conditions for basement flooding, 
+                                crawl space moisture, and foundation damage. Our residential waterproofing services provide permanent 
+                                solutions to keep your home dry and structurally sound. We address water intrusion at its source, 
+                                protecting your biggest investment.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving homeowners across NC, from the mountains to the coast, our certified technicians specialize in:
+                                basement waterproofing, crawl space encapsulation, foundation sealing, and mold remediation. 
+                                We understand the unique waterproofing challenges presented by North Carolina's diverse climate 
+                                and soil conditions.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Why Waterproofing is Essential in North Carolina</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Prevents structural damage to foundations",
+                                        "Reduces risk of costly mold remediation",
+                                        "Lowers humidity for improved indoor air quality",
+                                        "Creates usable basement storage/living space",
+                                        "Increases home value by 10-15%",
+                                        "Protects against NC's heavy seasonal rains"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +268,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Waterproofing Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Comprehensive Moisture Assessment",
+                                        description: "We inspect your property for water entry points, foundation issues, and humidity problems using specialized tools."
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Custom Solution Design",
+                                        description: "Receive a tailored waterproofing plan addressing your home's specific needs and NC climate challenges."
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Professional Installation",
+                                        description: "Our certified technicians implement solutions with minimal disruption to your household."
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Drainage System Implementation",
+                                        description: "We install interior/exterior drains, sump pumps, and vapor barriers as needed."
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Sealing & Encapsulation",
+                                        description: "Foundation cracks are sealed and crawl spaces encapsulated to block moisture."
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Final Testing & Maintenance Plan",
+                                        description: "We test our systems and provide maintenance guidelines for NC conditions."
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,13 +309,13 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Waterproofing Services for NC Homes</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Basement Waterproofing", "Crawl Space Encapsulation", "Foundation Sealing",
+                                        "French Drain Installation", "Sump Pump Systems", "Interior Drain Tile",
+                                        "Exterior Waterproofing", "Vapor Barrier Installation", "Concrete Crack Repair",
+                                        "Mold Remediation", "Humidity Control", "Grading & Downspout Solutions"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -340,7 +331,6 @@ export default function ServiceHero() {
             <Home5/>
             <Home6/>
             <Home7/>
-
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
@@ -359,10 +349,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Waterproofing Solutions FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about residential waterproofing in North Carolina
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +430,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Protect Your North Carolina Home Today
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +440,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Schedule a free waterproofing inspection and quote for your home.
                             </motion.p>
 
                             <motion.div
@@ -460,17 +450,17 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get waterproofing quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >
-                                        Request a Quote →
+                                        Request Inspection →
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call waterproofing specialists' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}

@@ -1,4 +1,3 @@
-// components/ServiceHero.js
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -12,39 +11,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to architectural and interior design consulting
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "What services do you offer in architectural and interior design consulting?",
+            answer: "We provide comprehensive design services including space planning, architectural design, interior styling, lighting design, material selection, and project management. Our services cover residential, commercial, and hospitality projects throughout North Carolina."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "How does the design process work with your firm?",
+            answer: "Our process begins with an initial consultation to understand your vision, followed by concept development, design refinement, and final implementation. We maintain clear communication throughout and provide 3D visualizations to help you envision the final result before any construction begins."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Do you work with existing structures or only new construction?",
+            answer: "We specialize in both new construction and renovations/remodels. Our team can transform existing spaces with creative solutions that maximize functionality and aesthetic appeal while respecting the building's original character."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "How do you incorporate North Carolina's architectural styles?",
+            answer: "We blend contemporary design with traditional NC influences like coastal, mountain, and historic styles. Our designs consider local climate, materials, and regional aesthetics while meeting modern living standards."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "What's included in your interior design packages?",
+            answer: "Our packages include space planning, furniture layouts, color schemes, material selections, lighting plans, and custom millwork designs. We also provide procurement services and can oversee installation for a turnkey solution."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "How do you handle sustainable design practices?",
+            answer: "We prioritize eco-friendly materials, energy-efficient solutions, and passive design strategies. Many of our projects incorporate LEED principles, local sourcing, and renewable materials tailored to North Carolina's climate."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "Can you help with obtaining permits and approvals?",
+            answer: "Yes, we navigate the permit process and ensure designs comply with local NC building codes, zoning laws, and HOA requirements. We handle all necessary documentation and coordinate with local authorities."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "What makes your NC design services unique?",
+            answer: "Our deep understanding of North Carolina's diverse regions—from coastal areas to urban centers to mountain communities—allows us to create designs that are both beautiful and perfectly suited to their environment and local lifestyle."
         }
     ];
 
@@ -82,7 +81,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Architectural & Interior Design Consulting</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +90,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Architectural & Interior Design Consulting in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/design-consulting.jpg"
+                                        alt="Modern interior design in North Carolina"
+                                        title="Architectural and interior design consulting services"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Design Solutions</h3>
                                 </div>
                             </div>
 
@@ -116,9 +114,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Transform your spaces with our expert architectural and interior design consulting services. 
+                                Serving clients across North Carolina, we create functional, beautiful environments that 
+                                reflect your vision while respecting the region's unique character and climate.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +127,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Full-service design solutions",
+                                    "3D visualization technology",
+                                    "Local material expertise",
+                                    "Sustainable design practices",
+                                    "Space optimization strategies",
+                                    "Custom furniture design"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -184,21 +182,19 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/design-consulting.jpg"
+                                        alt="Modern architectural design in North Carolina"
+                                        title="Architectural design consulting services"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-96"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">NC Design Experts</h3>
+                                    <p className="text-blue-100">Creating beautiful, functional spaces since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
 
                         </motion.div>
                     </div>
@@ -225,7 +221,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Comprehensive Design Consulting Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +233,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Living or Work Spaces</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our architectural and interior design consulting services are tailored to create spaces that 
+                                inspire while meeting practical needs. Whether modern minimalism or traditional Southern charm, 
+                                we design environments that reflect your personality and lifestyle while incorporating North 
+                                Carolina's unique architectural heritage.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving residential and commercial clients throughout North Carolina, our team brings expertise 
+                                in space planning, material selection, and innovative design solutions. We work with homeowners, 
+                                developers, and business owners to create spaces that are both beautiful and functional.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Benefits of Professional Design Consulting</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Increases property value by up to 20%",
+                                        "Optimizes space utilization and flow",
+                                        "Reduces costly design mistakes",
+                                        "Creates cohesive aesthetic appeal",
+                                        "Incorporates sustainable practices",
+                                        "Saves time and reduces stress"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +272,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Design Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Initial Consultation",
+                                        description: "We listen to your vision, needs, and budget to understand your project goals and preferences."
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Concept Development",
+                                        description: "Creation of preliminary designs, mood boards, and space plans that reflect your style."
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Design Refinement",
+                                        description: "We refine concepts based on your feedback, developing detailed plans and material selections."
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "3D Visualization",
+                                        description: "Advanced renderings help you visualize the final result before implementation."
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Implementation Planning",
+                                        description: "Detailed drawings, specifications, and project timelines for contractors."
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Project Oversight",
+                                        description: "Optional supervision during construction to ensure design integrity is maintained."
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,13 +313,13 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Design Services We Offer</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Residential Design", "Commercial Spaces", "Kitchen Remodeling",
+                                        "Bathroom Design", "Whole-House Renovation", "Space Planning",
+                                        "Lighting Design", "Custom Millwork", "Material Selection",
+                                        "Color Consultation", "Furniture Design", "Historic Preservation"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -359,10 +354,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Design Consulting FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our architectural and interior design services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +435,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Transform Your Space?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +445,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free consultation about your architectural or interior design project.
                             </motion.p>
 
                             <motion.div
@@ -470,7 +465,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call design consulting firm' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}

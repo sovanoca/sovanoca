@@ -12,39 +12,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to commercial roofing
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "How long does a commercial roofing project typically take?",
+            answer: "Most commercial roofing projects take 1-4 weeks depending on roof size and complexity. Small repairs may be completed in a day, while full replacements for large facilities can take 2-6 weeks. We provide a detailed timeline after our initial inspection."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "What types of commercial roofing systems do you install?",
+            answer: "We specialize in all major commercial roofing systems including TPO, EPDM, PVC, modified bitumen, built-up roofing (BUR), metal roofing, and green roofing solutions. We'll recommend the best system for your building's needs and North Carolina's climate."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Will roofing work disrupt my business operations?",
+            answer: "We minimize disruption through careful planning. For occupied buildings, we schedule noisy work during off-hours and maintain safe access at all times. Many repairs and installations can be completed without business interruption."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "How often should a commercial roof be inspected?",
+            answer: "We recommend bi-annual inspections (spring and fall) to catch issues early. Roofs in coastal areas or with heavy tree coverage may need quarterly inspections. Our maintenance plans include regular inspections with detailed reports."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "What are signs my commercial roof needs replacement?",
+            answer: "Key indicators include frequent leaks, visible cracks/blisters, pooling water, excessive granule loss (on modified bitumen), interior water stains, and aging (most systems last 15-30 years). We offer free evaluations to assess your roof's condition."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "Do you handle insurance claims for storm damage?",
+            answer: "Yes, we assist with the entire insurance claims process including documentation, working with adjusters, and providing detailed repair estimates. We're experienced with hail, wind, and storm damage common in North Carolina."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "What maintenance does a commercial roof require?",
+            answer: "Proper maintenance includes clearing debris, ensuring proper drainage, checking flashings/seals, inspecting penetrations, and addressing minor repairs promptly. Our maintenance programs can extend roof life by 5-10 years."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "What warranty options do you offer?",
+            answer: "We provide workmanship warranties (typically 5-10 years) along with manufacturer warranties (up to 30 years for some systems). Warranties cover materials and installation against defects when properly maintained."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Commercial Roofing</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +91,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Commercial Roofing Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-roofing.jpg"
+                                        alt="Commercial roofing installation and repair"
+                                        title="Professional commercial roofing services"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-72"
+                                        className="object-cover w-full h-80"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Roofing Solutions</h3>
                                 </div>
                             </div>
 
@@ -116,9 +115,10 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Protect your commercial property with our expert roofing solutions. 
+                                Serving businesses across North Carolina, we specialize in durable, 
+                                weather-resistant roofing systems designed for optimal performance 
+                                in our regional climate.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +129,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "All major roofing systems",
+                                    "Storm damage specialists",
+                                    "Minimal business disruption",
+                                    "10-year workmanship warranty",
+                                    "Free roof inspections",
+                                    "24/7 emergency repairs"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -184,22 +184,19 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-roofing.jpg"
+                                        alt="Commercial roofing installation"
+                                        title="Professional commercial roof installation"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-fit w-full h-[80vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Commercial Roofing Experts</h3>
+                                    <p className="text-blue-100">Protecting NC businesses since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
@@ -225,7 +222,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Commercial Roofing Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +234,30 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Comprehensive Roofing Solutions</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our commercial roofing services protect your most valuable asset - your building. 
+                                From routine maintenance to complete replacements, we provide durable solutions 
+                                designed for North Carolina's varied weather conditions, including heavy rains, 
+                                high winds, and intense sun exposure.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving commercial properties throughout North Carolina, our certified roofing 
+                                specialists work with retail centers, office buildings, industrial facilities, 
+                                warehouses, and multi-family housing. We understand the unique demands of 
+                                commercial roofing and prioritize quality materials and workmanship.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Benefits of Professional Commercial Roofing</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Protects your building and assets",
+                                        "Reduces energy costs with proper insulation",
+                                        "Prevents costly water damage and mold",
+                                        "Extends roof lifespan with proper maintenance",
+                                        "Improves property value and appearance",
+                                        "Meets all building codes and regulations"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +274,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Roofing Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Comprehensive Inspection",
+                                        description: "We conduct a thorough evaluation of your roof's condition, including core sampling when needed, to identify all issues and recommend appropriate solutions."
                                     },
                                     {
                                         title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        description: "Receive a transparent quote outlining all work, materials, timeline, and warranty information. We explain all options without pressure."
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Material Selection",
+                                        description: "We help you choose the best roofing system for your budget, building type, and North Carolina's climate conditions."
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Professional Installation",
+                                        description: "Our certified crews install your roofing system with precision, following manufacturer specifications for optimal performance."
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Quality Assurance",
+                                        description: "We conduct multiple inspections during and after installation to ensure perfect results."
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Maintenance Planning",
+                                        description: "We provide customized maintenance recommendations to maximize your roof's lifespan."
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,13 +315,13 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Commercial Roofing Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Roof Replacements", "TPO Roofing", "EPDM Roofing", 
+                                        "Metal Roofing", "Roof Repairs", "Roof Coatings",
+                                        "Roof Inspections", "Preventive Maintenance", "Emergency Repairs",
+                                        "Leak Detection", "Roof Drainage Solutions", "Skylight Installation"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -359,10 +356,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Commercial Roofing FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our commercial roofing services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +437,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Need Professional Commercial Roofing Services?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +447,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free roof inspection and estimate.
                             </motion.p>
 
                             <motion.div

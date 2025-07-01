@@ -4,47 +4,47 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Home4 from "../../home/home4"
-import Home5 from "../../home/home5"
-import Home6 from "../../home/home6"
-import Home7 from "../../home/home7"
+import Home4 from "../../home/home4";
+import Home5 from "../../home/home5";
+import Home6 from "../../home/home6";
+import Home7 from "../../home/home7";
 
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
+    // FAQ data specific to home layout alteration
     const faqs = [
         {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
+            question: "What is the typical timeline for a home layout alteration project?",
+            answer: "Project timelines vary based on scope. Simple wall removals take 1-2 weeks, while full floor plan changes may take 4-8 weeks. We provide a detailed schedule after our initial assessment and work efficiently to minimize disruption to your daily life."
         },
         {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
+            question: "Do I need permits for home layout changes in North Carolina?",
+            answer: "Yes, most structural changes require permits. We handle all NC building permits and ensure compliance with local regulations. Our team is experienced with North Carolina's specific requirements for residential alterations."
         },
         {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
+            question: "Can you work around my family's schedule?",
+            answer: "Absolutely. We offer flexible scheduling options and can work in phases to minimize disruption. For extensive projects, we can arrange temporary living solutions while work is completed."
         },
         {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
+            question: "What types of layout changes do you specialize in?",
+            answer: "We handle all types of home layout alterations including wall removals, room additions, kitchen expansions, creating open-concept living spaces, adding home offices, and reconfiguring bedroom/bathroom layouts."
         },
         {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
+            question: "Do you provide design services for layout changes?",
+            answer: "Yes, our in-house design team creates functional, beautiful spaces that maximize your home's potential. We provide 3D renderings to help visualize the changes before construction begins."
         },
         {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
+            question: "How do you handle dust and debris during construction?",
+            answer: "We implement comprehensive containment systems with plastic barriers and negative air machines. Daily cleanup ensures your home remains livable throughout the renovation process."
         },
         {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
+            question: "What warranty do you offer on layout alterations?",
+            answer: "We provide a 5-year structural warranty on all alterations and a 2-year warranty on craftsmanship. All warranty details are provided in writing before your project begins."
         },
         {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
+            question: "Can you help with structural engineering requirements?",
+            answer: "Yes, we work with licensed structural engineers who assess load-bearing walls and design appropriate support systems. All structural changes are engineered to meet or exceed NC building codes."
         }
     ];
 
@@ -82,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Home Layout Alteration</span>
                             </motion.h2>
 
                             <motion.h1
@@ -91,22 +91,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Home Layout Alteration Services in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/open-floor-plan.webp"
+                                        alt="Home layout alteration services in North Carolina"
+                                        title="Professional Home Layout Remodeling"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Transform Your Living Space</h3>
                                 </div>
                             </div>
 
@@ -116,9 +115,8 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Transform your home with our expert layout alteration services. Serving homeowners across North Carolina, 
+                                we reimagine living spaces to improve functionality, flow, and comfort while increasing your property value.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +127,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Structural alterations",
+                                    "Custom design solutions",
+                                    "NC building code compliance",
+                                    "5-year structural warranty",
+                                    "Minimal disruption to your life",
+                                    "Free initial consultation"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -150,7 +148,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Layout Alteration Quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
@@ -184,17 +182,17 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/open-floor-plan.webp"
+                                        alt="Home layout alteration services in North Carolina"
+                                        title="Custom Home Layout Transformations"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-cover w-full h-[70vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Transform Your Living Space</h3>
+                                    <p className="text-blue-100">Redesigning NC homes since 2023</p>
                                 </div>
                             </div>
 
@@ -225,7 +223,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Home Layout Alteration Services
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +235,29 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Reimagine Your Living Space</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our home layout alteration services transform your existing space into the home you've always wanted. 
+                                Whether you need more room for a growing family, want to create an open-concept living area, 
+                                or need to adapt your home for accessibility, we provide innovative solutions that enhance 
+                                functionality and comfort.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving homeowners throughout North Carolina, our team brings expertise in structural alterations, 
+                                space planning, and design. We work with all types of residential properties from historic homes 
+                                to modern constructions, always respecting the character of your home while implementing improvements.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Benefits of Home Layout Alterations</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Increases home value by 15-25%",
+                                        "Improves functionality and daily living",
+                                        "Creates space without moving or adding square footage",
+                                        "Enhances natural light and flow between rooms",
+                                        "Adapts your home to changing lifestyle needs",
+                                        "Modernizes older homes for contemporary living"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +274,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Alteration Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Initial Consultation & Assessment",
+                                        description: "We evaluate your space, discuss your goals, and identify structural possibilities"
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Design Development",
+                                        description: "Our team creates detailed plans and 3D renderings of your new layout"
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Permitting & Engineering",
+                                        description: "We handle all NC building permits and structural engineering requirements"
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Phased Construction",
+                                        description: "Skilled craftsmen implement alterations with minimal disruption"
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Quality Assurance",
+                                        description: "We conduct inspections at critical stages to ensure perfection"
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Final Reveal & Walkthrough",
+                                        description: "We present your transformed space and provide maintenance guidance"
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,15 +315,15 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Our Layout Alteration Services</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Wall Removal & Relocation", "Open Concept Conversions", "Room Additions",
+                                        "Kitchen Expansions", "Creating Home Offices", "Bedroom/Bathroom Reconfigurations",
+                                        "Accessibility Modifications", "Staircase Relocations", "Adding Architectural Features",
+                                        "Historic Home Renovations", "Basement Conversions", "Multi-generational Living Spaces"
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -359,10 +356,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Home Layout Alteration FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our home layout alteration services
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +437,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Transform Your Home's Layout?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +447,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free consultation on your home alteration project.
                             </motion.p>
 
                             <motion.div
@@ -460,7 +457,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Alteration Quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -470,7 +467,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call Home Alteration Experts' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}

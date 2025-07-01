@@ -4,49 +4,58 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Home4 from "../../home/home4"
-import Home5 from "../../home/home5"
-import Home6 from "../../home/home6"
-import Home7 from "../../home/home7"
+import Home4 from "../../home/home4";
+import Home5 from "../../home/home5";
+import Home6 from "../../home/home6";
+import Home7 from "../../home/home7";
 
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to commercial exterior painting
-    const faqs = [
-        {
-            question: "How long does a commercial exterior painting project take?",
-            answer: "Project timelines vary based on building size and condition. A typical commercial painting project takes 2-4 weeks. Small storefronts may be completed in 3-5 days, while larger buildings like shopping centers can take 3-6 weeks. We provide a detailed timeline after our initial assessment."
-        },
-        {
-            question: "What types of paint do you use for commercial exteriors?",
-            answer: "We use premium commercial-grade paints from industry leaders like Sherwin-Williams and Benjamin Moore. These include 100% acrylic elastomeric coatings for masonry, advanced acrylics for metal surfaces, and specialized UV-resistant finishes. All products are specifically formulated for North Carolina's climate conditions."
-        },
-        {
-            question: "Will painting disrupt my business operations?",
-            answer: "We minimize disruption through careful planning. We work after hours for retail businesses, section off work areas, and use low-odor paints. For most projects, we can complete work without requiring business closure. We'll develop a customized schedule that works with your operations."
-        },
-        {
-            question: "How often should commercial buildings be repainted?",
-            answer: "Most commercial buildings in NC need repainting every 5-8 years. Factors like sun exposure, material type (brick, stucco, metal), and coastal proximity affect longevity. We offer free inspections to determine when your property needs maintenance."
-        },
-        {
-            question: "Do you provide color consultation services?",
-            answer: "Yes, we offer complimentary color consultation with all commercial painting projects. Our design experts will help you select colors that enhance your branding, complement your architecture, and meet any HOA or zoning requirements."
-        },
-        {
-            question: "What surfaces can you paint?",
-            answer: "We paint all commercial exterior surfaces including: brick, stucco, concrete, metal, wood, EIFS, fiber cement siding, and vinyl. We have specialized preparation and painting techniques for each material to ensure optimal adhesion and longevity."
-        },
-        {
-            question: "Are your paints eco-friendly?",
-            answer: "We use low-VOC and zero-VOC paints that meet EPA standards. Many of our products are GreenGuard certified and contribute toward LEED certification points. We also implement sustainable practices like proper waste disposal and recycling of materials."
-        },
-        {
-            question: "What is included in your 5-year warranty?",
-            answer: "Our comprehensive warranty covers: peeling, blistering, chipping, cracking, and excessive fading under normal conditions. It includes both materials and labor. We provide detailed warranty documentation upon project completion."
-        }
-    ];
+    // FAQ data specific to landscaping and hardscaping
+   const faqs = [
+  {
+    question: "What's the difference between landscaping and hardscaping?",
+    answer:
+      "Great question! Landscaping covers all the living elements of your outdoor space — like grass, flowers, shrubs, trees, and garden beds. It brings color, life, and softness to a property. Hardscaping, on the other hand, includes the solid, man-made features like patios, walkways, retaining walls, and stonework. It's what gives structure and functionality to your yard. Together, they strike a balance between beauty and durability, making your outdoor space not only look amazing but also work for your needs."
+  },
+  {
+    question: "How much does commercial landscaping cost in North Carolina?",
+    answer:
+      "The cost of commercial landscaping in North Carolina can vary quite a bit depending on the size of the property and the complexity of the design. On average, you can expect anything from $5,000 for basic projects to over $50,000 for full-scale designs with advanced features. We believe every property is unique, so we take the time to evaluate your space and your goals before providing a detailed and transparent quote — no surprises, just smart planning and expert advice."
+  },
+  {
+    question: "What hardscaping materials work best in NC's climate?",
+    answer:
+      "North Carolina's climate can be a mix of hot summers, humid air, and occasional cold snaps, so it's important to choose materials that can handle all seasons. We typically recommend durable options like natural stone (for its timeless look and strength), concrete pavers (great for budget and flexibility), and composite decking (low-maintenance and weather-resistant). We always consider your specific location, drainage needs, and how the space will be used to recommend the right materials that will last for years to come."
+  },
+  {
+    question: "Do you offer seasonal maintenance packages?",
+    answer:
+      "Yes, we do — and they're a game-changer for keeping your property looking sharp year-round. Our seasonal maintenance packages cover everything from spring cleanups and mulching to summer irrigation checks, fall leaf removal, and winter weather prep. We tailor each package to your property’s specific layout and needs, so you’re never overpaying for services you don’t need. Think of it as a hassle-free way to protect your landscaping investment and keep your grounds always looking professional."
+  },
+  {
+    question: "How long does a commercial hardscaping project take?",
+    answer:
+      "Project timelines can vary, but we always aim to keep things efficient and on schedule. Smaller hardscaping jobs like a walkway or patio might take 1–2 weeks, while larger-scale projects — such as retaining walls, outdoor kitchens, or multi-zone layouts — could take 4–8 weeks depending on complexity and weather. We’ll always give you a clear timeline upfront, keep you updated throughout the process, and do our best to minimize disruption to your business or property access."
+  },
+  {
+    question: "Can you handle both design and installation?",
+    answer:
+      "Absolutely! Our team handles everything under one roof — from creative design to hands-on installation. Our in-house landscape designers work closely with you to understand your goals and vision, and once you're happy with the plan, our skilled installation crew brings it to life with precision and care. This all-in-one approach means fewer headaches for you, faster project turnaround, and results that match your original vision — or even exceed it."
+  },
+  {
+    question: "What sustainability practices do you implement?",
+    answer:
+      "Sustainability is at the heart of our approach. We use native and drought-tolerant plants that require less water and maintenance. Our irrigation systems are designed to be water-efficient, often using smart controllers and drip systems. We also favor eco-friendly solutions like permeable pavers to reduce runoff and organic treatments to improve soil health. The goal is to create beautiful landscapes that are also low-impact, long-lasting, and supportive of local ecosystems."
+  },
+  {
+    question: "Do you offer snow removal services?",
+    answer:
+      "Yes, we provide reliable snow removal for commercial properties throughout North Carolina. When winter hits, we’re ready around the clock with 24/7 service. We handle everything — snow plowing, salting, de-icing, and keeping your walkways and entryways safe and accessible. Whether it’s an early morning storm or a weekend freeze, our team ensures your business stays operational and safe for employees and visitors."
+  }
+];
+
 
     // Animation for FAQ items
     const faqItem = {
@@ -62,12 +71,11 @@ export default function ServiceHero() {
     const toggleFAQ = (index) => {
         setActiveFAQ(activeFAQ === index ? null : index);
     };
+    
     return (
         <div className="bg-white text-gray-900">
             <section className="relative overflow-hidden bg-white text-black">
-
-
-                <div className="relative z-10 container mx-auto px-8 py-4  lg:py-10">
+                <div className="relative z-10 container mx-auto px-8 py-4 lg:py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         {/* Text Content */}
                         <motion.div
@@ -80,33 +88,32 @@ export default function ServiceHero() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
+                                className="inline-block bg-b1 px-4 py-2 mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
+                                <span className="text-lg lg:text-2xl font-medium text-white">Landscaping & Hardscaping</span>
                             </motion.h2>
 
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
+                                className="text-xl lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Commercial Exterior Painting Services in North Carolina
+                                Landscaping & Hardscaping Services in North Carolina
                             </motion.h1>
-                            <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
+                            <div className="relative lg:hidden overflow-hidden shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-landscaping.jpg"
+                                        alt="Commercial landscaping and hardscaping services in North Carolina"
+                                        title="Landscape Design & Installation in NC"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-72"
+                                        className="object-fit w-full h-96 "
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Commercial Painting</h3>
-                                    {/* <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p> */}
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Landscape Solutions</h3>
                                 </div>
                             </div>
 
@@ -116,9 +123,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your commercial property with our premium exterior painting solutions.
-                                Serving businesses across North Carolina, we enhance curb appeal, protect your investment,
-                                and create lasting impressions with every brushstroke.
+                                Transform your commercial property with our premium landscaping and hardscaping solutions.
+                                Serving businesses across North Carolina, we create stunning outdoor environments that 
+                                enhance curb appeal, increase property value, and provide functional outdoor spaces.
                             </motion.p>
 
                             {/* Benefits */}
@@ -129,12 +136,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    " Premium commercial-grade paints",
-                                    " Weather-resistant finishes",
-                                    " Minimal business disruption",
-                                    " 5-year warranty on all work",
-                                    " EPA-compliant eco-friendly options",
-                                    " Free color consultation"
+                                    "Custom landscape design",
+                                    "Premium hardscape installation",
+                                    "Seasonal maintenance programs",
+                                    "Native plant selection",
+                                    "Water-efficient irrigation",
+                                    "5-year warranty on installations"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -150,7 +157,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Landscaping Quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
@@ -169,8 +176,6 @@ export default function ServiceHero() {
                                         View Projects
                                     </motion.button>
                                 </Link>
-
-
                             </motion.div>
                         </motion.div>
 
@@ -181,30 +186,25 @@ export default function ServiceHero() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
+                            <div className="relative overflow-hidden shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/commercial-painting.webp"
-                                        alt="Commercial building exterior painting"
-                                        title="Commercial building exterior painting"
+                                        src="/commercial-landscaping.jpg"
+                                        alt="Commercial landscaping and hardscaping in North Carolina"
+                                        title="Professional Landscape Design & Installation"
                                         width={800}
                                         height={600}
-                                        className="object-cover w-full h-96"
+                                        className="object-fit w-full h-[70vh]"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Premium Commercial Painting</h3>
-                                    <p className="text-blue-100">Protecting and enhancing NC businesses since 2023</p>
+                                    <h3 className="text-white font-bold text-xl">Premium Landscape Solutions</h3>
+                                    <p className="text-blue-100">Transforming NC properties since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
-
-
             </section>
             <Home4/>
             
@@ -225,7 +225,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Professional Commercial Exterior Painting
+                            Professional Landscaping & Hardscaping Solutions
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -237,30 +237,30 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Appearance</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Outdoor Space</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial exterior painting services are designed to revitalize your business property,
-                                creating a professional and welcoming appearance that attracts customers and impresses clients.
-                                We understand that your building's exterior is the first impression customers have of your business,
-                                and we're committed to making it exceptional.
+                                Our commercial landscaping and hardscaping services are designed to create stunning, 
+                                functional outdoor environments that enhance your property's value and appeal. We combine 
+                                artistic design with practical solutions to create spaces that thrive in North Carolina's 
+                                unique climate.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team of professional painters brings
-                                expertise in commercial painting techniques, surface preparation, and color consultation.
-                                We work with retail stores, office buildings, industrial facilities, restaurants, and
-                                multi-unit properties of all sizes.
+                                Serving businesses throughout North Carolina, our team of landscape architects and 
+                                certified installers brings expertise in sustainable design, native plant selection, 
+                                and premium hardscape installation. We work with office complexes, retail centers, 
+                                hospitality venues, and industrial properties.
                             </p>
 
-                            <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Choose Professional Commercial Painting?</h4>
+                            <div className="bg-b1/10 p-6 border-l-4 border-b1">
+                                <h4 className="font-bold text-gray-900 mb-2">Commercial Landscaping Benefits</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Increases property value by up to 15%",
-                                        "Extends the lifespan of building materials",
-                                        "Protects against weather damage and UV radiation",
-                                        "Creates a positive brand image and identity",
-                                        "Meets HOA and commercial zoning requirements",
-                                        "Improves employee morale and customer perception"
+                                        "Increases property value by up to 20%",
+                                        "Reduces maintenance costs with native plants",
+                                        "Enhances brand image and customer experience",
+                                        "Improves stormwater management",
+                                        "Creates functional outdoor spaces",
+                                        "Meets commercial zoning requirements"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,36 +277,36 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Commercial Painting Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Professional Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Comprehensive Assessment",
-                                        description: "We begin with a thorough inspection of your property to identify surface conditions, material types, and potential challenges."
+                                        title: "Site Analysis & Consultation",
+                                        description: "We evaluate your property's conditions, drainage, sun exposure, and business needs"
                                     },
                                     {
-                                        title: "Detailed Proposal",
-                                        description: "Receive a transparent quote with itemized costs, timeline, and product specifications."
+                                        title: "Custom Design Development",
+                                        description: "Our landscape architects create detailed plans with 3D visualizations"
                                     },
                                     {
-                                        title: "Surface Preparation",
-                                        description: "Proper preparation is 80% of a quality paint job. We clean, repair, and prime surfaces for optimal adhesion."
+                                        title: "Material Selection",
+                                        description: "We recommend premium, climate-appropriate plants and hardscape materials"
                                     },
                                     {
-                                        title: "Precision Application",
-                                        description: "Our skilled painters use professional techniques and equipment for flawless results."
+                                        title: "Professional Installation",
+                                        description: "Our certified crews implement the design with precision and care"
                                     },
                                     {
-                                        title: "Quality Inspection",
-                                        description: "We conduct multiple quality checks throughout the project to ensure perfection."
+                                        title: "Quality Assurance",
+                                        description: "We conduct thorough inspections at every project phase"
                                     },
                                     {
-                                        title: "Final Walkthrough",
-                                        description: "We review the completed work with you and provide maintenance recommendations."
+                                        title: "Maintenance Planning",
+                                        description: "We provide customized care programs for long-term beauty"
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
-                                        <div className="bg-b1 text-white font-bold w-8 h-8  flex items-center justify-center mr-4 flex-shrink-0">
+                                        <div className="bg-b1 text-white font-bold w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">
                                             {index + 1}
                                         </div>
                                         <div>
@@ -317,14 +317,14 @@ export default function ServiceHero() {
                                 ))}
                             </div>
 
-                            <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Commercial Painting Applications</h4>
+                            <div className="mt-8 bg-white border border-gray-200 p-6 shadow-sm">
+                                <h4 className="font-bold text-gray-900 mb-2">Our Services Include</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Retail Storefronts", "Shopping Centers", "Office Buildings",
-                                        "Industrial Facilities", "Restaurants", "Apartment Complexes",
-                                        "Hotels & Motels", "Medical Facilities", "Educational Buildings",
-                                        "Churches", "Warehouses", "Historic Buildings"
+                                        "Landscape Design", "Patio Installation", "Retaining Walls",
+                                        "Walkways & Pathways", "Commercial Lawn Care", "Irrigation Systems",
+                                        "Seasonal Plantings", "Outdoor Lighting", "Water Features",
+                                        "Snow Removal", "Tree & Shrub Care", "Permeable Paving"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -359,12 +359,12 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Commercial Painting FAQs
+                            Landscaping & Hardscaping FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our commercial exterior painting services
+                            Answers to common questions about our landscaping services in North Carolina
                         </p>
-                        <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
+                        <div className="h-1 w-24 bg-b1 mx-auto mt-4"></div>
                     </motion.div>
 
                     <motion.div
@@ -376,7 +376,7 @@ export default function ServiceHero() {
                         {faqs.map((faq, index) => (
                             <motion.div
                                 key={index}
-                                className="border border-gray-200  overflow-hidden shadow-sm"
+                                className="border border-gray-200 overflow-hidden shadow-sm"
                                 variants={faqItem}
                             >
                                 <button
@@ -422,15 +422,15 @@ export default function ServiceHero() {
 
                     {/* CTA Section */}
                     <motion.div
-                        className="mt-16 bg-b1  shadow-xl p-8 text-white relative overflow-hidden"
+                        className="mt-16 bg-b1 shadow-xl p-8 text-white relative overflow-hidden"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
                         <div className="absolute inset-0 bg-[url('/texture.png')] opacity-10" />
-                        <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
-                        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
+                        <div className="absolute -top-20 -right-20 w-64 h-64 bg-white opacity-10" />
+                        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300 opacity-20" />
 
                         <div className="relative z-10 max-w-2xl mx-auto text-center">
                             <motion.h3
@@ -440,7 +440,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Transform Your Commercial Property?
+                                Ready to Transform Your Property?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +450,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today for a free consultation and quote on your commercial painting project.
+                                Contact us today for a free consultation on your landscaping project.
                             </motion.p>
 
                             <motion.div
@@ -460,7 +460,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get Landscaping Quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -470,7 +470,7 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call Landscaping Experts' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
@@ -482,7 +482,6 @@ export default function ServiceHero() {
                                         Call Us: (551) 200-1350
                                     </motion.p>
                                 </Link>
-
                             </motion.div>
                         </div>
                     </motion.div>
