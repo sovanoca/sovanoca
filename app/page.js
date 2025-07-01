@@ -11,9 +11,9 @@ export default function Home() {
   return (
    <>
    <Home1/>
+   <Home4/>
    <Home2/>
    <Home3/>
-   <Home4/>
    <Home5/>
    <Home6/>
    <Home7/>

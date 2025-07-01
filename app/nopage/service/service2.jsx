@@ -12,49 +12,49 @@ const ServicesSection = () => {
         // Commercial Services
         {
             id: 1,
-            title: "Commercial Exterior Painting Services",
+            title: "Exterior Painting Services",
             description: "Enhance your commercial property’s curb appeal with expert exterior painting solutions tailored for businesses.",
             image: "/commercial-painting.webp",
             category: "Commercial"
         },
         {
             id: 2,
-            title: "Commercial Landscaping and Hardscaping Solutions",
+            title: "Landscaping and Hardscaping",
             description: "Professional landscaping and hardscaping services to elevate your business exterior and attract more customers.",
             image: "/commercial-landscaping.jpg",
             category: "Commercial"
         },
         {
             id: 3,
-            title: "Walkway Installation for Commercial Properties",
+            title: "Sidewalk for Commercial Properties",
             description: "Safe, durable, and attractive walkway solutions for business premises and commercial buildings.",
             image: "/walkway-installation.webp",
             category: "Commercial"
         },
         {
             id: 4,
-            title: "Streetlight Installation & Maintenance",
+            title: "Streetlight Installation",
             description: "Reliable streetlight services ensuring safety and visibility for your commercial spaces.",
             image: "/streetlight.webp",
             category: "Commercial"
         },
         {
             id: 5,
-            title: "Asphalt Parking Lot Paving for Businesses",
+            title: "Asphalt Parking Lot for Businesses",
             description: "Smooth, long-lasting parking lot paving services customized for commercial use.",
             image: "/parking-lot.webp",
             category: "Commercial"
         },
         {
             id: 6,
-            title: "Commercial Store Renovation & Buildouts",
+            title: "Commercial Store Renovation",
             description: "Complete renovation and buildout services to create functional, modern commercial spaces.",
             image: "/store-renovation.jpg",
             category: "Commercial"
         },
         {
             id: 7,
-            title: "Hotel & Motel Renovation Services",
+            title: "Hotel & Motel Renovation",
             description: "Expert renovation for hospitality properties focused on comfort, design, and durability.",
             image: "/hotel-renovation.jpg",
             category: "Commercial"
@@ -68,21 +68,21 @@ const ServicesSection = () => {
         },
         {
             id: 9,
-            title: "Multi-Family Property Renovation Services",
+            title: "Multi-Family Renovation",
             description: "Upgrades and remodels for apartments and multi-unit residences to enhance tenant experience.",
             image: "/multi-family.webp",
             category: "Commercial"
         },
         {
             id: 10,
-            title: "Commercial Roofing Contractors",
+            title: "Commercial Roofing",
             description: "High-performance roofing solutions for all types of commercial buildings.",
             image: "/commercial-roofing.jpg",
             category: "Commercial"
         },
         {
             id: 11,
-            title: "Commercial Waterproofing Services",
+            title: "Waterproofing",
             description: "Protect your commercial investment with professional waterproofing and sealing.",
             image: "/commercial-waterproofing.webp",
             category: "Commercial"
@@ -91,77 +91,77 @@ const ServicesSection = () => {
         // Residential Services
         {
             id: 12,
-            title: "Residential Flooring Installation & Replacement",
+            title: "Flooring",
             description: "Beautiful and durable flooring solutions tailored for your home’s style and comfort.",
             image: "/residential-flooring.jpg",
             category: "Residential"
         },
         {
             id: 13,
-            title: "Interior & Exterior House Painting Services",
+            title: "Interior & Exterior Painting",
             description: "Expert painting services to revitalize your home’s appearance inside and out.",
             image: "/house-painting.jpg",
             category: "Residential"
         },
         {
             id: 14,
-            title: "Bathroom Remodeling Contractors",
+            title: "Bathroom Remodeling",
             description: "Transform your bathroom with modern design, quality fixtures, and expert craftsmanship.",
             image: "/bathroom-remodel.webp",
             category: "Residential"
         },
         {
             id: 15,
-            title: "Home Layout Alteration & Open Floor Planning",
+            title: "Home Layout Alteration",
             description: "Redesign your home’s interior for better flow, light, and livability.",
             image: "/open-floor-plan.webp",
             category: "Residential"
         },
         {
             id: 16,
-            title: "Electrical Upgrades & Panel Replacement",
+            title: "Electrical Upgrades",
             description: "Safe and efficient electrical services including upgrades, rewiring, and panel replacements.",
             image: "/electrical-upgrades.webp",
             category: "Residential"
         },
         {
             id: 17,
-            title: "Kitchen Remodeling Services",
+            title: "Kitchen Remodeling",
             description: "Modern kitchen remodels combining functionality with design that fits your lifestyle.",
             image: "/kitchen-remodel.webp",
             category: "Residential"
         },
         {
             id: 18,
-            title: "Backyard & Patio Renovation Services",
+            title: "Backyard & Patio",
             description: "Create a beautiful and usable outdoor space with our expert renovation services.",
             image: "/patio-renovation.jpg",
             category: "Residential"
         },
         {
             id: 19,
-            title: "Basement Finishing & Remodeling",
+            title: "Basement Remodeling",
             description: "Maximize your home’s usable space with expert basement finishing and renovation.",
             image: "/basement-remodel.jpg",
             category: "Residential"
         },
         {
             id: 20,
-            title: "Residential Roofing Services",
+            title: "Roofing",
             description: "Durable and efficient roofing systems tailored to your home’s needs.",
             image: "/commercial-roofing.jpg",
             category: "Residential"
         },
         {
             id: 21,
-            title: "Waterproofing Solutions for Homes",
+            title: "Waterproofing Solutions",
             description: "Protect your home from moisture damage with advanced waterproofing techniques.",
             image: "/commercial-waterproofing.webp",
             category: "Residential"
         },
         {
             id: 22,
-            title: "HVAC Installation & Replacement",
+            title: "HVAC Mihi & Split Installation",
             description: "Energy-efficient HVAC system installs and replacements for year-round comfort.",
             image: "/hvac.jpg",
             category: "Residential"

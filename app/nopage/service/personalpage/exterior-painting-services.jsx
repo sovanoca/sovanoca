@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import Home4 from "../../home/home4"
+import Home5 from "../../home/home5"
+import Home6 from "../../home/home6"
+import Home7 from "../../home/home7"
 
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
@@ -78,7 +82,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Commercial Painting Contractors</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Exterior Painting Services</span>
                             </motion.h2>
 
                             <motion.h1
@@ -200,6 +204,7 @@ export default function ServiceHero() {
 
 
             </section>
+            
             {/* Service Description Section */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -328,6 +333,11 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
+            <Home4/>
+            <Home5/>
+            <Home6/>
+            <Home7/>
+
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">

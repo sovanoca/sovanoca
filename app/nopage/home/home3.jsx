@@ -11,21 +11,21 @@ const ServicesSection = () => {
     const services = [
         {
             id: 1,
-            title: "Commercial Exterior Painting Services",
+            title: "Exterior Painting Services",
             description: "Professional-grade exterior painting for commercial buildings—boost curb appeal, protect surfaces, and maintain brand presence.",
             image: "/commercial-painting.webp",
             category: "Commercial"
         },
         {
             id: 2,
-            title: "Bathroom Remodeling Services",
+            title: "Bathroom Remodeling",
             description: "Upgrade your bathroom with custom layouts, modern finishes, water-efficient fixtures, and expert installation.",
             image: "/bathroom-remodel.webp",
             category: "Residential"
         },
         {
             id: 3,
-            title: "Kitchen Remodeling Services",
+            title: "Kitchen Remodeling",
             description: "High-end kitchen renovations designed for style, flow, and function—from cabinetry to countertops and lighting.",
             image: "/kitchen-remodel.webp",
             category: "Residential"
