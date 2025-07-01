@@ -11,39 +11,39 @@ import Home7 from "../../home/home7"
 export default function ServiceHero() {
     const [activeFAQ, setActiveFAQ] = useState(null);
 
-    // FAQ data specific to cost-plus construction for investors
+    // FAQ data specific to preacquisition consulting
     const faqs = [
         {
-            question: "How does cost-plus pricing benefit real estate investors?",
-            answer: "Cost-plus pricing provides complete transparency and control over project costs. Investors pay the actual cost of materials, labor, and subcontractors plus a predetermined management fee (typically 10-20%). This eliminates contractor markups on materials and ensures investors only pay for actual work completed, maximizing ROI on every project."
+            question: "How quickly can you provide a preacquisition estimate in North Carolina?",
+            answer: "We typically deliver preliminary estimates within 48 hours of property viewing. Comprehensive reports with detailed renovation costs are completed in 5-7 business days. For urgent acquisitions in competitive NC markets, we offer 24-hour rush services."
         },
         {
-            question: "What's included in your management fee?",
-            answer: "Our management fee covers comprehensive project oversight including: project management, scheduling, subcontractor coordination, quality control, progress reporting, and warranty administration. We provide a detailed fee structure upfront with no hidden costs. Fees are typically 15% of hard costs for full-service management."
+            question: "What factors do you consider in your property assessments?",
+            answer: "Our NC assessments include: structural integrity, foundation condition, roofing, HVAC systems, electrical/plumbing, environmental hazards, code compliance issues, renovation potential, local market trends, and zoning regulations specific to North Carolina municipalities."
         },
         {
-            question: "How do you ensure cost control on projects?",
-            answer: "We implement strict cost controls: detailed line-item budgets, competitive bidding on all trades, purchase order systems, weekly cost reports, and change order management. Investors receive real-time access to our project management portal showing all expenses and commitments."
+            question: "Do you provide post-acquisition renovation estimates?",
+            answer: "Yes, we offer integrated services. Our preacquisition report includes a detailed renovation scope with cost projections. After purchase, we provide updated estimates reflecting actual conditions and help develop a phased implementation plan for North Carolina properties."
         },
         {
-            question: "Can I use my own subcontractors and suppliers?",
-            answer: "Absolutely. Our model is flexible - you can use your preferred tradespeople, or we can leverage our vetted network of NC-licensed subcontractors. We'll manage them either way, ensuring quality and schedule compliance while maintaining your cost-plus advantage."
+            question: "How accurate are your cost estimates?",
+            answer: "Our estimates are accurate within 5-7% of actual costs for NC properties. We maintain real-time databases of material and labor costs across North Carolina regions. We also factor in local permitting fees, HOA requirements, and NC-specific building codes."
         },
         {
-            question: "How do you handle change orders?",
-            answer: "All change orders are documented with detailed cost breakdowns before work begins. We provide transparent pricing showing actual material/labor costs plus our management fee. No work proceeds without your written approval, ensuring complete budget control."
+            question: "Can you help identify hidden problems before purchase?",
+            answer: "Absolutely. Our consultants specialize in uncovering costly issues like foundation problems, moisture damage, outdated electrical systems, and environmental hazards. We've helped NC investors avoid properties with $50k+ in hidden repair costs."
         },
         {
-            question: "What types of investment properties do you work on?",
-            answer: "We specialize in all investor property types: single-family rentals, multi-unit buildings, fix-and-flips, commercial conversions, student housing, vacation rentals, and mixed-use developments. Our team has experience with properties across North Carolina's diverse markets."
+            question: "Do you work with out-of-state investors buying NC properties?",
+            answer: "Yes, 40% of our clients are out-of-state investors. We provide virtual consultations, detailed video walkthroughs, and coordinate with local agents. Our reports include explanations of NC-specific considerations like hurricane mitigation and humidity control."
         },
         {
-            question: "Do you provide project financing options?",
-            answer: "While we don't provide direct financing, we work with a network of NC-based hard money lenders, private lenders, and traditional banks specializing in investment properties. We can facilitate introductions and provide construction budgets/draw schedules for loan applications."
+            question: "What areas of North Carolina do you serve?",
+            answer: "We cover all major NC markets including Raleigh-Durham, Charlotte, Asheville, Greensboro, Winston-Salem, Wilmington, and surrounding areas. Our consultants have localized knowledge of 120+ municipalities and their specific regulations."
         },
         {
-            question: "How do you ensure timely project completion?",
-            answer: "We guarantee completion dates through detailed scheduling, trade coordination, and milestone-based payments. Our project management portal provides real-time progress tracking. For flips, we typically complete projects 20-30% faster than traditional contractors due to our investor-focused processes."
+            question: "How do your services reduce investment risk?",
+            answer: "Our clients avoid overpaying by an average of 12% and reduce renovation budget overruns by 22%. We identify 92% of major issues pre-purchase, giving you negotiation leverage and preventing costly surprises after acquisition."
         }
     ];
 
@@ -65,7 +65,6 @@ export default function ServiceHero() {
         <div className="bg-white text-gray-900">
             <section className="relative overflow-hidden bg-white text-black">
 
-
                 <div className="relative z-10 container mx-auto px-8 py-4  lg:py-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12">
                         {/* Text Content */}
@@ -81,30 +80,30 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Cost-Plus Construction Services for Investors</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white"> Preacquisition Property Estimates & Consulting</span>
                             </motion.h2>
 
                             <motion.h1
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="text-xl  lg:text-4xl font-bold leading-tight mb-2 lg:mb-6"
+                                className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Cost-Plus Construction Services for Real Estate Investors in North Carolina
+                                Preacquisition Property Estimates & Consulting in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/cost-plus.jpg"
-                                        alt="Real estate investment property under construction"
-                                        title="Cost-plus construction services for investors"
+                                        src="/property-consulting.jpg"
+                                        alt="Property investment consulting in North Carolina"
+                                        title="Preacquisition estimates for NC properties"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Investor-Focused Construction</h3>
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Smart Property Investments</h3>
                                 </div>
                             </div>
 
@@ -114,10 +113,9 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Maximize your investment returns with our transparent cost-plus construction model. 
-                                Designed specifically for real estate investors in North Carolina, we provide 
-                                complete cost visibility, rigorous budget control, and professional project 
-                                management to optimize your renovation ROI.
+                                Make confident property investment decisions with our preacquisition consulting services. 
+                                Serving investors across North Carolina, we provide accurate renovation estimates, 
+                                risk assessments, and acquisition strategies to maximize your ROI in NC's competitive real estate market.
                             </motion.p>
 
                             {/* Benefits */}
@@ -128,12 +126,12 @@ export default function ServiceHero() {
                                 className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10"
                             >
                                 {[
-                                    "Complete cost transparency",
-                                    "No hidden markups on materials",
-                                    "Real-time budget tracking",
-                                    "Guaranteed completion timelines",
-                                    "Professional project management",
-                                    "Maximized renovation ROI"
+                                    "Accurate renovation cost projections",
+                                    "Hidden defect identification",
+                                    "Local market analysis",
+                                    "Negotiation leverage reports",
+                                    "ROI calculations",
+                                    "Virtual consultation options"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-2">
                                         <span className="text-green-400 mt-1">✓</span>
@@ -149,13 +147,13 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.6, duration: 0.6 }}
                                 className="flex flex-wrap gap-4"
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get consultation quote' passHref>
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
-                                        className="w-52 bg-b1 shine-button text-white font-bold py-3 px-8 text-lg shadow-lg flex items-center justify-center gap-2 transition-all duration-300"
+                                        className="w-72 bg-b1 shine-button text-white font-bold py-3 px-8 text-lg shadow-lg flex items-center justify-center gap-2 transition-all duration-300"
                                     >
-                                        Request a Quote
+                                        Request Consultation
                                     </motion.button>
                                 </Link>
 
@@ -163,13 +161,11 @@ export default function ServiceHero() {
                                     <motion.button
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.97 }}
-                                        className="w-52 bg-white text-b1 font-bold py-3 px-8 text-lg border border-b1 flex items-center justify-center gap-2 transition-all duration-300"
+                                        className="w-72 bg-white text-b1 font-bold py-3 px-8 text-lg border border-b1 flex items-center justify-center gap-2 transition-all duration-300"
                                     >
                                         View Projects
                                     </motion.button>
                                 </Link>
-
-
                             </motion.div>
                         </motion.div>
 
@@ -183,26 +179,22 @@ export default function ServiceHero() {
                             <div className="relative overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
-                                        src="/cost-plus.jpg"
-                                        alt="Construction project management for investors"
-                                        title="Cost-plus construction services in NC"
+                                        src="/property-consulting.jpg"
+                                        alt="Property investment consulting in North Carolina"
+                                        title="Preacquisition estimates for NC properties"
                                         width={800}
                                         height={600}
-                                        className="object-fit w-full h-[60vh]"
+                                        className="object-cover w-full h-96"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-xl">Investor-Focused Construction</h3>
-                                    <p className="text-blue-100">Maximizing ROI since 2012</p>
+                                    <h3 className="text-white font-bold text-xl">Investment Protection</h3>
+                                    <p className="text-blue-100">Serving NC real estate investors since 2023</p>
                                 </div>
                             </div>
-
-                            {/* Get Quote Button below image */}
-
                         </motion.div>
                     </div>
                 </div>
-
 
             </section>
             <Home4/>
@@ -224,7 +216,7 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Cost-Plus Construction for Real Estate Investors
+                            Preacquisition Property Analysis & Cost Consulting
                         </motion.h2>
                         <div className="h-1 w-24 bg-b1 mx-auto "></div>
                     </motion.div>
@@ -236,31 +228,30 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Maximize Your Investment Returns</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Make Smarter Investment Decisions</h3>
                             <p className="text-gray-700 mb-6">
-                                Our cost-plus construction model is designed specifically for real estate investors who demand 
-                                transparency and control. Unlike traditional fixed-bid contracts that include hidden markups, 
-                                our approach gives you direct access to actual costs plus a fixed management fee. This eliminates 
-                                contractor incentives to cut corners or use inferior materials.
+                                North Carolina's real estate market presents unique opportunities and challenges. 
+                                Our preacquisition consulting services give investors the critical insights needed to 
+                                avoid costly mistakes and maximize returns. We provide detailed renovation estimates, 
+                                risk assessments, and acquisition strategies tailored to NC's diverse markets from the 
+                                mountains to the coast.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving investors throughout North Carolina, we specialize in renovation projects that maximize 
-                                ARV (After Repair Value) while minimizing holding costs. From single-family flips to multi-unit 
-                                value-add projects, we provide the financial transparency and project oversight serious investors 
-                                require in today's competitive market.
+                                Serving investors throughout North Carolina, our team combines construction expertise with 
+                                local market knowledge. We've helped clients evaluate over $250M in NC property acquisitions, 
+                                identifying hidden costs and renovation potential that significantly impact investment ROI.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
-                                <h4 className="font-bold text-gray-900 mb-2">Why Investors Choose Cost-Plus Construction</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">Why Preacquisition Consulting is Essential</h4>
                                 <ul className="space-y-2">
                                     {[
-                                        "Eliminates 15-25% contractor markup on materials",
-                                        "Provides real-time budget tracking and control",
-                                        "Enables value engineering decisions during projects",
-                                        "Reduces project timelines by 20-30% on average",
-                                        "Increases ROI through efficient resource allocation",
-                                        "Minimizes change order disputes and delays",
-                                        "Provides detailed documentation for lender draws"
+                                        "Avoid overpaying by an average of 12%",
+                                        "Identify hidden repair costs before purchase",
+                                        "Accurately budget renovations and holding costs",
+                                        "Gain negotiation leverage with sellers",
+                                        "Prevent unexpected project delays in NC",
+                                        "Maximize property value and rental potential"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-start">
                                             <span className="text-b1 font-bold mr-2">✓</span>
@@ -277,32 +268,32 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Investor Construction Process</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Our Consulting Process</h3>
                             <div className="space-y-6">
                                 {[
                                     {
-                                        title: "Investment Analysis",
-                                        description: "We evaluate your property, comps, and target ARV to establish optimal renovation scope and budget."
+                                        title: "Property Evaluation & Walkthrough",
+                                        description: "We conduct thorough inspections (in-person or virtual) to assess condition and potential."
                                     },
                                     {
-                                        title: "Transparent Budgeting",
-                                        description: "Develop detailed line-item budget showing all expected costs plus our fixed management fee."
+                                        title: "Detailed Cost Analysis",
+                                        description: "Prepare accurate renovation estimates with line-item breakdowns for all work."
                                     },
                                     {
-                                        title: "Trade Partner Selection",
-                                        description: "Competitive bidding with our vetted network of NC subcontractors or incorporate your preferred trades."
+                                        title: "Risk Assessment Report",
+                                        description: "Identify structural, environmental, and regulatory risks specific to NC properties."
                                     },
                                     {
-                                        title: "Project Execution",
-                                        description: "Daily oversight with progress tracking, quality control, and real-time budget reporting."
+                                        title: "ROI Projections",
+                                        description: "Calculate potential returns based on comps, rental rates, and local market trends."
                                     },
                                     {
-                                        title: "Investor Reporting",
-                                        description: "Weekly updates with expense reports, photos, and ARV impact analysis."
+                                        title: "Acquisition Strategy",
+                                        description: "Develop negotiation tactics and optimal purchase price recommendations."
                                     },
                                     {
-                                        title: "Project Closeout",
-                                        description: "Final cost reconciliation, warranty documentation, and ROI analysis for future investments."
+                                        title: "Post-Acquisition Planning",
+                                        description: "Provide renovation sequencing and contractor selection guidance."
                                     }
                                 ].map((step, index) => (
                                     <div key={index} className="flex items-start">
@@ -318,13 +309,13 @@ export default function ServiceHero() {
                             </div>
 
                             <div className="mt-8 bg-white border border-gray-200  p-6 shadow-sm">
-                                <h4 className="font-bold text-gray-900 mb-2">Investment Property Specialties</h4>
+                                <h4 className="font-bold text-gray-900 mb-2">NC Property Types We Evaluate</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
-                                        "Fix & Flip Projects", "Single-Family Rentals", "Multi-Unit Renovations",
-                                        "Value-Add Conversions", "Student Housing Upgrades", "Vacation Rental Rehabs",
-                                        "Commercial-to-Residential", "Historic Property Renovations", "ADU Development",
-                                        "BRRRR Strategy Projects", "Wholesaler Renovations", "Portfolio Upgrades"
+                                        "Single-Family Homes", "Multi-Unit Properties", "Commercial Conversions",
+                                        "Fix-and-Flip Projects", "Rental Investments", "Vacation Rentals",
+                                        "Historic Renovations", "Land Development", "Mixed-Use Properties",
+                                        "Student Housing", "Senior Living", "Industrial Conversions"
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
@@ -340,7 +331,6 @@ export default function ServiceHero() {
             <Home5/>
             <Home6/>
             <Home7/>
-
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
@@ -359,10 +349,10 @@ export default function ServiceHero() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
                         >
-                            Cost-Plus Construction FAQs
+                            Preacquisition Consulting FAQs
                         </motion.h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Answers to common questions about our investor-focused construction services
+                            Common questions about property evaluation in North Carolina
                         </p>
                         <div className="h-1 w-24 bg-b1 mx-auto  mt-4"></div>
                     </motion.div>
@@ -440,7 +430,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4 }}
                             >
-                                Ready to Maximize Your Investment Returns?
+                                Ready to Invest with Confidence?
                             </motion.h3>
 
                             <motion.p
@@ -450,7 +440,7 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.5 }}
                             >
-                                Contact us today to discuss how our cost-plus model can increase your renovation ROI.
+                                Protect your investment with our expert preacquisition consulting services.
                             </motion.p>
 
                             <motion.div
@@ -460,17 +450,17 @@ export default function ServiceHero() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.6 }}
                             >
-                                <Link href="/get-quote" title='get free quote' passHref>
+                                <Link href="/get-quote" title='Get consultation quote' passHref>
                                     <motion.p
                                         className="border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3 hover:bg-white/10 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >
-                                        Request a Quote →
+                                        Schedule Consultation →
                                     </motion.p>
                                 </Link>
 
-                                <Link href="tel:+15512001350" title='Call construction company' passHref>
+                                <Link href="tel:+15512001350" title='Call investment consultants' passHref>
                                     <motion.p
                                         className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                         whileHover={{ scale: 1.05 }}
