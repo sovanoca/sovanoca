@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WhyChooseUs = () => {
     const [activeFeature, setActiveFeature] = useState(0);

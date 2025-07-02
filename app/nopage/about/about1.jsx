@@ -167,6 +167,7 @@ export default function AboutUs() {
                                     <Image
                                         src="/construction-team.webp"
                                         alt="SOVANOCA Construction Team"
+                                        title="SOVANOCA Construction Team"
                                         width={600}
                                         height={400}
                                         className="w-full h-auto object-cover border-4 border-b1"
@@ -384,6 +385,7 @@ export default function AboutUs() {
                                     <Image
                                         src={member.img}
                                         alt={member.name}
+                                        title={member.name}
                                         fill
                                         className="object-cover"
                                     />
@@ -451,6 +453,7 @@ export default function AboutUs() {
                                     <Image
                                         src={contractor.image}
                                         alt={contractor.name}
+                                        title={contractor.name}
                                         fill
                                         className="object-fit"
                                     />
@@ -513,7 +516,7 @@ export default function AboutUs() {
                             Request a Quote →
                         </motion.button>
                             </Link>
-                        <Link href="tel:+15512001350" passHref>
+                        <Link href="tel:+15512001350" title="Construction company's Phone number"  passHref>
                             <motion.p
                                 className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}

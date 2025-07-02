@@ -79,6 +79,7 @@ export default function Home() {
                             <Image
                                 src="/under-construction-building.webp"
                                 alt="Construction site in Greensboro"
+                                title="Construction site in Greensboro"
                                 fill
                                 className="object-cover"
                                 priority
@@ -117,6 +118,7 @@ export default function Home() {
                                 <Image
                                     src="/Engineers-discussing-projects1.webp"
                                     alt="Construction engineers in Greensboro"
+                                    title="Construction engineers in Greensboro"
                                     fill
                                     className="object-cover"
                                     priority

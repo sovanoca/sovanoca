@@ -1,266 +1,137 @@
-// components/Footer.js
 'use client';
-import { motion } from 'framer-motion';
 import Image from "next/image";
+import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import {
     FaFacebookF,
     FaXTwitter,
     FaGithub,
     FaLinkedinIn,
-    FaInstagram,
+    FaInstagram
 } from "react-icons/fa6";
 
 const Footer = () => {
-    // Animation variants
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1,
-                delayChildren: 0.2
-            }
-        }
-    };
-
-    const item = {
-        hidden: { opacity: 0, y: 20 },
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut"
-            }
-        }
-    };
-
-    const fadeIn = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                duration: 0.8
-            }
-        }
-    };
+    const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-b1 text-white py-16 px-6 md:px-16">
-            <div className="max-w-7xl mx-auto">
-                {/* Main Footer Content */}
-                <motion.div
-                    className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16"
-                    variants={container}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true }}
-                >
-                    {/* Logo + Intro */}
-                    <motion.div variants={item}>
-                        <div className="flex items-center gap-3 mb-6">
-                            <motion.div
-                                whileHover={{ rotate: 10 }}
-                                className="bg-[#0D1B2A] p-2 rounded-lg border border-blue-400"
-                            >
-                                <Image
-                                    src="/construction-company-logo.png"
-                                    alt="Logo"
-                                    width={100}
-                                    height={100}
-                                    className=""
-                                />
-                            </motion.div>
-
+        <footer className="bg-[#0D1B2A] text-gray-300 py-12 px-6 md:px-16">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+                {/* Logo and Description */}
+                <div>
+                    <Link href="/" title="Sovanoca Construction Home" aria-label="Sovanoca Construction Home">
+                        <div className="w-24 h-auto mb-4">
+                            <Image
+                                src="/construction-company-logo.png"
+                                alt="Sovanoca Construction Logo"
+                                title="Sovanoca Construction Logo"
+                                width={100}
+                                height={100}
+                                className="object-contain"
+                            />
                         </div>
-                        <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                            Transforming visions into reality with quality construction services
-                            that stand the test of time.
-                        </p>
+                    </Link>
+                    <p className="text-sm leading-relaxed">
+                        Transforming visions into reality with quality construction services that stand the test of time.
+                    </p>
 
-                        <motion.div
-                            className="flex gap-4 text-blue-400 text-lg mt-6"
-                            variants={fadeIn}
-                        >
-                            <motion.a
-                                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                                className="cursor-pointer transition-all"
-                            >
-                                <FaInstagram />
-                            </motion.a>
-                            <motion.a
-                                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                                className="cursor-pointer transition-all"
-                            >
-                                <FaFacebookF />
-                            </motion.a>
-                            <motion.a
-                                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                                className="cursor-pointer transition-all"
-                            >
-                                <FaXTwitter />
-                            </motion.a>
-                            <motion.a
-                                whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                                className="cursor-pointer transition-all"
-                            >
-                                <FaLinkedinIn />
-                            </motion.a>
-                        </motion.div>
-                    </motion.div>
-
-                    {/* Our Services */}
-                    <motion.div variants={item}>
-                        <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
-                            Our Services
-                        </h3>
-                        <ul className="space-y-3 text-sm">
-                            {["Building Construction", "Architecture Design", "Building Renovation",
-                                "Flooring & Roofing", "Building Maintenance"].map((service, i) => (
-                                    <motion.li
-                                        key={i}
-                                        whileHover={{
-                                            x: 10,
-                                            color: "#93c5fd"
-                                        }}
-                                        className="flex items-center gap-2 transition-colors cursor-pointer text-gray-300"
-                                    >
-                                        <span className="text-blue-400">→</span> {service}
-                                    </motion.li>
-                                ))}
-                        </ul>
-                    </motion.div>
-
-                    {/* Company */}
-                    <motion.div variants={item}>
-                        <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
-                            Company
-                        </h3>
-                        <ul className="space-y-3 text-sm">
-                            {["Services", "About Us", "Projects", "Blogs", "Contact"].map((item, i) => (
-                                <motion.li
-                                    key={i}
-                                    whileHover={{
-                                        x: 10,
-                                        color: "#93c5fd"
-                                    }}
-                                    className="flex items-center gap-2 transition-colors cursor-pointer text-gray-300"
-                                >
-                                    <span className="text-blue-400">→</span> {item}
-                                </motion.li>
-                            ))}
-                        </ul>
-                    </motion.div>
-
-                    {/* Contact Us */}
-                    <motion.div variants={item}>
-                        <h3 className="text-blue-400 font-semibold text-lg mb-6 pb-2 border-b border-gray-700">
-                            Contact Us
-                        </h3>
-                        <ul className="space-y-5 text-sm text-gray-300">
-                            <motion.li
-                                className="flex items-start gap-3"
-                                whileHover={{ x: 5 }}
-                            >
-                                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
-                                    <FaPhone className="text-blue-400 mt-0.5" />
-                                </div>
-                                <div>
-                                    <div className="font-medium text-white">Phone</div>
-                                    <div>+1 809 120 6705</div>
-                                </div>
-                            </motion.li>
-
-                            <motion.li
-                                className="flex items-start gap-3"
-                                whileHover={{ x: 5 }}
-                            >
-                                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
-                                    <FaEnvelope className="text-blue-400 mt-0.5" />
-                                </div>
-                                <div>
-                                    <div className="font-medium text-white">Email</div>
-                                    <div>infosovanoca@gmail.com</div>
-                                </div>
-                            </motion.li>
-
-                            <motion.li
-                                className="flex items-start gap-3"
-                                whileHover={{ x: 5 }}
-                            >
-                                <div className="bg-[#0D1B2A] p-2 rounded-full border border-blue-400">
-                                    <FaMapMarkerAlt className="text-blue-400 mt-0.5" />
-                                </div>
-                                <div>
-                                    <div className="font-medium text-white">Location</div>
-                                    <div>
-                                        7 Dundas Circle Suite G, <br /> Greensboro, NC 27403
-                                        
-                                    </div>
-                                </div>
-                            </motion.li>
-                        </ul>
-                    </motion.div>
-                </motion.div>
-
-                {/* Footer Bottom */}
-                <motion.div
-                    className="border-t border-gray-700 pt-8 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <div className="flex items-center gap-2">
-                        <span>Copyright © {new Date().getFullYear()} Sovanoca Construction.</span>
-
-                        <motion.a
-                            className="text-blue-400 hover:underline"
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            Privacy Policy
-                        </motion.a>
-                        <motion.a
-                            className="text-blue-400 hover:underline"
-                            whileHover={{ scale: 1.05 }}
-                        >
-                            Terms of Service
-                        </motion.a>
-                    </div>
-
-                    <motion.div
-                        className="flex gap-4 text-blue-400 text-lg"
-                        whileInView={{ opacity: 1 }}
-                        initial={{ opacity: 0 }}
-                        transition={{ delay: 0.3 }}
-                    >
-                        <motion.a
-                            whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                            className="cursor-pointer transition-all"
-                        >
+                    {/* Social Icons */}
+                    <div className="flex gap-4 text-xl text-white mt-4">
+                        <Link href="https://instagram.com" target="_blank" title="Instagram" aria-label="Instagram">
                             <FaInstagram />
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                            className="cursor-pointer transition-all"
-                        >
+                        </Link>
+                        <Link href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
                             <FaFacebookF />
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                            className="cursor-pointer transition-all"
-                        >
+                        </Link>
+                        <Link href="https://twitter.com" target="_blank" title="Twitter" aria-label="Twitter">
                             <FaXTwitter />
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ y: -5, color: "#93c5fd", scale: 1.2 }}
-                            className="cursor-pointer transition-all"
-                        >
+                        </Link>
+                        <Link href="https://linkedin.com" target="_blank" title="LinkedIn" aria-label="LinkedIn">
                             <FaLinkedinIn />
-                        </motion.a>
-                    </motion.div>
-                </motion.div>
+                        </Link>
+                    </div>
+                </div>
+
+                {/* Services */}
+                <div>
+                    <h3 className="text-white font-semibold text-lg mb-4">Services</h3>
+                    <ul className="space-y-2 text-sm">
+                        {[
+                            { name: "Painting Services", href: "/services/exterior-painting-services" },
+                            { name: "Waterproofing", href: "/services/waterproofing" },
+                            { name: "Flooring", href: "/services/flooring" },
+                            { name: "Consulting", href: "/services/preacquisition-property-estimates-consulting" },
+                            { name: "Home Alteration", href: "/services/home-layout-alteration" },
+                        ].map((link, index) => (
+                            <li key={index}>
+                                <Link href={link.href} title={`${link.name}`} className="hover:text-blue-300">
+                                     {link.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                {/* Company */}
+                <div>
+                    <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
+                    <ul className="space-y-2 text-sm">
+                        {[
+                            { name: "Services", href: "/services" },
+                            { name: "About Us", href: "/about-us" },
+                            { name: "Projects", href: "/projects" },
+                            // { name: "Blogs", href: "/blogs" },
+                            { name: "Contact", href: "/contact-us" },
+                        ].map((link, index) => (
+                            <li key={index}>
+                                <Link href={link.href} className="hover:text-blue-300">
+                                     {link.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                {/* Contact */}
+                <div>
+                    <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
+                    <ul className="space-y-4 text-sm">
+                        <li className="flex gap-3 items-start">
+                            <FaPhone className="text-white mt-1" />
+                            <div>
+                                <div className="font-medium text-white">Phone</div>
+                                <div>+1 809 120 6705</div>
+                            </div>
+                        </li>
+                        <li className="flex gap-3 items-start">
+                            <FaEnvelope className="text-white mt-1" />
+                            <div>
+                                <div className="font-medium text-white">Email</div>
+                                <div>infosovanoca@gmail.com</div>
+                            </div>
+                        </li>
+                        <li className="flex gap-3 items-start">
+                            <FaMapMarkerAlt className="text-white mt-1" />
+                            <div>
+                                <div className="font-medium text-white">Location</div>
+                                <div>
+                                    7 Dundas Circle Suite G, <br />
+                                    Greensboro, NC 27403
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            {/* Footer Bottom */}
+            <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+                <span className="text-gray-400 mb-4 md:mb-0">
+                    © {currentYear} Sovanoca Construction. All rights reserved.
+                </span>
+                {/* <div className="flex gap-4">
+                    <Link href="/privacy-policy" className="hover:text-blue-300">Privacy Policy</Link>
+                    <Link href="/terms-of-service" className="hover:text-blue-300">Terms of Service</Link>
+                </div> */}
             </div>
         </footer>
     );

@@ -239,6 +239,7 @@ export default function ProjectsPage() {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    title={project.title}
                     fill
                     className="object-cover"
                   />
@@ -302,6 +303,7 @@ export default function ProjectsPage() {
                 <Image
                   src={image}
                   alt={`Construction project ${index + 1}`}
+                  title={`Construction project ${index + 1}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -362,7 +364,7 @@ export default function ProjectsPage() {
                             Request a Quote →
                         </motion.button>
                           </Link>
-                        <Link href="tel:+15512001350" passHref>
+                        <Link href="tel:+15512001350" title="Construction company's Phone number" passHref>
                             <motion.p
                                 className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}

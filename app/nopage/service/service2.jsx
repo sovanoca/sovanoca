@@ -323,6 +323,7 @@ const ServicesSection = () => {
                                         <Image
                                             src={service.image}
                                             alt={service.title}
+                                            title={service.title}
                                             fill
                                             className="object-cover transition-transform duration-500"
                                             style={{ transform: hoveredCard === service.id ? 'scale(1.05)' : 'scale(1)' }}
@@ -362,7 +363,7 @@ const ServicesSection = () => {
                                             >
                                                 {service.description}
                                             </motion.p>
-                                            <Link href={`/services/${createSlug(service.title)}`} passHref>
+                                            <Link href={`/services/${createSlug(service.title)}`} title={`${service.title}`} passHref>
                                                 <motion.p
                                                     className="inline-flex items-center gap-1 bg-white text-gray-900 font-medium px-2 py-2  text-sm lg:text-base"
                                                     whileHover={{ scale: 1.03 }}

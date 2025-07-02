@@ -31,6 +31,7 @@ export default function HeroSection() {
           <Image
             src="/cta-box-img.png" // ✅ Replace with your image path
             alt="Construction Girl"
+            title="Construction Girl"
             width={400}
             height={500}
             className="hidden lg:flex object-contain h-auto w-full max-w-sm lg:max-w-md"
@@ -39,6 +40,7 @@ export default function HeroSection() {
           <Image
             src="/cta-box-img2.webp" // ✅ Replace with your image path
             alt="Construction Girl"
+            title="Construction Girl"
             width={400}
             height={500}
             className="lg:hidden object-contain h-auto w-full max-w-sm lg:max-w-md"

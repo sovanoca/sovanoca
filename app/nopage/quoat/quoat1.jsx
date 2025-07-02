@@ -103,14 +103,14 @@ const ContactUs = () => {
                             <div className="space-y-4">
                                 {/* WhatsApp */}
                                 <a
-                                    href="https://wa.me/917567393494?text=Hello%2C%20I%20have%20visited%20your%20company%27s%20website%20Designuix%20and%20I%20really%20like%20it.%20I%27m%20interested%20in%20your%20services.."
-                                    target="_blank"
+                                    href="tel:+15512001350"
+                                    title="compnay's phone number"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-between p-3  bg-blue-50 hover:bg-blue-100 transition"
+                                    className="flex items-center justify-between p-3 bg-blue-50 hover:bg-blue-100 transition"
                                 >
                                     <div className="flex items-center space-x-4">
-                                        <div className=" p-2 ">
-                                            <svg className="h-6 w-6 text-b1 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div className="p-2">
+                                            <svg className="h-6 w-6 text-b1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                             </svg>
                                         </div>
@@ -121,9 +121,10 @@ const ContactUs = () => {
                                     </div>
                                 </a>
 
+
                                 {/* Email */}
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 gap-4 bg-blue-50 hover:bg-blue-100 transition">
-                                    <a href={`mailto:${email}`} className="flex items-start sm:items-center gap-4">
+                                    <a href={`mailto:${email}`} title="compnay's email" className="flex items-start sm:items-center gap-4">
                                         <div className="p-2">
                                             <svg className="h-6 w-6 text-b1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path
@@ -197,7 +198,7 @@ const ContactUs = () => {
                                     {/* Phone Field */}
                                     <div>
                                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                                            Phone Number (WhatsApp)
+                                            Phone Number 
                                         </label>
                                         <div className="relative">
                                             <input

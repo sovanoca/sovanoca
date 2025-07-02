@@ -11,6 +11,7 @@ const ServiceHero = () => {
         <Image
           src="/service-hero.jpg"
           alt="Construction site"
+           title="Construction site"
           fill
           className="object-fit"
           priority

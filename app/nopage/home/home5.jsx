@@ -150,6 +150,7 @@ const ProjectsSection = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
+                  title={project.title}
                   fill
                   className="object-cover transition-transform duration-500"
                   style={{ transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)' }}
