@@ -7,48 +7,48 @@ const FAQSection = () => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     // Based on common construction industry FAQs
-  const faqs = [
-  {
-    question: "What types of construction projects do you handle in North Carolina?",
-    answer:
-      "As a leading construction company in North Carolina, we specialize in a wide range of residential and commercial construction projects. Our services include custom home construction, home remodeling, room additions, kitchen and bathroom renovations, and complete property renovations. On the commercial side, we handle office buildings, retail store fit-outs, restaurants, warehouses, and industrial facilities. We also offer foundation work, roofing, siding, and other exterior improvements tailored to North Carolina's unique climate and building codes. Whether you're in Charlotte, Raleigh, Greensboro, or anywhere else in NC, we have the experience and local expertise to deliver exceptional results."
-  },
-  {
-    question: "How long does a typical construction project take in North Carolina?",
-    answer:
-      "Construction timelines vary based on the scope, size, and complexity of your project. For instance, a small bathroom remodel in Raleigh may take 2–4 weeks, while building a custom home in the suburbs of Charlotte could take anywhere from 6 to 12 months. Commercial construction projects, such as office spaces or retail stores, usually take between 3 months to over a year, depending on permits, design approvals, and structural requirements. During the initial consultation, our team will assess your specific needs and provide a customized project timeline with key milestones so you always know what to expect."
-  },
-  {
-    question: "Are you licensed and insured to operate in North Carolina?",
-    answer:
-      "Yes, we are fully licensed, bonded, and insured to operate throughout North Carolina. We hold all required state and local licenses to ensure compliance with NC building codes and regulations. Our insurance coverage includes general liability, workers’ compensation, and builder’s risk policies to protect our clients and our team. All subcontractors we work with are also thoroughly vetted to ensure they meet our high standards for licensing and insurance. We’re happy to provide copies of our certifications and insurance documents upon request for your peace of mind."
-  },
-  {
-    question: "Do you provide free estimates for construction projects in NC?",
-    answer:
-      "Absolutely! We offer free, no-obligation consultations and detailed estimates for all types of construction projects in North Carolina. After understanding your goals, site conditions, and budget, we prepare a comprehensive written estimate outlining labor, materials, permits, and timelines. For complex or large-scale builds, we also offer paid feasibility studies that provide deeper insight into costs and potential challenges. This transparency helps North Carolina homeowners and business owners plan their investments more effectively."
-  },
-  {
-    question: "How do you manage design changes or modifications during a project?",
-    answer:
-      "We follow a structured and transparent change order process for any design or scope modifications. If you request changes during construction, we’ll document them in writing and provide an updated quote detailing any additional costs and how the timeline may be affected. No changes are implemented without your written approval. This process ensures clear communication and keeps your North Carolina construction project on budget and on schedule without surprises."
-  },
-  {
-    question: "What kind of warranty do you offer on your construction services in NC?",
-    answer:
-      "We stand behind the quality of our work with a comprehensive warranty package. All projects come with a standard 1-year workmanship warranty. For systems like plumbing, HVAC, and electrical, we offer a 2-year warranty. Structural components may be covered for up to 10 years depending on the project type. We also pass along all manufacturer warranties on materials and products used in your build. These warranties are provided in writing at the end of your project for full transparency and peace of mind."
-  },
-  {
-    question: "What safety measures do you follow on construction sites in North Carolina?",
-    answer:
-      "Safety is a cornerstone of our operations. All our North Carolina construction projects follow OSHA safety standards and local safety regulations. Our crew members undergo regular safety training and daily on-site briefings. We enforce strict safety protocols, including the use of personal protective equipment (PPE), secure job site access, and regular inspections. We also maintain a drug-free workplace policy. These measures ensure a safe working environment for our team and a secure construction site for you and your neighbors."
-  },
-  {
-    question: "Can I view your past construction projects in North Carolina?",
-    answer:
-      "Yes! We proudly showcase our work through a portfolio of completed construction projects across North Carolina, including cities like Raleigh, Durham, Wilmington, Asheville, and more. You can view our photo gallery and project case studies on our website. For serious inquiries, we can also arrange site visits (with prior client approval) or connect you with past clients for references. These examples demonstrate our craftsmanship, attention to detail, and the quality of service you can expect when working with us."
-  }
-];
+    const faqs = [
+        {
+            question: "What types of construction projects do you handle in North Carolina?",
+            answer:
+                "As a leading construction company in North Carolina, we specialize in a wide range of residential and commercial construction projects. Our services include custom home construction, home remodeling, room additions, kitchen and bathroom renovations, and complete property renovations. On the commercial side, we handle office buildings, retail store fit-outs, restaurants, warehouses, and industrial facilities. We also offer foundation work, roofing, siding, and other exterior improvements tailored to North Carolina's unique climate and building codes. Whether you're in Charlotte, Raleigh, Greensboro, or anywhere else in NC, we have the experience and local expertise to deliver exceptional results."
+        },
+        {
+            question: "How long does a typical construction project take in North Carolina?",
+            answer:
+                "Construction timelines vary based on the scope, size, and complexity of your project. For instance, a small bathroom remodel in Raleigh may take 2–4 weeks, while building a custom home in the suburbs of Charlotte could take anywhere from 6 to 12 months. Commercial construction projects, such as office spaces or retail stores, usually take between 3 months to over a year, depending on permits, design approvals, and structural requirements. During the initial consultation, our team will assess your specific needs and provide a customized project timeline with key milestones so you always know what to expect."
+        },
+        {
+            question: "Are you licensed and insured to operate in North Carolina?",
+            answer:
+                "Yes, we are fully licensed, bonded, and insured to operate throughout North Carolina. We hold all required state and local licenses to ensure compliance with NC building codes and regulations. Our insurance coverage includes general liability, workers’ compensation, and builder’s risk policies to protect our clients and our team. All subcontractors we work with are also thoroughly vetted to ensure they meet our high standards for licensing and insurance. We’re happy to provide copies of our certifications and insurance documents upon request for your peace of mind."
+        },
+        {
+            question: "Do you provide free estimates for construction projects in NC?",
+            answer:
+                "Absolutely! We offer free, no-obligation consultations and detailed estimates for all types of construction projects in North Carolina. After understanding your goals, site conditions, and budget, we prepare a comprehensive written estimate outlining labor, materials, permits, and timelines. For complex or large-scale builds, we also offer paid feasibility studies that provide deeper insight into costs and potential challenges. This transparency helps North Carolina homeowners and business owners plan their investments more effectively."
+        },
+        {
+            question: "How do you manage design changes or modifications during a project?",
+            answer:
+                "We follow a structured and transparent change order process for any design or scope modifications. If you request changes during construction, we’ll document them in writing and provide an updated quote detailing any additional costs and how the timeline may be affected. No changes are implemented without your written approval. This process ensures clear communication and keeps your North Carolina construction project on budget and on schedule without surprises."
+        },
+        {
+            question: "What kind of warranty do you offer on your construction services in NC?",
+            answer:
+                "We stand behind the quality of our work with a comprehensive warranty package. All projects come with a standard 1-year workmanship warranty. For systems like plumbing, HVAC, and electrical, we offer a 2-year warranty. Structural components may be covered for up to 10 years depending on the project type. We also pass along all manufacturer warranties on materials and products used in your build. These warranties are provided in writing at the end of your project for full transparency and peace of mind."
+        },
+        {
+            question: "What safety measures do you follow on construction sites in North Carolina?",
+            answer:
+                "Safety is a cornerstone of our operations. All our North Carolina construction projects follow OSHA safety standards and local safety regulations. Our crew members undergo regular safety training and daily on-site briefings. We enforce strict safety protocols, including the use of personal protective equipment (PPE), secure job site access, and regular inspections. We also maintain a drug-free workplace policy. These measures ensure a safe working environment for our team and a secure construction site for you and your neighbors."
+        },
+        {
+            question: "Can I view your past construction projects in North Carolina?",
+            answer:
+                "Yes! We proudly showcase our work through a portfolio of completed construction projects across North Carolina, including cities like Raleigh, Durham, Wilmington, Asheville, and more. You can view our photo gallery and project case studies on our website. For serious inquiries, we can also arrange site visits (with prior client approval) or connect you with past clients for references. These examples demonstrate our craftsmanship, attention to detail, and the quality of service you can expect when working with us."
+        }
+    ];
 
 
     // Animation variants
@@ -211,26 +211,26 @@ const FAQSection = () => {
                             transition={{ delay: 0.6 }}
                         >
                             <Link href="/get-quote">
-                            <motion.button
-                                className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3  hover:bg-white/10 transition flex items-center justify-center gap-2"
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
+                                <motion.button
+                                    className=" border-2 shine-button border-white bg-b1 text-white font-bold px-8 py-3  hover:bg-white/10 transition flex items-center justify-center gap-2"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
                                 >
-                                Request a Quote →
-                            </motion.button>
-                                </Link>
-                           <Link href="tel:+15512001350" title="Construction company's Phone number" passHref>
-                                    <motion.p
-                                        className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                        </svg>
-                                        Call Us: (551) 200-1350
-                                    </motion.p>
-                                </Link>
+                                    Request a Quote →
+                                </motion.button>
+                            </Link>
+                            {/* <Link href="tel:+15512001350" title="Construction company's Phone number" passHref>
+                                <motion.p
+                                    className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                    </svg>
+                                    Call Us: (551) 200-1350
+                                </motion.p>
+                            </Link> */}
 
 
                         </motion.div>

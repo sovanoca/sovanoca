@@ -102,7 +102,7 @@ const ContactUs = () => {
 
                             <div className="space-y-4">
                                 {/* WhatsApp */}
-                                <a
+                                {/* <a
                                     href="tel:+15512001350"
                                     title="compnay's phone number"
                                     rel="noopener noreferrer"
@@ -119,7 +119,7 @@ const ContactUs = () => {
                                             <p className="text-gray-600">(551) 200-1350</p>
                                         </div>
                                     </div>
-                                </a>
+                                </a> */}
 
 
                                 {/* Email */}

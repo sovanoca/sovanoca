@@ -52,9 +52,7 @@ export default function Home() {
                     {/* Right Text */}
                     <motion.div className="hidden lg:flex w-full lg:w-1/2 items-end pl-20" variants={item}>
                         <motion.p className="text-gray-600 text-base lg:text-lg" variants={item}>
-                            Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
-
-                            From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
+                            Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results. From residential remodels to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
                         </motion.p>
 
                     </motion.div>
@@ -95,9 +93,7 @@ export default function Home() {
                             animate="show"
                         >
                             <motion.p className="text-gray-600 text-base lg:text-lg" variants={item}>
-                                Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results.
-
-                                From new home construction to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
+                               Based in Greensboro, North Carolina, we proudly serve clients across the state—delivering exceptional craftsmanship, reliable project management, and on-time results. From residential remodels to commercial renovations, we're the construction company North Carolina trusts for dependable service and lasting results.
                             </motion.p>
                         </motion.div>
 

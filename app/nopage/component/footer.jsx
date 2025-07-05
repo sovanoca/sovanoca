@@ -36,18 +36,18 @@ const Footer = () => {
 
                     {/* Social Icons */}
                     <div className="flex gap-4 text-xl text-white mt-4">
-                        <Link href="https://instagram.com" target="_blank" title="Instagram" aria-label="Instagram">
+                        <Link href="https://www.instagram.com/sovanoca?igsh=a2hqaGs0NngwdHZy" target="_blank" title="Instagram" aria-label="Instagram">
                             <FaInstagram />
                         </Link>
-                        <Link href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+                        <Link href="https://www.facebook.com/profile.php?id=61569272357353&mibextid=wwXIfr&rdid=Wqs0ulDuw6YnwikU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1FegLHx3rc%2F%3Fmibextid%3DwwXIfr#" target="_blank" title="Facebook" aria-label="Facebook">
                             <FaFacebookF />
                         </Link>
-                        <Link href="https://twitter.com" target="_blank" title="Twitter" aria-label="Twitter">
+                        {/* <Link href="https://twitter.com" target="_blank" title="Twitter" aria-label="Twitter">
                             <FaXTwitter />
                         </Link>
                         <Link href="https://linkedin.com" target="_blank" title="LinkedIn" aria-label="LinkedIn">
                             <FaLinkedinIn />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 
@@ -95,13 +95,13 @@ const Footer = () => {
                 <div>
                     <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
                     <ul className="space-y-4 text-sm">
-                        <li className="flex gap-3 items-start">
+                        {/* <li className="flex gap-3 items-start">
                             <FaPhone className="text-white mt-1" />
                             <div>
                                 <div className="font-medium text-white">Phone</div>
                                 <div>+1 809 120 6705</div>
                             </div>
-                        </li>
+                        </li> */}
                         <li className="flex gap-3 items-start">
                             <FaEnvelope className="text-white mt-1" />
                             <div>

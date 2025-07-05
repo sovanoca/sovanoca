@@ -14,10 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sovanoca",
-  description: "Construction Company",
+  metadataBase: new URL("https://sovanoca.com"),
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

@@ -77,7 +77,7 @@ export default function AboutUsHero() {
                         </Link>
                     </motion.div>
 
-                    <Link href="tel:+15512001350" title="Construction company's Phone number" passHref>
+                    {/* <Link href="tel:+15512001350" title="Construction company's Phone number" passHref>
                         <motion.p
                             className="bg-white text-b1 border-2 border-b1 font-bold px-6 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                             whileHover={{ scale: 1.05 }}
@@ -88,7 +88,7 @@ export default function AboutUsHero() {
                             </svg>
                             Call Us: (551) 200-1350
                         </motion.p>
-                    </Link>
+                    </Link> */}
                 </div>
             </motion.div>
         </div>

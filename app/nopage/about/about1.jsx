@@ -516,7 +516,7 @@ export default function AboutUs() {
                             Request a Quote →
                         </motion.button>
                             </Link>
-                        <Link href="tel:+15512001350" title="Construction company's Phone number"  passHref>
+                        {/* <Link href="tel:+15512001350" title="Construction company's Phone number"  passHref>
                             <motion.p
                                 className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05 }}
@@ -527,7 +527,7 @@ export default function AboutUs() {
                                 </svg>
                                 Call Us: (551) 200-1350
                             </motion.p>
-                        </Link>
+                        </Link> */}
 
 
                     </motion.div>
