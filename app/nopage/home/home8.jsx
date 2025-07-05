@@ -98,7 +98,7 @@ const FAQSection = () => {
                     >
                         Frequently Asked Questions
                     </motion.h2>
-                    <motion.h1
+                    <motion.h2
                         className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ const FAQSection = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         Construction Questions Answered
-                    </motion.h1>
+                    </motion.h2>
                     <motion.div
                         className="h-1 w-20 bg-b1 mx-auto "
                         initial={{ width: 0 }}
@@ -134,9 +134,9 @@ const FAQSection = () => {
                                 className="w-full flex justify-between items-center p-6 text-left bg-white hover:bg-gray-50 transition-colors"
                                 onClick={() => toggleAccordion(index)}
                             >
-                                <h3 className="text-lg md:text-xl font-semibold text-gray-900 pr-4">
+                                <h2 className="text-lg md:text-xl font-semibold text-gray-900 pr-4">
                                     {faq.question}
-                                </h3>
+                                </h2>
                                 <motion.div
                                     animate={{ rotate: activeIndex === index ? 180 : 0 }}
                                     transition={{ duration: 0.3 }}

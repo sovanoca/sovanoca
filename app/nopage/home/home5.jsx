@@ -183,7 +183,7 @@ const ProjectsSection = () => {
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 w-full p-5 md:p-6 text-white z-10">
-                <motion.h3
+                <motion.h2
                   className="text-xl md:text-2xl font-bold mb-2"
                   initial={false}
                   animate={{
@@ -195,7 +195,7 @@ const ProjectsSection = () => {
                   }}
                 >
                   {project.title}
-                </motion.h3>
+                </motion.h2>
 
                 <motion.div
                   className="overflow-hidden p-2"
