@@ -381,7 +381,7 @@ export default function AboutUs() {
                                 variants={item}
                                 className="bg-white overflow-hidden shadow-md"
                             >
-                                <div className="relative h-80 bg-gray-100">
+                                <div className="relative h-[55vh] lg:h-[40vh] bg-gray-100">
                                     <Image
                                         src={member.img}
                                         alt={member.name}
