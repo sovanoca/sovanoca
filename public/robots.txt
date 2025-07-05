@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sovanoca.com
+
+# Sitemaps
+Sitemap: https://sovanoca.com/sitemap.xml
