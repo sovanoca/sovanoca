@@ -192,7 +192,7 @@ const WhyChooseUs = () => {
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
                         <div className="bg-b1  shadow-2xl p-8 text-white relative overflow-hidden h-full w-full">
-                            <div className="absolute top-0 left-0 w-full h-full bg-[url('/texture.png')] opacity-10" />
+                             
                             <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                             <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 

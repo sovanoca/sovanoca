@@ -323,7 +323,7 @@ export default function ProjectsPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
             >
-                <div className="absolute inset-0 bg-[url('/texture.png')] opacity-10" />
+                
                 <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                 <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
