@@ -27,10 +27,10 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
-      title: "Duplex in Danville, NC",
+      title: "Duplex in Danville, Va",
       description: "Modern duplex construction with energy-efficient design and premium finishes.",
       image: "/duplex-danville.jpeg",
-      location: "Danville, NC",
+      location: "Danville, Va",
       year: "2023",
       category: "Residential"
     },

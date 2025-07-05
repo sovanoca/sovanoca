@@ -7,8 +7,9 @@
   src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-size: larger;
+  font-display: swap; /* ✅ This line fixes the FCP issue */
 }
+
 
 .vintage {
   font-family: 'YourFont', sans-serif;

@@ -131,25 +131,25 @@ export default function Home() {
                                 animate="show"
                             >
                                 <Link href="/get-quote" passHref>
-                                    <motion.p
+                                    <motion.button
                                         className="flex-1 text-center shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 hover:bg-b1 transition shadow-md"
                                         variants={item}
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.98 }}
                                     >
                                         Request a Quote
-                                    </motion.p>
+                                    </motion.button>
                                 </Link>
 
                                 <Link href="/projects" passHref>
-                                    <motion.p
+                                    <motion.button
                                         className="flex-1 text-center bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 border border-gray-300 hover:bg-gray-50 transition shadow-md"
                                         variants={item}
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.98 }}
                                     >
                                         View Projects
-                                    </motion.p>
+                                    </motion.button>
                                 </Link>
                             </motion.div>
 

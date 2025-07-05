@@ -381,13 +381,13 @@ export default function AboutUs() {
                                 variants={item}
                                 className="bg-white overflow-hidden shadow-md"
                             >
-                                <div className="relative h-72 bg-gray-100">
+                                <div className="relative h-80 bg-gray-100">
                                     <Image
                                         src={member.img}
                                         alt={member.name}
                                         title={member.name}
                                         fill
-                                        className="object-cover"
+                                        className="object-fit"
                                     />
                                 </div>
                                 <div className="p-6 border-t-4 border-b1">
