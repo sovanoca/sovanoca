@@ -115,8 +115,8 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your hospitality property with our comprehensive renovation solutions. 
-                                Serving hotels  across North Carolina, we specialize in guest room updates, 
+                                Transform your hospitality property with our comprehensive renovation solutions.
+                                Serving hotels  across North Carolina, we specialize in guest room updates,
                                 lobby transformations, and facility upgrades that enhance guest experience and property value.
                             </motion.p>
 
@@ -202,8 +202,8 @@ export default function ServiceHero() {
 
 
             </section>
-            <Home4/>
-            
+            <Home4 />
+
             {/* Service Description Section */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -235,15 +235,15 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Revitalize Your Hospitality Property</h3>
                             <p className="text-gray-700 mb-6">
-                                Our hotel renovation services are designed to modernize your property while 
-                                maximizing return on investment. We understand the hospitality industry's unique needs - 
-                                creating spaces that are not only beautiful but also durable, functional, and compliant 
+                                Our hotel renovation services are designed to modernize your property while
+                                maximizing return on investment. We understand the hospitality industry's unique needs -
+                                creating spaces that are not only beautiful but also durable, functional, and compliant
                                 with all regulations.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving properties throughout North Carolina, from boutique hotels to national chains, 
-                                we specialize in renovations that enhance guest satisfaction, improve operational efficiency, 
-                                and increase revenue potential. Our team handles everything from cosmetic updates to 
+                                Serving properties throughout North Carolina, from boutique hotels to national chains,
+                                we specialize in renovations that enhance guest satisfaction, improve operational efficiency,
+                                and increase revenue potential. Our team handles everything from cosmetic updates to
                                 complete property transformations.
                             </p>
 
@@ -322,7 +322,7 @@ export default function ServiceHero() {
                                         "Meeting Space Modernization", "ADA Compliance", "Lighting Upgrades",
                                         "Flooring Replacement", "HVAC Improvements", "Signage Installation"
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -332,10 +332,41 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            
-            <Home5/>
-            <Home6/>
-            <Home7/>
+            <section className="container mx-auto bg-white border  shadow-md p-6 my-12">
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                    {/* Image */}
+                    <div className="overflow-hidden">
+                        <Image
+                            src="/hotel-renovation-benefits-vs-cost-north-carolina-guide.jpg"
+                            alt="Hotel Renovation Benefits vs. Cost"
+                            width={600}
+                            height={400}
+                            className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+
+                    {/* Content */}
+                    <div>
+                        <p className="text-sm text-gray-500 mb-2">Published on July 11, 2025</p>
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                            Hotel Renovation Benefits vs. Cost: A North Carolina Owner's Strategic Guide
+                        </h3>
+                        <p className="text-gray-700 mb-4">
+                            Discover the true value of hotel renovations in North Carolina. Learn how strategic upgrades can boost guest satisfaction, increase bookings, and outweigh renovation costs in the long run.
+                        </p>
+                        <Link
+                            href="/blogs/hotel-renovation-benefits-vs-cost-north-carolina-guide"
+                            className="inline-block bg-black text-white px-5 py-2  hover:bg-gray-800 transition"
+                        >
+                            Read Full Guide
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <Home5 />
+            <Home6 />
+            <Home7 />
 
 
             {/* FAQ Section */}
@@ -424,7 +455,7 @@ export default function ServiceHero() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        
+
                         <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
