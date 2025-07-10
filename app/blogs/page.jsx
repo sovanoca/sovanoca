@@ -1,62 +1,62 @@
 import Blog1 from "../nopage/blog/blog1"
 
 export const metadata = {
-    title: "Web Design & SEO Blog – Tips, Trends & Insights | Designuix",
+  title: "Construction Blog – Renovation Tips, Real Estate ROI & Strategy | Sovanoca",
+  description:
+    "Explore expert articles from Sovanoca on hotel renovations, residential remodeling, and construction ROI strategies in North Carolina. Stay informed and maximize your property value.",
+  keywords: [
+    "construction blog",
+    "hotel renovation tips",
+    "residential remodeling strategies",
+    "real estate ROI North Carolina",
+    "renovation insights",
+    "contractor advice",
+    "property value improvement",
+    "North Carolina construction trends",
+    "Sovanoca blog",
+    "commercial renovation blog",
+  ],
+  alternates: {
+    canonical: "/blogs",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  authors: [{ name: "Sovanoca", url: "https://sovanoca.com" }],
+  creator: "Sovanoca",
+  publisher: "Sovanoca",
+  openGraph: {
+    title: "Construction Blog – Renovation Tips, Real Estate ROI & Strategy | Sovanoca",
     description:
-        "Read expert articles from Designuix on web design, SEO, and digital growth. Stay ahead with actionable insights, tutorials, and strategies for building high-converting websites.",
-    keywords: [
-        "web design blog",
-        "seo tips",
-        "website development insights",
-        "digital marketing blog",
-        "web development articles",
-        "website optimization",
-        "seo for small businesses",
-        "custom website blog",
-        "Designuix blog",
-        "web strategy tips",
-        "Designuix",
+      "Get expert insights on hotel and residential renovations, North Carolina market dynamics, and maximizing ROI through strategic construction projects.",
+    url: "https://sovanoca.com/blogs",
+    siteName: "Sovanoca",
+    images: [
+      {
+        url: "https://sovanoca.com/opengraph.webp", // Use your OG blog image
+        alt: "Sovanoca Blog - Construction Insights and Renovation Strategy",
+      },
     ],
-    alternates: {
-        canonical: "/blogs",
-    },
-    robots: {
-        index: true,
-        follow: true,
-        nocache: false,
-        googleBot: {
-            index: true,
-            follow: true,
-        },
-    },
-    authors: [{ name: "Designuix", url: "https://designuix.com" }],
-    creator: "Designuix",
-    publisher: "Designuix",
-    openGraph: {
-        title: "Web Design & SEO Blog – Tips, Trends & Insights | Designuix",
-        description:
-            "Explore the Designuix blog for expert insights on web design, SEO, ecommerce, and digital growth strategies. Learn how to improve your online presence.",
-        url: "https://designuix.com/blogs",
-        siteName: "Designuix",
-        images: [
-            {
-                url: "https://designuix.com/opengraph-designuix.png", // ✅ Replace with actual OG image
-                alt: "Designuix Blog - Web Design & SEO Insights",
-            },
-        ],
-        locale: "en_US",
-        type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Web Design & SEO Blog – Tips, Trends & Insights | Designuix",
-        description:
-            "Get practical tips and strategies from the Designuix team on web design, SEO, and online growth. Perfect for startups, founders, and marketers.",
-        images: ["https://designuix.com/opengraph-designuix.png"], // ✅ Replace if you have a better blog OG image
-        creator: "@designuix_team",
-    },
-    metadataBase: new URL("https://designuix.com"),
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Construction Blog – Renovation Tips, Real Estate ROI & Strategy | Sovanoca",
+    description:
+      "Sovanoca shares renovation strategy, real estate tips, and expert construction insights tailored for property owners in North Carolina.",
+    images: ["https://sovanoca.com/opengraph.webp"],
+    creator: "@sovanoca_team",
+  },
+  metadataBase: new URL("https://sovanoca.com"),
 };
+
 
 
 
