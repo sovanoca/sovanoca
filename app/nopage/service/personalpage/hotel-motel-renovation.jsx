@@ -91,7 +91,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Hotel & Motel Renovation Services in North Carolina
+                                Hotel Renovation company in North Carolina
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
@@ -116,7 +116,7 @@ export default function ServiceHero() {
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
                                 Transform your hospitality property with our comprehensive renovation solutions. 
-                                Serving hotels and motels across North Carolina, we specialize in guest room updates, 
+                                Serving hotels  across North Carolina, we specialize in guest room updates, 
                                 lobby transformations, and facility upgrades that enhance guest experience and property value.
                             </motion.p>
 
@@ -235,7 +235,7 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Revitalize Your Hospitality Property</h3>
                             <p className="text-gray-700 mb-6">
-                                Our hotel and motel renovation services are designed to modernize your property while 
+                                Our hotel renovation services are designed to modernize your property while 
                                 maximizing return on investment. We understand the hospitality industry's unique needs - 
                                 creating spaces that are not only beautiful but also durable, functional, and compliant 
                                 with all regulations.

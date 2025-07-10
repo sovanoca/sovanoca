@@ -2,16 +2,22 @@ import Comp1 from "../../nopage/service/personalpage/hotel-motel-renovation";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Hotel & Motel Renovation Services in North Carolina | Sovanoca",
+  title: "Hotel Renovation company in North Carolina | Sovanoca",
   description:
-    "Upgrade your hospitality property with Sovanoca’s expert hotel & motel renovation services in North Carolina. From interior makeovers to structural updates, we do it all.",
+    "Upgrade your hospitality property with Sovanoca’s expert hotel renovation company in North Carolina. From interior makeovers to structural updates, we do it all.",
   keywords: [
+    "hotel renovation companies nc",
+    "hotel renovation contractors nc",
+    "hotel renovation in north carolina",
     "hotel renovation North Carolina",
-    "motel renovation services NC",
-    "hospitality renovation contractor NC",
-    "hotel remodeling North Carolina",
-    "motel upgrades NC",
-    "Sovanoca hotel services",
+    "hotel remodeling services",
+    "hotel renovation",
+    "hotel renovation solutions",
+    "hotel remodeling specialists",
+    "hotel renovation services",
+    "hotel remodeling",
+    "hotel renovation specialists",
+    "hotel remodeling companies"
   ],
   alternates: {
     canonical: "/services/hotel-motel-renovation",
@@ -29,15 +35,15 @@ export const metadata = {
   creator: "Sovanoca",
   publisher: "Sovanoca",
   openGraph: {
-    title: "Hotel & Motel Renovation Services in NC | Sovanoca",
+    title: "Hotel Renovation company in North Carolina | Sovanoca",
     description:
-      "Sovanoca offers professional hotel and motel renovation services across North Carolina. Interior upgrades, exterior improvements, and full-scale remodeling available.",
+      "Sovanoca offers professional hotel renovation services across North Carolina. Interior upgrades, exterior improvements, and full-scale remodeling available.",
     url: "https://sovanoca.com/services/hotel-motel-renovation",
     siteName: "Sovanoca",
     images: [
       {
         url: "https://sovanoca.com/opengraph.webp",
-        alt: "Hotel & Motel Renovation – Sovanoca NC",
+        alt: "Hotel Renovation – Sovanoca NC",
       },
     ],
     locale: "en_US",
@@ -45,9 +51,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hotel & Motel Renovation Services in NC | Sovanoca",
+    title: "Hotel Renovation company in North Carolina | Sovanoca",
     description:
-      "Renovate your hotel or motel in North Carolina with Sovanoca’s expert construction and remodeling services. Start your hospitality upgrade today.",
+      "Renovate your hotel in North Carolina with Sovanoca’s expert construction and remodeling services. Start your hospitality upgrade today.",
     images: ["https://sovanoca.com/opengraph.webp"],
   },
   metadataBase: new URL("https://sovanoca.com"),
@@ -57,8 +63,8 @@ export default function ServicePage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Hotel & Motel Renovation Services",
-    "serviceType": "Hospitality Renovation; Hotel and Motel Remodeling",
+    "name": "Hotel Renovation Company",
+    "serviceType": "Hospitality Renovation; Hotel Remodeling",
     "provider": {
       "@type": "Organization",
       "name": "Sovanoca",

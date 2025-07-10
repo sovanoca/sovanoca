@@ -125,14 +125,14 @@ export default function Home() {
                             
 
                             <motion.div
-                                className="flex flex-col sm:flex-row gap-3 lg:gap-4"
+                                className="flex flex-col w-full lg:flex-row gap-3 lg:gap-4"
                                 variants={container}
                                 initial="hidden"
                                 animate="show"
                             >
-                                <Link href="/get-quote" passHref>
+                                <Link className="flex-1 text-center shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 hover:bg-b1 transition shadow-md" href="/get-quote" passHref>
                                     <motion.button
-                                        className="flex-1 text-center shine-button bg-b1 text-white text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 hover:bg-b1 transition shadow-md"
+                                        
                                         variants={item}
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.98 }}
@@ -141,9 +141,9 @@ export default function Home() {
                                     </motion.button>
                                 </Link>
 
-                                <Link href="/projects" passHref>
+                                <Link href="/projects" className="flex-1 text-center bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 border border-gray-300 hover:bg-gray-50 transition shadow-md" passHref>
                                     <motion.button
-                                        className="flex-1 text-center bg-white text-gray-800 text-base sm:text-xl lg:text-2xl font-medium px-4 py-3 sm:py-4 lg:py-6 border border-gray-300 hover:bg-gray-50 transition shadow-md"
+                                        
                                         variants={item}
                                         whileHover={{ scale: 1.03 }}
                                         whileTap={{ scale: 0.98 }}
