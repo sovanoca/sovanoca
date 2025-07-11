@@ -102,8 +102,8 @@ const ContactUs = () => {
 
                             <div className="space-y-4">
                                 {/* WhatsApp */}
-                                {/* <a
-                                    href="tel:+15512001350"
+                                <a
+                                    href="tel:+13365003171"
                                     title="compnay's phone number"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-between p-3 bg-blue-50 hover:bg-blue-100 transition"
@@ -116,10 +116,10 @@ const ContactUs = () => {
                                         </div>
                                         <div>
                                             <h3 className="text-lg font-semibold text-gray-800">Call us</h3>
-                                            <p className="text-gray-600">(551) 200-1350</p>
+                                            <p className="text-gray-600">(336) 500-3171</p>
                                         </div>
                                     </div>
-                                </a> */}
+                                </a>
 
 
                                 {/* Email */}

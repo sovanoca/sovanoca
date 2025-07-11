@@ -51,8 +51,8 @@ const BlogPost = () => {
                         <button
                             onClick={() => scrollToSection(item.id)}
                             className={`text-left w-full px-3 py-2 transition-all duration-200 ${activeSection === item.id
-                                    ? 'bg-blue-100 text-b1 font-medium'
-                                    : 'hover:bg-gray-100'
+                                ? 'bg-blue-100 text-b1 font-medium'
+                                : 'hover:bg-gray-100'
                                 } ${item.indent ? 'ml-4' : ''}`}
                         >
                             {item.text}
@@ -639,18 +639,30 @@ const BlogPost = () => {
                                                 Request a Quote →
                                             </motion.button>
                                         </Link>
+                                        <Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
+                                            <motion.p
+                                                className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                                whileHover={{ scale: 1.05 }}
+                                                whileTap={{ scale: 0.95 }}
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                                </svg>
+                                                Call Us: (336) 500-3171
+                                            </motion.p>
+                                </Link>
                                     </motion.div>
-                                </div>
-                            </motion.div>
+                            </div>
+                        </motion.div>
 
-                            <p className="mt-8">
-                                The decision to renovate is ultimately about future-proofing your investment. In North Carolina's dynamic hospitality landscape, strategic renovation isn't just an option—it's an essential component of long-term success. By approaching renovation as an investment rather than an expense, you position your property for sustained profitability and growth in one of America's most vibrant tourism markets.
-                            </p>
-                        </motion.section>
-                    </article>
-                </div>
+                        <p className="mt-8">
+                            The decision to renovate is ultimately about future-proofing your investment. In North Carolina's dynamic hospitality landscape, strategic renovation isn't just an option—it's an essential component of long-term success. By approaching renovation as an investment rather than an expense, you position your property for sustained profitability and growth in one of America's most vibrant tourism markets.
+                        </p>
+                    </motion.section>
+                </article>
             </div>
         </div>
+        </div >
     );
 };
 

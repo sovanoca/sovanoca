@@ -95,13 +95,13 @@ const Footer = () => {
                 <div>
                     <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
                     <ul className="space-y-4 text-sm">
-                        {/* <li className="flex gap-3 items-start">
+                        <li className="flex gap-3 items-start">
                             <FaPhone className="text-white mt-1" />
                             <div>
                                 <div className="font-medium text-white">Phone</div>
-                                <div>+1 809 120 6705</div>
+                                <div>+1 336 500-3171</div>
                             </div>
-                        </li> */}
+                        </li>
                         <li className="flex gap-3 items-start">
                             <FaEnvelope className="text-white mt-1" />
                             <div>
