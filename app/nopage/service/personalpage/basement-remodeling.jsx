@@ -321,7 +321,16 @@ export default function ServiceHero() {
                                         "Entertainment Rooms", "Home Theaters", "Guest Suites",
                                         "Home Offices", "Fitness Centers", "Playrooms",
                                         "Wet Bars & Kitchens", "Additional Bedrooms", "Rental Units",
-                                        "Music Studios", "Game Rooms", "Craft Spaces"
+                                        "Music Studios", "Game Rooms", "Craft Spaces","basement remodeling greensboro nc",
+    "basement waterproofing",
+    "basement remodel greensboro nc",
+    "custom basement remodeling burlington nc",
+    "basement remodeling North Carolina",
+    "basement finishing NC",
+    "basement renovation services",
+    "home remodeling NC",
+    "Sovanoca basement services",
+    "basement upgrades North Carolina",
                                     ].map((item, index) => (
                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}

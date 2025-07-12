@@ -6,6 +6,10 @@ export const metadata = {
   description:
     "Transform your basement with Sovanoca’s expert remodeling services in North Carolina. From design to completion, we turn unused spaces into functional living areas.",
   keywords: [
+    "basement remodeling greensboro nc",
+    "basement waterproofing",
+    "basement remodel greensboro nc",
+    "custom basement remodeling burlington nc",
     "basement remodeling North Carolina",
     "basement finishing NC",
     "basement renovation services",
