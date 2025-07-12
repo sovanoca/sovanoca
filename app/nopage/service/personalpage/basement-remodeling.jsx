@@ -114,8 +114,8 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your underutilized basement into valuable living space with our professional remodeling services. 
-                                Serving homeowners across North Carolina, we create functional, beautiful spaces that enhance your 
+                                Transform your underutilized basement into valuable living space with our professional remodeling services.
+                                Serving homeowners across North Carolina, we create functional, beautiful spaces that enhance your
                                 lifestyle and increase your home's value.
                             </motion.p>
 
@@ -204,8 +204,8 @@ export default function ServiceHero() {
 
 
             </section>
-            <Home4/>
-            
+            <Home4 />
+
             {/* Service Description Section */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -237,14 +237,14 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Underutilized Space</h3>
                             <p className="text-gray-700 mb-6">
-                                Our basement remodeling services unlock the hidden potential in your home, creating functional living areas 
-                                that match your lifestyle needs. We specialize in transforming dark, unfinished basements into bright, 
+                                Our basement remodeling services unlock the hidden potential in your home, creating functional living areas
+                                that match your lifestyle needs. We specialize in transforming dark, unfinished basements into bright,
                                 welcoming spaces that add significant value to your North Carolina home.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving homeowners throughout North Carolina, our team brings expertise in structural modifications, 
-                                moisture control, and custom finishes. Whether you need additional bedrooms, a home office, 
-                                entertainment space, or a rental unit, we handle all aspects of basement renovation with precision 
+                                Serving homeowners throughout North Carolina, our team brings expertise in structural modifications,
+                                moisture control, and custom finishes. Whether you need additional bedrooms, a home office,
+                                entertainment space, or a rental unit, we handle all aspects of basement renovation with precision
                                 and care.
                             </p>
 
@@ -321,18 +321,18 @@ export default function ServiceHero() {
                                         "Entertainment Rooms", "Home Theaters", "Guest Suites",
                                         "Home Offices", "Fitness Centers", "Playrooms",
                                         "Wet Bars & Kitchens", "Additional Bedrooms", "Rental Units",
-                                        "Music Studios", "Game Rooms", "Craft Spaces","basement remodeling greensboro nc",
-    "basement waterproofing",
-    "basement remodel greensboro nc",
-    "custom basement remodeling burlington nc",
-    "basement remodeling North Carolina",
-    "basement finishing NC",
-    "basement renovation services",
-    "home remodeling NC",
-    "Sovanoca basement services",
-    "basement upgrades North Carolina",
+                                        "Music Studios", "Game Rooms", "Craft Spaces", "basement remodeling greensboro nc",
+                                        "basement waterproofing",
+                                        "basement remodel greensboro nc",
+                                        "custom basement remodeling burlington nc",
+                                        "basement remodeling North Carolina",
+                                        "basement finishing NC",
+                                        "basement renovation services",
+                                        "home remodeling NC",
+                                        "Sovanoca basement services",
+                                        "basement upgrades North Carolina",
                                     ].map((item, index) => (
-                                       <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -342,10 +342,43 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            
-            <Home5/>
-            <Home6/>
-            <Home7/>
+            <section className="container mx-auto bg-white border shadow-md p-6 my-12">
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                    {/* Image */}
+                    <div className="overflow-hidden">
+                        <Image
+                            src="/10-basement-remodeling-ideas-to-maximize-space-value.webp"
+                            alt="10 Basement Remodeling Ideas to Maximize Space & Value"
+                            title="10 Basement Remodeling Ideas to Maximize Space & Value"
+                            width={600}
+                            height={400}
+                            className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+
+                    {/* Content */}
+                    <div>
+                        <p className="text-sm text-gray-500 mb-2">Published on July 12, 2025</p>
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                            10 Basement Remodeling Ideas to Maximize Space & Value
+                        </h3>
+                        <p className="text-gray-700 mb-4">
+                            Transform your basement into a high-value living space. Explore 10 creative remodeling ideas that add functionality, comfort, and resale value to your home.
+                        </p>
+                        <Link
+                            href="/blogs/10-basement-remodeling-ideas-to-maximize-space-value"
+                            className="inline-block bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+                        >
+                            Read Full Guide
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+
+            <Home5 />
+            <Home6 />
+            <Home7 />
 
 
             {/* FAQ Section */}
@@ -434,7 +467,7 @@ export default function ServiceHero() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        
+
                         <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
@@ -476,18 +509,18 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-<Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
-                                <motion.p
-                                    className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                    </svg>
-                                    Call Us: (336) 500-3171
-                                </motion.p>
-                            </Link>
+                                <Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
+                                    <motion.p
+                                        className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                        </svg>
+                                        Call Us: (336) 500-3171
+                                    </motion.p>
+                                </Link>
 
                             </motion.div>
                         </div>

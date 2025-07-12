@@ -6,10 +6,15 @@ import Image from "next/image";
 const blogs = [
   {
     title: "Hotel Renovation Benefits vs. Cost: A North Carolina Owner's Strategic Guide",
-    excerpt: "Discover the true value of hotel renovations in North Carolina. Learn how strategic upgrades can boost guest satisfaction, increase bookings, and outweigh renovation costs in the long run.",
     date: "July 11, 2025",
     link: "/blogs/hotel-renovation-benefits-vs-cost-north-carolina-guide",
     image: "/hotel-renovation-benefits-vs-cost-north-carolina-guide.jpg",
+  },
+  {
+    title: "10 Basement Remodeling Ideas to Maximize Space & Value",
+    date: "July 12, 2025",
+    link: "/blogs/10-basement-remodeling-ideas-to-maximize-space-value",
+    image: "/10-basement-remodeling-ideas-to-maximize-space-value.webp",
   }
 ];
 
