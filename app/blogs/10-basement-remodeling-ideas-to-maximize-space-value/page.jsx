@@ -40,7 +40,7 @@ export const metadata = {
         siteName: "Sovanoca",
         images: [
             {
-                url: "https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.jpg",
+                url: "https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.webp",
                 width: 1200,
                 height: 630,
                 alt: "Finished basement remodel with functional living space",
@@ -54,7 +54,7 @@ export const metadata = {
         title: "10 Basement Remodeling Ideas to Maximize Space & Value",
         description:
             "Looking to remodel your basement? Discover 10 ideas to turn your basement into a valuable, functional space. Boost home value with Sovanoca.",
-        images: ["https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.jpg"],
+        images: ["https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.webp"],
         creator: "@sovanoca_team",
     },
     metadataBase: new URL("https://sovanoca.com"),
@@ -70,7 +70,7 @@ export default function Page() {
         },
         "headline": "10 Basement Remodeling Ideas to Maximize Space & Value",
         "description": "Transform your basement with these 10 smart remodeling ideas. Learn how to increase living space, functionality, and home value with expert basement renovation tips.",
-        "image": "https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.jpg",
+        "image": "https://sovanoca.com/10-basement-remodeling-ideas-to-maximize-space-value.webp",
         "author": {
             "@type": "Organization",
             "name": "Sovanoca",
