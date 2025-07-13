@@ -40,7 +40,7 @@ export const metadata = {
         siteName: "Sovanoca",
         images: [
             {
-                url: "https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.jpg",
+                url: "https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.webp",
                 width: 1200,
                 height: 630,
                 alt: "Hotel renovation in North Carolina before and after visual",
@@ -54,7 +54,7 @@ export const metadata = {
         title: "Hotel Renovation Benefits vs. Cost: A North Carolina Owner's Strategic Guide",
         description:
             "Understand how hotel renovations in North Carolina can enhance guest experience and profitability. A must-read for hotel owners.",
-        images: ["https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.jpg"],
+        images: ["https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.webp"],
         creator: "@sovanoca_team",
     },
     metadataBase: new URL("https://sovanoca.com"),
@@ -70,7 +70,7 @@ export default function Page() {
         },
         "headline": "Hotel Renovation Benefits vs. Cost: A North Carolina Owner's Strategic Guide",
         "description": "Explore the financial impact of hotel renovations in North Carolina. Learn how modern upgrades can increase guest satisfaction, bookings, and long-term ROI.",
-        "image": "https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.jpg",
+        "image": "https://sovanoca.com/hotel-renovation-benefits-vs-cost-north-carolina-guide.webp",
         "author": {
             "@type": "Organization",
             "name": "Sovanoca",
