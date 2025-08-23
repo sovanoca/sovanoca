@@ -2,10 +2,12 @@ import Comp1 from "../../nopage/service/personalpage/asphalt-parking-lot-for-bus
 import Head from "next/head";
 
 export const metadata = {
-  title: "Asphalt Parking Lot Services for North Carolina Businesses | Sovanoca",
+  title: "Commercial Parking Lot Installation | Sovanoca",
   description:
-    "Sovanoca offers durable and professionally paved asphalt parking lots for businesses across North Carolina. Improve curb appeal, safety, and functionality today.",
+    "Sovanoca provides expert commercial parking lot installation tailored to your business needs. Work with affordable parking lot contractors in North Carolina to get durable, high-quality asphalt without breaking your budget.",
   keywords: [
+    "commercial parking lot installation",
+    "affordable parking lot contractors",
     "asphalt parking lot North Carolina",
     "commercial asphalt paving NC",
     "business parking lot installation",
@@ -29,15 +31,15 @@ export const metadata = {
   creator: "Sovanoca",
   publisher: "Sovanoca",
   openGraph: {
-    title: "Asphalt Parking Lot Services for NC Businesses | Sovanoca",
+    title: "Commercial Parking Lot Installation | Sovanoca",
     description:
-      "Reliable asphalt parking lot services for businesses across North Carolina. Paving, resurfacing & maintenance. Contact Sovanoca for a free quote.",
+      "Get professional commercial parking lot installation from affordable parking lot contractors in North Carolina. Durable, safe, and cost-effective asphalt solutions for businesses of all sizes.",
     url: "https://sovanoca.com/services/asphalt-parking-lot-for-businesses",
     siteName: "Sovanoca",
     images: [
       {
         url: "https://sovanoca.com/opengraph.webp",
-        alt: "Asphalt Parking Lot Paving – Sovanoca NC",
+        alt: "Commercial Parking Lot Installation – Sovanoca NC",
       },
     ],
     locale: "en_US",
@@ -45,13 +47,14 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asphalt Parking Lot Services for NC Businesses | Sovanoca",
+    title: "Commercial Parking Lot Installation | Sovanoca",
     description:
-      "Need a durable asphalt parking lot for your business in NC? Sovanoca provides expert commercial paving services tailored to your needs.",
+      "Looking for commercial parking lot installation? Our affordable parking lot contractors in North Carolina deliver durable, high-quality asphalt parking lots that meet your budget and needs.",
     images: ["https://sovanoca.com/opengraph.webp"],
   },
   metadataBase: new URL("https://sovanoca.com"),
 };
+
 
 export default function ServicePage() {
   const schemaData = {

@@ -43,8 +43,16 @@ export default function ServiceHero() {
             answer: "Absolutely. We assess each lot individually - many can be restored through milling, resurfacing, and targeted repairs at 30-50% of replacement cost. We'll provide honest recommendations on repair vs. replacement options."
         },
         {
+            question: "What is included in your commercial parking lot installation services?",
+            answer: "Our commercial parking lot installation covers every step – from site preparation and grading to asphalt paving, striping, and final safety checks. We build lots designed for durability, accessibility, and long-term performance."
+        },
+        {
             question: "How do you handle drainage in parking lots?",
             answer: "We design lots with 1-2% slope for proper runoff, incorporating catch basins, trench drains, and permeable asphalt options where needed. Our designs meet NC stormwater regulations and prevent pooling that damages asphalt."
+        },
+        {
+            question: "What makes you affordable parking lot contractors?",
+            answer: "We keep our services affordable by streamlining project management, sourcing materials at competitive rates, and using efficient paving techniques. This allows us to reduce costs while still delivering durable, high-quality parking lots for businesses."
         }
     ];
 
@@ -81,7 +89,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Parking Lot Solutions</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Affordable Parking Lot Contractors</span>
                             </motion.h2>
 
                             <motion.h1
@@ -90,21 +98,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Asphalt Parking Lots for North Carolina Businesses
+                                Commercial Parking Lot Installation
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
                                         src="/parking-lot.webp"
-                                        alt="New asphalt parking lot installation"
-                                        title="Commercial asphalt parking lot installation"
+                                        alt="Commercial Parking Lot Installation"
+                                        title="Commercial Parking Lot Installation"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Premium Asphalt Solutions</h3>
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Commercial Parking Lot Installation</h3>
                                 </div>
                             </div>
 
@@ -114,9 +122,8 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your business property with durable, professional asphalt parking solutions. 
-                                Serving businesses across North Carolina, we specialize in commercial parking lot installation, 
-                                repair, and maintenance that enhances safety, accessibility, and curb appeal.
+                                Transform your business property with durable, professional asphalt parking solutions.
+                                Serving businesses across North Carolina, As affordable parking lot contractors we specialize in commercial parking lot installation, repair, and maintenance that enhances safety, accessibility, and curb appeal.
                             </motion.p>
 
                             {/* Benefits */}
@@ -197,8 +204,8 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            <Home4/>
-            
+            <Home4 />
+
             {/* Service Description Section */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -230,17 +237,18 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Transform Your Business Property</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial asphalt parking lot services create safe, durable, and professional surfaces 
-                                that enhance your property's functionality and appearance. We understand that your parking 
-                                area is the first impression customers have of your business and we're committed to making 
-                                it exceptional.
+                                Our commercial asphalt parking lot services create safe, durable, and professional surfaces
+                                that enhance your property's functionality and appearance. With a focus on quality and value,
+                                we are the best affordable parking lot contractors ensure that your parking area makes the best first
+                                impression for your business.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team specializes in commercial parking 
-                                solutions for retail centers, office complexes, industrial facilities, medical campuses, 
-                                and multi-unit properties of all sizes. We combine engineering expertise with quality 
-                                craftsmanship to deliver lasting results.
+                                Serving businesses throughout North Carolina, our team specializes in commercial parking lot installation
+                                for retail centers, office complexes, industrial facilities, medical campuses, and multi-unit properties of all sizes.
+                                We combine engineering expertise with quality craftsmanship to deliver lasting results that maximize safety
+                                and curb appeal.
                             </p>
+
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
                                 <h4 className="font-bold text-gray-900 mb-2">Benefits of Professional Asphalt Parking Lots</h4>
@@ -327,10 +335,10 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            
-            <Home5/>
-            <Home6/>
-            <Home7/>
+
+            <Home5 />
+            <Home6 />
+            <Home7 />
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
@@ -418,7 +426,7 @@ export default function ServiceHero() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        
+
                         <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
@@ -461,17 +469,17 @@ export default function ServiceHero() {
                                 </Link>
 
                                 <Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
-                                <motion.p
-                                    className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                    </svg>
-                                    Call Us: (336) 500-3171
-                                </motion.p>
-                            </Link>
+                                    <motion.p
+                                        className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                        </svg>
+                                        Call Us: (336) 500-3171
+                                    </motion.p>
+                                </Link>
                             </motion.div>
                         </div>
                     </motion.div>
