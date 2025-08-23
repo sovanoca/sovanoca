@@ -2,10 +2,12 @@ import Comp1 from "../../nopage/service/personalpage/waterproofing";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Waterproofing Services in North Carolina | Sovanoca",
+  title: "Deck Waterproofing Services in Greensboro | Sovanoca",
   description:
-    "Protect your property with Sovanoca’s expert waterproofing services in North Carolina. We prevent leaks, mold, and structural damage with proven solutions.",
+    "Sovanoca offers professional deck waterproofing services in Greensboro to protect your decks from leaks, moisture, and damage. Get a free quote today!",
   keywords: [
+    "deck waterproofing services Greensboro",
+    "deck waterproofing Greensboro",
     "waterproofing services North Carolina",
     "basement waterproofing NC",
     "roof waterproofing North Carolina",
@@ -29,15 +31,15 @@ export const metadata = {
   creator: "Sovanoca",
   publisher: "Sovanoca",
   openGraph: {
-    title: "Waterproofing Services in North Carolina | Sovanoca",
+    title: "Deck Waterproofing Services in Greensboro | Sovanoca",
     description:
-      "Sovanoca provides reliable waterproofing solutions in North Carolina to protect homes and buildings from water damage. Get a free quote today!",
+      "Protect your deck with Sovanoca’s expert deck waterproofing services in Greensboro. Prevent leaks, moisture, and damage with our professional solutions.",
     url: "https://sovanoca.com/services/waterproofing",
     siteName: "Sovanoca",
     images: [
       {
         url: "https://sovanoca.com/opengraph.webp",
-        alt: "Waterproofing Services in North Carolina – Sovanoca",
+        alt: "Deck Waterproofing Services in Greensboro – Sovanoca",
       },
     ],
     locale: "en_US",
@@ -45,13 +47,14 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Waterproofing Services in North Carolina | Sovanoca",
+    title: "Deck Waterproofing Services in Greensboro | Sovanoca",
     description:
-      "Need waterproofing in North Carolina? Sovanoca prevents leaks and moisture damage with professional solutions. Request your consultation now!",
+      "Looking for deck waterproofing in Greensboro? Sovanoca prevents leaks and moisture damage with expert solutions. Request your consultation now!",
     images: ["https://sovanoca.com/opengraph.webp"],
   },
   metadataBase: new URL("https://sovanoca.com"),
 };
+
 
 export default function ServicePage() {
   const schemaData = {

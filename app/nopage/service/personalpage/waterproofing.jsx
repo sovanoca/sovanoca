@@ -19,6 +19,10 @@ export default function ServiceHero() {
             answer: "We waterproof all critical areas including basements, foundations, crawl spaces, roofs, decks, balconies, and retaining walls. Our solutions protect both above and below-grade structures from water intrusion."
         },
         {
+            question: "Do you provide deck waterproofing services in Greensboro?",
+            answer: "Yes, we specialize in professional deck waterproofing services in Greensboro. Our team protects decks from water damage, leaks, and mold, ensuring long-lasting durability while enhancing safety and aesthetics."
+        },
+        {
             question: "How long does waterproofing last?",
             answer: "Our waterproofing systems typically last 10-15 years. We use premium materials specifically designed for North Carolina's climate, including heavy rainfall and humidity. Our warranty covers materials and workmanship for 10 years."
         },
@@ -81,7 +85,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Waterproofing</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Deck Waterproofing</span>
                             </motion.h2>
 
                             <motion.h1
@@ -90,21 +94,21 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.3, duration: 0.6 }}
                                 className="text-xl  lg:text-5xl font-bold leading-tight mb-2 lg:mb-6"
                             >
-                                Waterproofing Services in North Carolina
+                                Deck Waterproofing Services in Greensboro, NC
                             </motion.h1>
                             <div className="relative lg:hidden overflow-hidden  shadow-2xl border-4 border-white">
                                 <div className="aspect-w-16 aspect-h-9">
                                     <Image
                                         src="/commercial-waterproofing.webp"
-                                        alt="Commercial building waterproofing"
-                                        title="Professional waterproofing services for businesses"
+                                        alt="Deck Waterproofing"
+                                        title="Deck waterproofing services for businesses"
                                         width={800}
                                         height={600}
                                         className="object-cover w-full h-72"
                                     />
                                 </div>
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-b1/90 to-transparent p-6">
-                                    <h3 className="text-white font-bold text-md lg:text-xl">Water Intrusion Experts</h3>
+                                    <h3 className="text-white font-bold text-md lg:text-xl">Deck Waterproofing Experts</h3>
                                 </div>
                             </div>
 
@@ -114,9 +118,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Protect your commercial property from water damage with our comprehensive waterproofing solutions. 
-                                Serving businesses across North Carolina, we prevent leaks, foundation damage, and mold growth 
-                                while preserving your property's structural integrity.
+                                Protect your commercial property from water damage with our deck waterproofing services in Greensboro. Serving businesses across North Carolina, we prevent leaks, foundation damage, and mold growth while preserving your property's structural integrity with expert deck waterproofing solutions.
                             </motion.p>
 
                             {/* Benefits */}
@@ -197,8 +199,8 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            <Home4/>
-            
+            <Home4 />
+
             {/* Service Description Section */}
             <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4">
@@ -230,15 +232,16 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Protect Your Property Investment</h3>
                             <p className="text-gray-700 mb-6">
-                                Our commercial waterproofing services are designed to safeguard your property against water damage, 
-                                foundation issues, and mold growth. We understand that water intrusion can cause significant structural 
-                                damage and health hazards, and we're committed to providing long-lasting solutions that protect your investment.
+                                Our commercial deck waterproofing services in Greensboro are designed to safeguard your property against water damage,
+                                foundation issues, and mold growth. We understand that water intrusion can cause significant structural
+                                damage and health hazards, and we're committed to providing long-lasting solutions that protect your investment with expert deck waterproofing techniques.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving businesses throughout North Carolina, our team specializes in waterproofing solutions 
-                                for retail centers, office buildings, industrial facilities, multi-unit properties, and historical structures. 
+                                Serving businesses throughout North Carolina, our team specializes in deck waterproofing services in Greensboro
+                                and other waterproofing solutions for retail centers, office buildings, industrial facilities, multi-unit properties, and historical structures.
                                 We address the unique challenges of NC's climate including heavy rainfall, high humidity, and clay soil expansion.
                             </p>
+
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">
                                 <h4 className="font-bold text-gray-900 mb-2">Why Waterproofing is Essential in NC?</h4>
@@ -316,7 +319,7 @@ export default function ServiceHero() {
                                         "French Drain Installation", "Sump Pump Systems", "Vapor Barrier Installation",
                                         "Concrete Waterproofing", "Expansion Joint Sealing", "Mold Remediation"
                                     ].map((item, index) => (
-                                      <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
+                                        <h3 key={index} className="bg-gray-100 text-gray-800 px-3 py-1  text-sm">
                                             {item}
                                         </h3>
                                     ))}
@@ -326,10 +329,10 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
-            
-            <Home5/>
-            <Home6/>
-            <Home7/>
+
+            <Home5 />
+            <Home6 />
+            <Home7 />
 
             {/* FAQ Section */}
             <section className="py-16 bg-white">
@@ -417,7 +420,7 @@ export default function ServiceHero() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        
+
                         <div className="absolute -top-20 -right-20 w-64 h-64 bg-white  opacity-10" />
                         <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-blue-300  opacity-20" />
 
@@ -459,18 +462,18 @@ export default function ServiceHero() {
                                     </motion.p>
                                 </Link>
 
-<Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
-                                <motion.p
-                                    className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                    </svg>
-                                    Call Us: (336) 500-3171
-                                </motion.p>
-                            </Link>
+                                <Link href="tel:+13365003171" title="Construction company's Phone number" passHref>
+                                    <motion.p
+                                        className="bg-white text-b1 font-bold px-8 py-3 hover:bg-gray-100 transition flex items-center justify-center gap-2"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                        </svg>
+                                        Call Us: (336) 500-3171
+                                    </motion.p>
+                                </Link>
                             </motion.div>
                         </div>
                     </motion.div>
