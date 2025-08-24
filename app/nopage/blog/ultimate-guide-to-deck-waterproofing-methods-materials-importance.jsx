@@ -28,42 +28,48 @@ const BlogPost = () => {
     };
 
     // Table of Contents Component
-    const TableOfContents = ({ isMobile }) => (
-        <div className={`bg-white shadow-lg p-6 border border-gray-200 ${isMobile ? 'mb-8' : 'sticky top-24'}`}>
-            <h2 className="text-xl font-bold text-b1 mb-4">Table of Contents</h2>
-            <ul className="space-y-2">
-                {[
-                    { id: 'introduction', text: 'Introduction: Why Deck Waterproofing is Non-Negotiable' },
-                    { id: 'methods', text: 'Deck Waterproofing Methods: Choosing the Right Approach' },
-                    { id: 'membrane', text: '- Membrane Systems', indent: true },
-                    { id: 'coating', text: '- Liquid Coatings', indent: true },
-                    { id: 'tile', text: '- Tile Systems', indent: true },
-                    { id: 'materials', text: 'Waterproofing Materials: Pros, Cons, and Costs' },
-                    { id: 'lifespan', text: 'How Long Does Deck Waterproofing Last?' },
-                    { id: 'benefits', text: 'The Benefits: More Than Just Leak Prevention' },
-                    { id: 'costs', text: 'Cost Analysis: Investment vs. Expense' },
-                    { id: 'conclusion', text: 'Conclusion: Protecting Your Investment' },
-                ].map((item) => (
-                    <motion.li
-                        key={item.id}
-                        initial={{ x: -10, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.1 }}
-                    >
-                        <button
-                            onClick={() => scrollToSection(item.id)}
-                            className={`text-left w-full px-3 py-2 transition-all duration-200 ${activeSection === item.id
+ const TableOfContents = ({ isMobile }) => (
+    <div
+        className={`bg-white shadow-lg p-6 border h-[80vh] overflow-y-auto border-gray-200 ${
+            isMobile ? 'mb-8' : 'sticky top-24'
+        }`}
+    >
+        <h2 className="text-xl font-bold text-b1 mb-4">Table of Contents</h2>
+        <ul className="space-y-2">
+            {[
+                { id: 'introduction', text: 'Introduction: Why Deck Waterproofing is Non-Negotiable' },
+                { id: 'methods', text: 'Deck Waterproofing Methods: Choosing the Right Approach' },
+                { id: 'membrane', text: '- Membrane Systems', indent: true },
+                { id: 'coating', text: '- Liquid Coatings', indent: true },
+                { id: 'tile', text: '- Tile Systems', indent: true },
+                { id: 'materials', text: 'Waterproofing Materials: Pros, Cons, and Costs' },
+                { id: 'lifespan', text: 'How Long Does Deck Waterproofing Last?' },
+                { id: 'benefits', text: 'The Benefits: More Than Just Leak Prevention' },
+                { id: 'costs', text: 'Cost Analysis: Investment vs. Expense' },
+                { id: 'conclusion', text: 'Conclusion: Protecting Your Investment' },
+            ].map((item) => (
+                <motion.li
+                    key={item.id}
+                    initial={{ x: -10, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.1 }}
+                >
+                    <button
+                        onClick={() => scrollToSection(item.id)}
+                        className={`text-left w-full px-3 py-2 transition-all duration-200 ${
+                            activeSection === item.id
                                 ? 'bg-blue-100 text-b1 font-medium'
                                 : 'hover:bg-gray-100'
-                                } ${item.indent ? 'ml-4' : ''}`}
-                        >
-                            {item.text}
-                        </button>
-                    </motion.li>
-                ))}
-            </ul>
-        </div>
-    );
+                        } ${item.indent ? 'ml-4' : ''}`}
+                    >
+                        {item.text}
+                    </button>
+                </motion.li>
+            ))}
+        </ul>
+    </div>
+);
+
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -83,7 +89,7 @@ const BlogPost = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                            <h1 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
                                 The Ultimate Guide to Deck Waterproofing: Methods, Materials, and Why It's Crucial
                             </h1>
                             <div className="flex justify-center items-center space-x-4 text-gray-600">
