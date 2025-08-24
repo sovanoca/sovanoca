@@ -15,7 +15,14 @@ const blogs = [
     date: "July 12, 2025",
     link: "/blogs/10-basement-remodeling-ideas-to-maximize-space-value",
     image: "/10-basement-remodeling-ideas-to-maximize-space-value.webp",
-  }
+  },
+ {
+  title: "The Ultimate Guide to Deck Waterproofing: Methods, Materials, and Why It's Crucial",
+  date: "August 24, 2025",
+  link: "/blogs/ultimate-guide-to-deck-waterproofing-methods-materials-importance",
+  image: "/ultimate-guide-to-deck-waterproofing.webp",
+}
+
 ];
 
 export default function BlogPage() {

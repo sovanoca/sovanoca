@@ -10,14 +10,12 @@ export const metadata = {
     "hotel renovation contractors nc",
     "hotel renovation in north carolina",
     "hotel renovation North Carolina",
-    "hotel remodeling services",
-    "hotel renovation",
+    "hotel remodeling services nc",
+    "hotel renovation nc",
     "hotel renovation solutions",
-    "hotel remodeling specialists",
-    "hotel renovation services",
-    "hotel remodeling",
-    "hotel renovation specialists",
-    "hotel remodeling companies"
+    "hotel renovation services nc",
+    "hotel remodeling nc",
+    "hotel remodeling companies nc"
   ],
   alternates: {
     canonical: "/services/hotel-motel-renovation",

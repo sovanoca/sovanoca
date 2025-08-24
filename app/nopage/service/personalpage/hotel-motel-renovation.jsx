@@ -42,6 +42,10 @@ export default function ServiceHero() {
             question: "What COVID-related renovations are you seeing?",
             answer: "We're implementing touchless fixtures, antimicrobial surfaces, enhanced HVAC systems, redesigned lobbies for social distancing, and converting spaces to accommodate remote workers. These upgrades help properties meet new guest expectations."
         },
+         {
+            question: "Why should I choose hotel renovation companies NC like yours?",
+            answer: "As one of the trusted hotel renovation companies in NC, we combine deep knowledge of the hospitality industry with local expertise. Our team delivers end-to-end solutions—from design and permits to construction and finishing—helping North Carolina hotels enhance guest experience, improve efficiency, and boost long-term property value."
+        },
         {
             question: "Do you offer financing options for renovations?",
             answer: "Yes, we partner with several lenders specializing in hospitality projects. We can help you explore options like renovation loans, equipment financing, and energy efficiency rebates to make improvements more affordable."
@@ -82,7 +86,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="inline-block bg-b1 px-4 py-2  mb-2 lg:mb-6"
                             >
-                                <span className=" text-lg lg:text-2xl font-medium text-white">Hotel & Motel Renovation</span>
+                                <span className=" text-lg lg:text-2xl font-medium text-white">Hotel renovation companies nc</span>
                             </motion.h2>
 
                             <motion.h1
@@ -115,9 +119,7 @@ export default function ServiceHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="text-sm lg:text-xl text-black mb-2 mt-4 lg:mt-0 lg:mb-8 max-w-3xl"
                             >
-                                Transform your hospitality property with our comprehensive renovation solutions.
-                                Serving hotels  across North Carolina, we specialize in guest room updates,
-                                lobby transformations, and facility upgrades that enhance guest experience and property value.
+                                Transform your hospitality property with our comprehensive renovation solutions. As one of the trusted hotel renovation companies NC, we serve hotels across North Carolina, specializing in guest room updates, lobby transformations, and facility upgrades that enhance both guest experience and property value.
                             </motion.p>
 
                             {/* Benefits */}
@@ -235,16 +237,10 @@ export default function ServiceHero() {
                         >
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Revitalize Your Hospitality Property</h3>
                             <p className="text-gray-700 mb-6">
-                                Our hotel renovation services are designed to modernize your property while
-                                maximizing return on investment. We understand the hospitality industry's unique needs -
-                                creating spaces that are not only beautiful but also durable, functional, and compliant
-                                with all regulations.
+                                As one of the top hotel renovation companies NC, our renovation services are designed to modernize your property while maximizing return on investment. We specialize in understanding the hospitality industry's unique needs—delivering spaces that are not only visually appealing but also durable, functional, and fully compliant with regulations.
                             </p>
                             <p className="text-gray-700 mb-6">
-                                Serving properties throughout North Carolina, from boutique hotels to national chains,
-                                we specialize in renovations that enhance guest satisfaction, improve operational efficiency,
-                                and increase revenue potential. Our team handles everything from cosmetic updates to
-                                complete property transformations.
+                                As one of the leading hotel renovation companies NC, we serve properties across North Carolina, from boutique hotels to national chains. Our expertise lies in renovations that enhance guest satisfaction, improve operational efficiency, and maximize revenue potential. From cosmetic updates to complete property transformations, our team delivers solutions tailored to your hospitality needs.
                             </p>
 
                             <div className="bg-b1/10 p-6  border-l-4 border-b1">

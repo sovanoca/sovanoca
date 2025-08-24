@@ -327,6 +327,35 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </section>
+            <section className="container mx-auto bg-white border  shadow-md p-6 my-12">
+                            <div className="grid md:grid-cols-2 gap-6 items-center">
+                                {/* Image */}
+                                <div className="overflow-hidden">
+                                    <Image
+                                        src="/ultimate-guide-to-deck-waterproofing.webp"
+                                        alt="Deck Waterproofing"
+                                        width={600}
+                                        height={400}
+                                        className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-sm text-gray-500 mb-2">Published on August 24, 2025</p>
+                                    <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+                                        The Ultimate Guide to Deck Waterproofing: Methods, Materials, and Why It's Crucial.
+                                    </h3>
+                                    <p className="text-gray-700 mb-4">
+                                        Learn everything about deck waterproofing — the best methods, materials, and why it's essential to protect your outdoor spaces from leaks, rot, and long-term damage.
+                                    </p>
+                                    <Link
+                                        href="/blogs/ultimate-guide-to-deck-waterproofing-methods-materials-importance"
+                                        className="inline-block bg-black text-white px-5 py-2  hover:bg-gray-800 transition"
+                                    >
+                                        Read Full Guide
+                                    </Link>
+                                </div>
+                            </div>
+                        </section>
             
             <Home5/>
             <Home6/>
