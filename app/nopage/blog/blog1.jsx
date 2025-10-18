@@ -27,6 +27,12 @@ const blogs = [
     date: "August 24, 2025",
     link: "/blogs/ultimate-guide-to-commercial-parking-lot-installation-concept-to-completion",
     image: "/ultimate-guide-to-commercial-parking-lot-installation.webp",
+  },
+   {
+    title: "How much does it cost to renovate a house in NC?",
+    date: "October 18, 2025",
+    link: "/blogs/how-much-does-it-cost-to-renovate-a-house-in-nc",
+    image: "/how-much-does-it-cost-to-renovate-a-house-in-nc.webp",
   }
 
 
