@@ -350,7 +350,7 @@ export default function AboutUs() {
             </section>
 
             {/* Team Section */}
-            <section className="py-20 px-4">
+            {/* <section className="py-20 px-4">
                 <div className="container mx-auto max-w-6xl">
                     <div className="text-center mb-16">
                         <motion.h2
@@ -398,7 +398,7 @@ export default function AboutUs() {
                         ))}
                     </motion.div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Associated Sub-Contractors Section */}
             <section className="py-16 bg-gray-50">
