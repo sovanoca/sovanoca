@@ -36,35 +36,41 @@ const ContactUs = () => {
     };
 
     // Handle form submission
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
+ const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-        const savedContacts = JSON.parse(localStorage.getItem('contactFormData') || '[]');
-        const newContacts = [...savedContacts, formData];
-        localStorage.setItem('contactFormData', JSON.stringify(newContacts));
+    const savedContacts = JSON.parse(localStorage.getItem('contactFormData') || '[]');
+    const newContacts = [...savedContacts, formData];
+    localStorage.setItem('contactFormData', JSON.stringify(newContacts));
 
-        // Send form data to backend
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
+    try {
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
 
-            if (res.ok) {
-                setSubmitMessage("Thanks for reaching out! We'll get back to you soon.");
-                setFormData({ name: '', phone: '', email: '', message: '' });
-            } else {
-                setSubmitMessage("Failed to send message. Please try again later.");
+        if (res.ok) {
+            setSubmitMessage("Thanks for reaching out! We'll get back to you soon.");
+            setFormData({ name: '', phone: '', email: '', message: '' });
+
+            // 🔹 Trigger Google Ads conversion
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
             }
-        } catch (err) {
-            console.error(err);
-            setSubmitMessage("Error occurred. Please try again.");
-        }
 
-        setIsSubmitting(false);
-    };
+        } else {
+            setSubmitMessage("Failed to send message. Please try again later.");
+        }
+    } catch (err) {
+        console.error(err);
+        setSubmitMessage("Error occurred. Please try again.");
+    }
+
+    setIsSubmitting(false);
+};
+
 
 
     // Select suggestion

@@ -23,23 +23,25 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google tag (GA4 + Google Ads) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-CBDFQD5190"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        {/* Google tag (GA4 + Google Ads) */}
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-CBDFQD5190"
+  strategy="afterInteractive"
+/>
+<Script id="gtag-init" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-            // Google Analytics
-            gtag('config', 'G-CBDFQD5190');
+    // Google Analytics
+    gtag('config', 'G-CBDFQD5190');
 
-            // Google Ads
-            gtag('config', 'AW-17274749876');
-          `}
-        </Script>
+    // Google Ads
+    gtag('config', 'AW-17274749876');
+  `}
+</Script>
+
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
